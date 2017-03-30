@@ -13,7 +13,7 @@ function CreateFooter() {
 
 // loads all the commonly required stylesheets for each page
 function LoadStyleSheets () {
-	CreateStyleSheetLink("navbarStyles.css");
+	CreateStyleSheetLink("styles/navbarStyles.css");
 }
 
 function CreateStyleSheetLink (filename) {
