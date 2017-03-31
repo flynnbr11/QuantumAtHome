@@ -1,12 +1,15 @@
 // example script for a canvas within a canvas that expands/contracts on being clicked
-// could be used for rooms and furniture
+// could be used for rooms and furniture - Joe
+
+var STATEVAR_CLICKABLE_NOT_CLICKED = 0;
+var STATEVAR_CLICKABLE_CLICKED = 1;
 
 function StartClickableCanvas() {
-	myButton = new ClickableObject(10, 10);
-	houseArea.Initialise(1600, 800);
+	MainCanvas.Initialise(800, 600);
+	MainCanvas.AddChild(new ClickableCanvasObject(300, 400, 100, 50));
 }
 
-var houseArea = {
+var MainCanvas = {
 	// object holding information about the primary canvas
     canvas : document.createElement("canvas"), 
 
@@ -17,6 +20,7 @@ var houseArea = {
         this.canvas.width = width;
         this.canvas.height = height;
 		this.color = "lightgrey";
+		this.childList = [];
 		
 		// function called when mouse is clicked while cursor is over canvas
 		// objects within the canvas cannot respond directly to events like this,
@@ -27,7 +31,9 @@ var houseArea = {
 				var mx = event.offsetX;
 				var my = event.offsetY;
 				
-				myButton.handleClick(mx, my);
+				for (i = 0, len = MainCanvas.childList.length; i < len; i++) {
+					MainCanvas.childList[i].HandleClick(mx, my);
+				}
 			},
 			false
 		);
@@ -36,54 +42,81 @@ var houseArea = {
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.interval = setInterval(UpdateArea, 33);
     },
-    clear : function() {
+	AddChild : function(childObj) {
+		childObj.SetParent(this);
+		this.childList.push(childObj);
+	},
+    Update : function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
 		this.context.fillStyle = this.color;
 		this.context.fillRect(0,0,this.canvas.width, this.canvas.height);
+		
+		for (i = 0, len = this.childList.length; i < len; i++) {
+			this.childList[i].Update();
+		}
     }
 }
 
-function ClickableObject(x, y)
-{
+function ClickableCanvasObject(x, y, width, height)
+{	
 	this.canvas = document.createElement("canvas");
 	this.x = x;
 	this.y = y;
-    this.canvas.width = 100;
-    this.canvas.height = 50;
+	this.baseWidth = width;
+	this.baseHeight = height;
+    this.canvas.width = width;
+    this.canvas.height = height;
     this.context = this.canvas.getContext("2d");
 	this.color = "red";
+	this.state = STATEVAR_CLICKABLE_NOT_CLICKED;
+	this.bParentSet = false;
 	
+	// sets the parent object of this object
+	this.SetParent = function(parentObj) {
+		this.parentObj = parentObj;
+		this.bParentSet = true;
+	}
 	// function for responding to clicks handled by parent object
-	this.handleClick = function(mx, my)
+	this.HandleClick = function(mx, my)
 	{
-		if (mx > this.x && mx < this.canvas.width + this.x && my > this.y && my < this.y + this.canvas.height)
+		if (this.bParentSet)
 		{
-			// was clicked
-			if (this.color == "red")
+			if (mx > this.x && mx < this.canvas.width + this.x && my > this.y && my < this.y + this.canvas.height)
 			{
-				this.color = "blue";
-				this.canvas.width =  700;
-				this.canvas.height = 350;
-			}
-			else
-			{
-				this.color = "red";
-				this.canvas.width = 100;
-				this.canvas.height = 50;
+				// simple demonstration about how state tracking works
+				switch(this.state)
+				{
+					case STATEVAR_CLICKABLE_NOT_CLICKED:
+						this.state = STATEVAR_CLICKABLE_CLICKED;
+						this.color = "blue";
+						this.canvas.width = this.baseWidth * 3;
+						this.canvas.height = this.baseHeight * 3;
+						break;
+					case STATEVAR_CLICKABLE_CLICKED:
+						this.state = STATEVAR_CLICKABLE_NOT_CLICKED;
+						this.color = "red";
+						this.canvas.width = this.baseWidth;
+						this.canvas.height = this.baseHeight;
+						break;
+					default:
+						break;
+				}
 			}
 		}
 	}
-    this.update = function(){
-		this.x = houseArea.canvas.width / 2 - this.canvas.width / 2;
-		this.y = houseArea.canvas.height / 2 - this.canvas.height / 2;
-		this.context.fillStyle = this.color;
-		this.context.fillRect(0,0,this.canvas.width, this.canvas.height);
-        ctx = houseArea.context;
-		ctx.drawImage(this.canvas, this.x, this.y);
+    this.Update = function()
+	{
+		// don't want to try and draw if the parent hasn't been set
+		if (this.bParentSet)
+		{
+			this.context.fillStyle = this.color;
+			this.context.fillRect(0,0,this.canvas.width, this.canvas.height);
+			ctx = this.parentObj.context;
+			ctx.drawImage(this.canvas, this.x, this.y);
+		}
 	}
 }
 
 function UpdateArea() {
-	houseArea.clear();
-	myButton.update();
+	MainCanvas.Update();
 }
