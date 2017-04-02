@@ -5,11 +5,11 @@ var STATEVAR_CLICKABLE_INACTIVE = 0;
 var STATEVAR_CLICKABLE_ACTIVE = 1;
 
 function StartClickableCanvas() {
-	MainCanvas.Initialise(1600, 600);
-	MainCanvas.AddChild(new ClickableCanvasObject(300, 100, 500, 200, "red"));
-	MainCanvas.AddChild(new ClickableCanvasObject(800, 100, 500, 200, "orange"));
-	MainCanvas.AddChild(new ClickableCanvasObject(300, 300, 500, 200, "green"));
-	MainCanvas.AddChild(new ClickableCanvasObject(800, 300, 500, 200, "blue"));
+	MainCanvas.Initialise(1600, 900);
+	MainCanvas.AddChild(new ClickableCanvasObject(200, 200, 600, 300, "red"));
+	MainCanvas.AddChild(new ClickableCanvasObject(800, 200, 600, 300, "orange"));
+	MainCanvas.AddChild(new ClickableCanvasObject(200, 500, 600, 300, "green"));
+	MainCanvas.AddChild(new ClickableCanvasObject(800, 500, 600, 300, "blue"));
 }
 
 var MainCanvas = {
