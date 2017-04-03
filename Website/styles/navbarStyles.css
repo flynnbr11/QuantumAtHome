@@ -3,8 +3,10 @@
 	text-decoration: none;
 	padding: 10px 10px 10px 10px;
 	font-size: 20px;
-	text-decoration: capitalize;
+	text-transform: uppercase;
+	font-family: Arial;
 }
+
 .navbarItem:hover {
 	color: black;
 	background-color: gray;
