@@ -41,7 +41,7 @@ function CreateNavbarItem(name, navbar) {
 function CreateNavbar() {
 	var navbar = document.getElementById("navbar");
 	
-	CreateNavbarItem("Contact", navbar);
-	CreateNavbarItem("About", navbar);
-	CreateNavbarItem("Index", navbar);
+	CreateNavbarItem("contact", navbar);
+	CreateNavbarItem("about", navbar);
+	CreateNavbarItem("index", navbar);
 }
