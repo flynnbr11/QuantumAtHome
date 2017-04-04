@@ -4,7 +4,7 @@ function StartCombinedFunctionalityTest() {
 	MainArea.Load(800, 450, "");
 	
 	MainArea.AddChildRoom("living_room", 50, 50, "images/bg_living_room.png");
-	MainArea.AddChildRoom("kitchen", 300, 50, "images/bg_kitchen.png");
+	MainArea.AddChildRoom("kitchen", 250, 50, "images/bg_kitchen.png");
 	
 //	MainArea.GetRoomByName("living_room").AddChildFurniture(new Furniture(""));
 }
