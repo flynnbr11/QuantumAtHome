@@ -1,10 +1,17 @@
 // initscript.js
 // sets up the common elements for each page on the site
 
+
+
 function DoLoad() {
-	CreateNavbar();
+	//CreateNavbar();
 	LoadStyleSheets();
-	CreateFooter();
+	//CreateFooter();
+}
+
+// bring up welcome canvas
+function CreateWelcome() {
+
 }
 
 // create the footer

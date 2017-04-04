@@ -12,6 +12,11 @@ function StartClickableCanvas() {
 	MainCanvas.AddChild(new ClickableCanvasObject(800, 500, 600, 300, "blue"));
 }
 
+function WelcomeCanvas() {
+	MainCanvas.Initialise(500,200);
+	
+}
+
 var MainCanvas = {
 	// object holding information about the primary canvas
     canvas : document.createElement("canvas"), 
@@ -66,8 +71,9 @@ var MainCanvas = {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
 		this.context.fillStyle = this.color;
 		this.context.fillRect(0,0,this.canvas.width, this.canvas.height);
-		//this.context.font = "20px Georgia";
-		//this.context.strokeText("TExT", 10, 50);
+		this.context.font = "20px Georgia";
+		this.context.fillStyle = "red";
+		this.context.fillText("TExT", 10, 50);
 		
 		if (this.bObjectActive) {
 			this.activeObject.Update();
