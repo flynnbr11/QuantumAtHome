@@ -2,21 +2,23 @@
 <html>
 <head>
 
-<title>Quantum Kitchen</title>
-<script src="../clickableCanvasTest.js"></script>
+<title>Quantum at Home - Living Room - ALPHA</title>
+<script src="../scripts/clickableCanvasTest.js"></script>
 
-<style>
-#mainCanvas {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-</style>
-
+<link rel = "stylesheet" type = "text/css" href = "../styles/stylesheet.css" />
 </head>
-<body >
-   <p>
-    This is the living room. 
-   </p>
+<body onload="PageInit()">
+
+<script>
+	function PageInit()
+	{
+		Initialise();
+		
+		// add new rooms/furniture here
+		AddItemToCanvas(0, 0, 1600, 900, "../images/living_room.jpg", "#");
+		AddItemToCanvas(800, 500, 300, 350, "../images/tv_image.jpg", "#");	
+	}
+</script>
+
 </body>
 </html>
