@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Quantum at Home - ALPHA</title>
+<script src="scripts/mainscript.js"></script>
+<style>
+.house {
+	width: 90%;
+	margin: auto;
+	position: center;
+}
+
+canvas {
+	width: 50%;
+	position: center;
+}
+</style>
+</head>
+<body>
+
+<div id="house"></div>
+
+<script>
+	// add rooms using pre-defined functions
+	AddRoom("livingRoom", 0, 0, "living.htm", "images/livingRoom.jpg");
+	AddRoom("kitchen", 0, 0, "kitchen.htm", "images/kitchen.jpg");
+	
+	Init();
+</script>
+</body>
+</html>
