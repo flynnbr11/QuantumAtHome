@@ -4,8 +4,8 @@
 var STATEVAR_CLICKABLE_INACTIVE = 0;
 var STATEVAR_CLICKABLE_ACTIVE = 1;
 
-function Initialise() {
-	MainCanvas.Initialise(1600, 900);
+function Initialise(bgSrc) {
+	MainCanvas.Initialise(1600, 900, bgSrc);
 }
 
 function AddItemToCanvas(x, y, width, height, imgSrc, clickURL)
@@ -18,7 +18,7 @@ var MainCanvas = {
     canvas : document.createElement("canvas"), 
     
 	// initialise the house area
-	Initialise : function(width, height) {
+	Initialise : function(width, height, bgSrc) {
 		this.canvas.innerHTML = "<p>Sorry, your browser does not support this application.</p>";
 		this.canvas.id = "mainCanvas";
         this.canvas.width = width;
@@ -26,6 +26,8 @@ var MainCanvas = {
 		this.color = "lightgrey";
 		this.childList = [];
 		this.bObjectActive = false;
+		this.img = new Image();
+		this.img.src = bgSrc;
 		
 		// function called when mouse is clicked while cursor is over canvas
 		// objects within the canvas cannot respond directly to events like this,
@@ -67,6 +69,8 @@ var MainCanvas = {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
 		this.context.fillStyle = this.color;
 		this.context.fillRect(0,0,this.canvas.width, this.canvas.height);
+		
+		this.context.drawImage(this.img, 0, 0, this.canvas.width, this.canvas.height);
 		
 		if (this.bObjectActive) {
 			this.activeObject.Update();
