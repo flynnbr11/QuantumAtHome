@@ -6,10 +6,13 @@ var STATEVAR_CLICKABLE_ACTIVE = 1;
 
 function StartClickableCanvas() {
 	MainCanvas.Initialise(1600, 900);
-	MainCanvas.AddChild(new ClickableCanvasObject(200, 200, 600, 300, "red"));
-	MainCanvas.AddChild(new ClickableCanvasObject(800, 200, 600, 300, "orange"));
-	MainCanvas.AddChild(new ClickableCanvasObject(200, 500, 600, 300, "green"));
-	MainCanvas.AddChild(new ClickableCanvasObject(800, 500, 600, 300, "blue"));
+	MainCanvas.AddChild(new ClickableCanvasObject(50, 200, 400, 225, "images/bathroom.jpg", "rooms/bathroom.html"));
+	MainCanvas.AddChild(new ClickableCanvasObject(450, 200, 400, 225, "images/bedroom.jpg", "rooms/bedroom.html"));
+	MainCanvas.AddChild(new ClickableCanvasObject(50, 425, 400, 225, "images/kitchen.jpg", "rooms/kitchen.html"));
+	MainCanvas.AddChild(new ClickableCanvasObject(450, 425, 400, 225, "images/living_room.jpg", "rooms/living_room.html"));
+	
+	MainCanvas.AddChild(new ClickableCanvasObject(1100, 200, 400, 225, "images/cloud.jpg", "rooms/cloud.html"));
+	MainCanvas.AddChild(new ClickableCanvasObject(1100, 425, 400, 225, "images/road.jpg", "rooms/road.html"));
 }
 
 function HomepageCanvas() { 
@@ -98,7 +101,7 @@ var MainCanvas = {
     }
 }
 
-function ClickableCanvasObject(x, y, width, height, color, imgSrc)
+function ClickableCanvasObject(x, y, width, height, imgSrc, url)
 {	
 	this.canvas = document.createElement("canvas");
 	this.baseX = x;
@@ -110,10 +113,12 @@ function ClickableCanvasObject(x, y, width, height, color, imgSrc)
     this.canvas.width = width;
     this.canvas.height = height;
     this.context = this.canvas.getContext("2d");
-	this.color = color;
+	this.color = "grey";
 	this.state = STATEVAR_CLICKABLE_INACTIVE;
 	this.bParentSet = false;
-	this.imgSrc = imgSrc;
+	this.img = new Image();
+	this.img.src = imgSrc;
+	this.url = url;
     
 	// sets the parent object of this object
 	this.SetParent = function(parentObj) {
@@ -125,7 +130,7 @@ function ClickableCanvasObject(x, y, width, height, color, imgSrc)
 	{
         if (mx > this.x && mx < this.canvas.width + this.x && my > this.y && my < this.y + this.canvas.height)
         {
-            window.location.href=this.link;
+            window.location.href=this.url;
         }
 		/*
         if (this.bParentSet)
@@ -168,6 +173,7 @@ function ClickableCanvasObject(x, y, width, height, color, imgSrc)
 		{
 			this.context.fillStyle = this.color;
 			this.context.fillRect(0,0,this.canvas.width, this.canvas.height);
+			this.context.drawImage(this.img, 0, 0, this.canvas.width, this. canvas.height);
 			ctx = this.parentObj.context;
 			ctx.drawImage(this.canvas, this.x, this.y);
 		}
