@@ -4,35 +4,13 @@
 var STATEVAR_CLICKABLE_INACTIVE = 0;
 var STATEVAR_CLICKABLE_ACTIVE = 1;
 
-function StartClickableCanvas() {
+function Initialise() {
 	MainCanvas.Initialise(1600, 900);
-	MainCanvas.AddChild(new ClickableCanvasObject(50, 200, 400, 225, "images/bathroom.jpg", "rooms/bathroom.html"));
-	MainCanvas.AddChild(new ClickableCanvasObject(450, 200, 400, 225, "images/bedroom.jpg", "rooms/bedroom.html"));
-	MainCanvas.AddChild(new ClickableCanvasObject(50, 425, 400, 225, "images/kitchen.jpg", "rooms/kitchen.html"));
-	MainCanvas.AddChild(new ClickableCanvasObject(450, 425, 400, 225, "images/living_room.jpg", "rooms/living_room.html"));
-	
-	MainCanvas.AddChild(new ClickableCanvasObject(1100, 200, 400, 225, "images/cloud.jpg", "rooms/cloud.html"));
-	MainCanvas.AddChild(new ClickableCanvasObject(1100, 425, 400, 225, "images/road.jpg", "rooms/road.html"));
 }
 
-function HomepageCanvas() { 
-	MainCanvas.Initialise(1600, 900);
-	MainCanvas.AddChild(new ClickableCanvasObject(200, 200, 600, 600, "red", "house/house.html"));
-	MainCanvas.AddChild(new ClickableCanvasObject(800, 200, 600, 600, "orange", "outdoor/outdoor.html"));
-}
-
-function HouseCanvas() {
-	MainCanvas.Initialise(1600, 900);
-	MainCanvas.AddChild(new ClickableCanvasObject(200, 200, 600, 300, "red", "livingRoom.html"));
-	MainCanvas.AddChild(new ClickableCanvasObject(800, 200, 600, 300, "orange", "bedroom.html"));
-	MainCanvas.AddChild(new ClickableCanvasObject(200, 500, 600, 300, "green", "kitchen.html"));
-	MainCanvas.AddChild(new ClickableCanvasObject(800, 500, 600, 300, "blue", "garage.html"));
-}
-
-function OutdoorCanvas() {
-	MainCanvas.Initialise(1600, 900);
-	MainCanvas.AddChild(new ClickableCanvasObject(200, 200, 100, 100, "red", "satellite.html"));
-	MainCanvas.AddChild(new ClickableCanvasObject(800, 200, 600, 300, "white", "cloud.html"));
+function AddItemToCanvas(x, y, width, height, imgSrc, clickURL)
+{
+	MainCanvas.AddChild(new ClickableCanvasObject(x, y, width, height, imgSrc, clickURL));
 }
 
 var MainCanvas = {
