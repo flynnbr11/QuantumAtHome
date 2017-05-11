@@ -51,7 +51,9 @@ var MainCanvas = {
 		);
 		
         this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        
+        var container = document.getElementById("pageCanvas");        
+        container.insertBefore(this.canvas, container.childNodes[0]);
         this.interval = setInterval(UpdateArea, 33);
     },
 	SetActiveObject : function(obj) {
