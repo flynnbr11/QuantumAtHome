@@ -157,6 +157,8 @@ function ClickableCanvasObject(x, y, width, height, imgSrc, url)
 		{
 			this.context.fillStyle = this.color;
 			this.context.fillRect(0,0,this.canvas.width, this.canvas.height);
+			this.context.shadowBlur = 10;
+			this.context.shadowColor = "black";
 			this.context.drawImage(this.img, 0, 0, this.canvas.width, this. canvas.height);
 			ctx = this.parentObj.context;
 			ctx.drawImage(this.canvas, this.x, this.y);
