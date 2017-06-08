@@ -5,7 +5,10 @@ var STATEVAR_CLICKABLE_INACTIVE = 0;
 var STATEVAR_CLICKABLE_ACTIVE = 1;
 
 function Initialise(bgSrc) {
-	MainCanvas.Initialise(1600, 900, bgSrc);
+	var width = 1200;
+	var height = 675;
+
+	MainCanvas.Initialise(width, height, bgSrc);
 }
 
 function AddItemToCanvas(x, y, width, height, imgSrc, clickURL)
