@@ -2,3 +2,22 @@
 	<name>Test</name>
 	<summary>This is an example.</summary>
 </item>
+
+<room>
+	<item>
+		<id>tv</id>
+		<imgsrc>tv.png</imgsrc>
+		<name>Quantum Television</name>
+		<tagline>New frontiers.</tagline>
+		<summary>Quantum mechanics coming to a TV near you soon! Some Sony televisions already take advantage of quantum dots to light their pixels.</summary>
+		<description>	Quantum mechanics coming to a TV near you soon! Some Sony televisions already take advantage of quantum dots to light their pixels.</description>
+	</item>
+	<item>
+		<id>phone</id>
+		<imgsrc>phone.png</imgsrc>
+		<name>Quantum Television</name>
+		<tagline>New frontiers.</tagline>
+		<summary>Quantum mechanics coming to a TV near you soon! Some Sony televisions already take advantage of quantum dots to light their pixels.</summary>
+		<description>	Quantum mechanics coming to a TV near you soon! Some Sony televisions already take advantage of quantum dots to light their pixels.</description>
+	</item>
+</room>";
