@@ -13,19 +13,33 @@
     {
         PageInit();
         DoLoad();
+        
     }
 
 	function PageInit() <!-- Fill in page details here -->
 	{
 		Initialise("images/living_room.jpg");
+		
+		AddItemToCanvas( 80, 170, 320, 180, "images/tv_image.jpg", "tv", true);
+		
 	}
 </script>
-
 
 
 <body onload="LoadAll()">
 <div id="navbar"></div>
 <div id="pageCanvas"></div>
+
+<div onclick="off()" id="itemOverlay">
+	<div id="innerOverlay">
+		<div id="itemImage"></div>
+		<div id="itemTagline"></div>
+		<div id="itemHeader"></div>
+		<div id="itemSummary"></div>
+		<div id="itemDescription"></div>
+	</div>
+</div>
+
 
 </body>
 </html>
