@@ -131,9 +131,6 @@
 		<description></description>
 	</item>
 
-
-
-
 	<!-- Outdoor items --> 
 
 	<item>
@@ -146,6 +143,16 @@
 	</item>
 
 
+	<!-- Garage items --> 
+	<item>
+		<id>leak</id>
+		<imgsrc></imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description> </description>
+	</item>
+
 	<item>
 		<id>mailbox</id>
 		<imgsrc></imgsrc>
@@ -155,14 +162,6 @@
 		<description> </description>
 	</item>
 
-	<item>
-		<id>leak</id>
-		<imgsrc></imgsrc>
-		<name></name>
-		<tagline></tagline>
-		<summary></summary>
-		<description> </description>
-	</item>
 
 		<item>
 		<id>solar_cell</id>

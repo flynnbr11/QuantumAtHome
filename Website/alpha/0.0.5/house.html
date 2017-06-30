@@ -10,6 +10,31 @@
 <link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
 </head>
 <script> 
+		var room_height = 180;
+		var room_width = 320;
+		var left_room = 300;
+		var right_room = left_room + room_width;
+		var upstairs = 170;
+		var downstairs = upstairs + room_height;
+		
+		
+		var house_width=room_width + room_width;
+		var house_height=room_height + room_height;
+		var house_right = left_room + house_width;
+		var house_bottom = upstairs+house_height;
+		
+		var external_item_width=50;
+		var external_item_height=50;
+		var leak_x_pos = left_room-external_item_width;
+		var leak_y_pos = upstairs + external_item_height + external_item_height;		
+		var cctv_x_pos = house_right;
+		var cctv_y_pos = leak_y_pos;		
+		var mailbox_x_pos = house_right + external_item_width + external_item_width;
+		var mailbox_y_pos = house_bottom-30;
+		var solar_height=80;
+		var solar_y_pos = upstairs-solar_height;
+				
+
     function LoadAll() <!-- Load external scripts for nav bar etc. --> 
     {
         PageInit();
@@ -21,16 +46,16 @@
 		Initialise("images/house_background.jpg");
 		
 		// add new rooms/furniture here
-		AddItemToCanvas(620, 170, 320, 180, "images/bedroom.jpg", "bedroom.html", false);
-		AddItemToCanvas(300, 170, 320, 180, "images/living_room.jpg", "living_room.html", false);
-		AddItemToCanvas( 300, 350, 320, 180, "images/kitchen.png", "kitchen.html", false);
-		AddItemToCanvas( 620, 350, 320, 180, "images/bathroom.jpg", "garage.html", false);
+		AddItemToCanvas( left_room, upstairs, room_width, room_height, "images/bedroom.jpg", "bedroom.html", false);
+		AddItemToCanvas( right_room, upstairs, room_width, room_height, "images/living_room.jpg", "living_room.html", false);
+		AddItemToCanvas( left_room, downstairs, room_width, room_height, "images/kitchen.png", "kitchen.html", false);
+		AddItemToCanvas( right_room, downstairs, room_width, room_height, "images/bathroom.jpg", "garage.html", false);
+
 		
-		AddItemToCanvas( 940, 250, 50, 50, "images/cctv.jpg", "cctv", true);
-		AddItemToCanvas( 300, 100, 640, 70, "images/solar_cell.jpg", "solar_cell", true);
-		AddItemToCanvas( 990, 530, 50, 50, "images/mailbox.jpg", "mailbox", true);
-		AddItemToCanvas( 250, 250, 50, 50, "images/leak.jpg", "leak", true);
-		
+		AddItemToCanvas( cctv_x_pos, cctv_y_pos, external_item_width, external_item_height, "images/cctv.jpg", "cctv", true);
+		AddItemToCanvas( left_room, solar_y_pos, house_width, solar_height, "images/solar_cell.jpg", "solar_cell", true);
+		AddItemToCanvas( mailbox_x_pos, mailbox_y_pos, external_item_width, external_item_height, "images/mailbox.jpg", "mailbox", true);
+		AddItemToCanvas( leak_x_pos, leak_y_pos, external_item_width, external_item_height, "images/leak.jpg", "leak", true);
 		
 //		AddItemToCanvas(800,  50, 320, 180, "images/cloud.jpg", "cloud.html", false);
 //		AddItemToCanvas(800, 425, 320, 180, "images/road.jpg", "road.html", false);
