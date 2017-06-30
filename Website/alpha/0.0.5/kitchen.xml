@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<room>
+	<item>
+		<id>fridge</id>
+		<imgsrc></imgsrc>
+		<name>Quantum Fridge<name>
+		<tagline>What's cooler than bein' cool</tagline>
+		<summary>Ice cold!</summary>
+		<description>fridges are useful enough devices. </description>
+	</item>
+	<item>
+		<id>tv</id>
+		<imgsrc>images/tv_image.jpg</imgsrc>
+		<name>Quantum Television</name>
+		<tagline>New frontiers.</tagline>
+		<summary>Quantum mechanics coming to a TV near you soon! Some Sony televisions already take advantage of quantum dots to light their pixels.</summary>
+		<description>	Quantum mechanics coming to a TV near you soon! Some Sony televisions already take advantage of quantum dots to light their pixels.</description>
+	</item>
+
+</room>";

@@ -1,0 +1,40 @@
+<!DOCTYPE=html>
+<html>
+<head>
+
+<title>Quantum at Home - ALPHA</title>
+<script src="scripts/clickableCanvasTest.js"></script>
+<script src="../scripts/repeatedCalls.js"></script>
+
+<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
+</head>
+<script> 
+    function LoadAll() <!-- Load external scripts for nav bar etc. --> 
+    {
+        PageInit();
+        DoLoad();
+    }
+
+	function PageInit() <!-- Fill in page details here -->
+	{
+		Initialise("images/cloud.jpg");
+	}
+</script>
+
+
+
+<body onload="LoadAll()">
+<div id="navbar"></div>
+<div id="pageCanvas"></div>
+<div onclick="off()" id="itemOverlay">
+	<div id="innerOverlay">
+		<div id="itemImage"></div>
+		<div id="itemTagline"></div>
+		<div id="itemHeader"></div>
+		<div id="itemSummary"></div>
+		<div id="itemDescription"></div>
+	</div>
+</div>
+
+</body>
+</html>
