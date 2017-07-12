@@ -18,7 +18,7 @@ a.navbarItem {
 
 a.navbarItem:hover {
 	text-decoration: underline;
-	color: white;
+	color: blue;
 }
 
 
