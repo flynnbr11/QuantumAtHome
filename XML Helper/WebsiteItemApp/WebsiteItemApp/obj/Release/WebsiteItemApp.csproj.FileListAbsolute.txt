@@ -1,0 +1,8 @@
+C:\Users\Joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\bin\Release\WebsiteItemApp.exe.config
+C:\Users\Joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\bin\Release\WebsiteItemApp.exe
+C:\Users\Joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\bin\Release\WebsiteItemApp.pdb
+C:\Users\Joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\obj\Release\WebsiteItemApp.Form1.resources
+C:\Users\Joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\obj\Release\WebsiteItemApp.Properties.Resources.resources
+C:\Users\Joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\obj\Release\WebsiteItemApp.csproj.GenerateResource.Cache
+C:\Users\Joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\obj\Release\WebsiteItemApp.exe
+C:\Users\Joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\obj\Release\WebsiteItemApp.pdb

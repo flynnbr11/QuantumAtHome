@@ -1,0 +1,41 @@
+<root>
+  <room name="garage">
+    <item name="car">
+      <tech>
+        <name>door lock</name>
+        <image_name>door_lock.png</image_name>
+        <summary>Well, it's a door lock...</summary>
+        <description>They lock doors!</description>
+        <more_info_url>www.wikipedia.com/wiki/door_lock</more_info_url>
+      </tech>
+    </item>
+  </room>
+  <room name="living_room">
+    <item name="tv">
+      <tech>
+        <name>quantum dot pixels</name>
+        <image_name>qdp.png</image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="couch">
+      <tech>
+        <name>quantum couch</name>
+        <image_name>qc.png</image_name>
+        <summary>God knows...</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+  </room>
+  <room name="bedroom">
+    <item name="bed" />
+  </room>
+</root>
