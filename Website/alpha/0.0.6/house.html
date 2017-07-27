@@ -10,9 +10,9 @@
 <link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
 </head>
 <script> 
-		var room_height = 180;
-		var room_width = 320;
-		var left_room = 300;
+		var room_height = 240;
+		var room_width = 450;
+		var left_room = 150;
 		var right_room = left_room + room_width;
 		var upstairs = 170;
 		var downstairs = upstairs + room_height;
@@ -25,12 +25,13 @@
 		
 		var external_item_width=50;
 		var external_item_height=50;
+		var mailbox_height=100;
 		var leak_x_pos = left_room-external_item_width;
 		var leak_y_pos = upstairs + external_item_height + external_item_height;		
 		var cctv_x_pos = house_right;
 		var cctv_y_pos = leak_y_pos;		
-		var mailbox_x_pos = house_right + external_item_width + external_item_width;
-		var mailbox_y_pos = house_bottom-30;
+		var mailbox_x_pos = house_right + external_item_width + external_item_width/2;
+		var mailbox_y_pos = house_bottom-80;
 		var solar_height=80;
 		var solar_y_pos = upstairs-solar_height;
 				
@@ -54,8 +55,8 @@
 		
 		AddItemToCanvas( cctv_x_pos, cctv_y_pos, external_item_width, external_item_height, "images/cctv.jpg", "cctv", true);
 		AddItemToCanvas( left_room, solar_y_pos, house_width, solar_height, "images/solar_cell.jpg", "solar_cell", true);
-		AddItemToCanvas( mailbox_x_pos, mailbox_y_pos, external_item_width, external_item_height, "images/mailbox.jpg", "mailbox", true);
-		AddItemToCanvas( leak_x_pos, leak_y_pos, external_item_width, external_item_height, "images/leak.jpg", "leak", true);
+		AddItemToCanvas( mailbox_x_pos, mailbox_y_pos, external_item_width, mailbox_height, "images/mailbox.jpg", "mailbox", true);
+		AddItemToCanvas( leak_x_pos, leak_y_pos, external_item_width, mailbox_height, "images/leak.jpg", "leak", true);
 		
 //		AddItemToCanvas(800,  50, 320, 180, "images/cloud.jpg", "cloud.html", false);
 //		AddItemToCanvas(800, 425, 320, 180, "images/road.jpg", "road.html", false);
