@@ -12,6 +12,12 @@ body {
 	position: absolute;
 }
 
+img {
+	background-color: transparent;
+	border: none;
+}
+
+
 a.navbarItem {
 	padding: 10px 20px 10px 10px;
 	margin: 20px 0px 20px 0px;
