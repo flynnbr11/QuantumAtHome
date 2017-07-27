@@ -16,7 +16,6 @@ function AddItemToCanvas(x, y, width, height, imgSrc, clickURL, isXML)
 	MainCanvas.AddChild(new ClickableCanvasObject(x, y, width, height, imgSrc, clickURL, isXML));
 }
 
-
 var MainCanvas = {
 	// object holding information about the primary canvas
     canvas : document.createElement("canvas"), 
@@ -166,8 +165,8 @@ function ClickableCanvasObject(x, y, width, height, imgSrc, url, isXML)
 		// don't want to try and draw if the parent hasn't been set
 		if (this.bParentSet)
 		{
-			this.context.fillStyle = this.color;
-			this.context.fillRect(0,0,this.canvas.width, this.canvas.height);
+		//	this.context.fillStyle = this.color;
+		//	this.context.fillRect(0,0,this.canvas.width, this.canvas.height);
 			this.context.drawImage(this.img, 0, 0, this.canvas.width, this. canvas.height);
 			ctx = this.parentObj.context;
 			ctx.drawImage(this.canvas, this.x, this.y);
