@@ -31,59 +31,77 @@ a.navbarItem:hover {
 
 
 #whole_frame {
+	margin-top: 100px;
+	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 0 0 0;
 	width: 1300px;
 }
-/*
-#frame_topleft {
-	width: 50 px;
-	height: 50 px;
-}*/
+
+#frame_top_left {
+	width: 50px;
+	float: left;
+	height: 50px;
+}
 
 #frame_top {
 	background-image: url("../images/frame_top.png");
 	height: 50px;
-	margin-top: 85px;
 	float: left;
 	padding: 0 0 0 0;
 	width: 1200px;
 }
-/*
-#frame_topright {
-	width: 50 px;
+
+#frame_top_right {
+	width: 50px;
 	float: left;
-	height: 50 px;
-}
-*/
-#frame_bottom {
-	background-image: url("../images/frame_bottom.png");
 	height: 50px;
-	padding: 0 0 0 0;
-	width: 1200px;
 }
-/*
+
+
 #frame_left {
 	background-image: url("../images/frame_left.png");
 	width: 50px;
-	height: 600px;
+	height: 676px;
+	float: left;
+	margin: 0 0 0 0;
 	padding: 0 0 0 0;
+}
+
+#pageCanvas {
+	position: relative;
+	float: left;
 }
 
 #frame_right {
 	background-image: url("../images/frame_right.png");
 	width: 50px;
-	height: 600px;
+	height: 676px;
 	float: left;
+	margin: 0 0 0 0;
 	padding: 0 0 0 0;
 }
-*/
-#main_canvas {
-	float: left;
+
+#frame_bottom_left {
+	width: 50px;
+	height: 50px;
+	float:left;
 }
 
+#frame_bottom {
+	background-image: url("../images/frame_bottom.png");
+	height: 50px;
+	padding: 0 0 0 0;
+	float: left;
+	width: 1200px;
+}
 
+#frame_bottom_right {
+	width: 50px;
+	height: 50px;
+	float:left;
+}
 
 #clickTest {
 	width: 300px;
