@@ -2,33 +2,49 @@
 <html>
 <head>
 
-<title>Quantum at Home - Quantum Physics - ALPHA</title>
-<script src="scripts/clickableCanvasTest.js"></script>
-<script src="scripts/repeatedCalls.js"></script>
+	<title>Quantum at Home - All Items</title>
+	<script src="scripts/clickableCanvasTest.js"></script>
+	<script src="scripts/repeatedCalls.js"></script>
 
-<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/accordian.css" />
 </head>
-<script> 
-    function LoadAll()
-    {
-        PageInit();
-        DoLoad();
-    }
-
-	function PageInit()
-	{
-		Initialise("images/cdt.jpg");
-		
-		// add new rooms/furniture here
-		
-	}
-</script>
-
-
 
 <body onload="LoadAll()">
+
+<div onclick="off()" id="itemOverlay">
+	<div id="innerOverlay">
+		<div id="itemImage"></div>
+		<div id="itemTagline"></div>
+		<div id="itemHeader"></div>
+		<div id="itemSummary"></div>
+		<div id="itemDescription"></div>
+	</div>
+</div>
+ 
 <div id="navbar"></div>
-<div id="pageCanvas"></div>
-	List all the items we have
+
+<h2>The Quantum Technologies</h2>
+
+<button class="accordion">Living Room</button>
+<div class="panel">
+  <p> TV </p>
+  <p> Computer </p>
+</div>
+
+<button class="accordion">Kitchen</button>
+<div class="panel">
+  <button class="sub_accordion", onclick="loadXMLDoc('fridge')"> Fridge </button>
+ 		<div class="sub_panel">
+			<p>This is where some stuff can go. </p>
+			
+			<p> And more stuff here </p>
+		</div> 
+  <p> Recycling Bin</p>
+</div>
+
+
+<script src="scripts/accordian.js"></script>
+
 </body>
 </html>
