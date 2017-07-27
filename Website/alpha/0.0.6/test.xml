@@ -1,0 +1,41 @@
+<room>
+	<!-- Living room items--> 
+	<item>
+		<id>tv</id>
+		<imgsrc>images/tv_image.jpg</imgsrc>
+		<name>Quantum Television</name>
+		<tagline>New frontiers.</tagline>
+		<summary>Quantum mechanics coming to a TV near you soon! Some Sony televisions already take advantage of quantum dots to light their pixels.</summary>
+		<description>	Quantum mechanics coming to a TV near you soon! Some Sony televisions already take advantage of quantum dots to light their pixels.</description>
+	</item>
+	
+	<item>
+		<id>phone</id>
+		<imgsrc>images/phone.jpg</imgsrc>
+		<name>Quantum Phone</name>
+		<tagline></tagline>
+		<summary>This phone is the bees' knees</summary>
+		<description>	jjj</description>
+	</item>
+
+	<!-- Kitchen items -->	
+	<item>
+		<id>fridge</id>
+		<imgsrc>images/fridge.jpg</imgsrc>
+		<name>Quantum Fridge</name>
+		<tagline>What's cooler than bein' cool</tagline>
+		<summary>Ice cold!</summary>
+		<description>fridges are useful enough devices. </description>
+	</item>
+
+	<!-- Bedroom items --> 
+	<item>
+		<id>storage_disc</id>
+		<imgsrc>images/storage_disc.jpg</imgsrc>
+		<name>Storage device</name>
+		<tagline> Quantum is good for storage.</tagline>
+		<summary> Good for stuff somehow. </summary>
+		<description> This is because of things to do with ... </description>
+	</item>
+
+</room>";

@@ -1,0 +1,50 @@
+<!DOCTYPE=html>
+<html>
+<head>
+
+<title>Quantum at Home - ALPHA</title>
+<script src="scripts/clickableCanvasTest.js"></script>
+<script src="scripts/repeatedCalls.js"></script>
+
+<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
+</head>
+<script> 
+    function LoadAll() <!-- Load external scripts for nav bar etc. --> 
+    {
+        PageInit();
+        DoLoad();
+        
+    }
+
+	function PageInit() <!-- Fill in page details here -->
+	{
+		Initialise("images/living_room.jpg");
+		
+		AddItemToCanvas( 900, 275, 200, 200, "images/tv_image.jpg", "tv", true);
+		AddItemToCanvas( 550, 500, 75, 75, "images/phone.jpg", "phone", true);
+		AddItemToCanvas( 1000, 175, 50, 50, "images/clock.jpg", "clock", true);
+		AddItemToCanvas( 600, 460, 50, 50, "images/wallet.jpg", "wallet", true);
+		AddItemToCanvas( 545, 450, 50, 50, "images/camera.jpg", "camera", true);
+		AddItemToCanvas( 25, 600, 75, 75, "images/phone_charger.jpg", "phone_charger", true);
+
+	}
+</script>
+
+
+<body onload="LoadAll()">
+<div id="navbar"></div>
+<div id="pageCanvas"></div>
+
+<div onclick="off()" id="itemOverlay">
+	<div id="innerOverlay">
+		<div id="itemImage"></div>
+		<div id="itemTagline"></div>
+		<div id="itemHeader"></div>
+		<div id="itemSummary"></div>
+		<div id="itemDescription"></div>
+	</div>
+</div>
+
+
+</body>
+</html>

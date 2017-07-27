@@ -1,0 +1,92 @@
+<!DOCTYPE=html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quantum at Home - ALPHA</title>
+<script src="scripts/clickableCanvasTest.js"></script>
+<script src="scripts/repeatedCalls.js"></script>
+
+<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
+</head>
+<script> 
+		var room_height = 180;
+		var room_width = 320;
+		var left_room = 300;
+		var right_room = left_room + room_width;
+		var upstairs = 170;
+		var downstairs = upstairs + room_height;
+		
+		
+		var house_width=room_width + room_width;
+		var house_height=room_height + room_height;
+		var house_right = left_room + house_width;
+		var house_bottom = upstairs+house_height;
+		
+		var external_item_width=50;
+		var external_item_height=50;
+		var leak_x_pos = left_room-external_item_width;
+		var leak_y_pos = upstairs + external_item_height + external_item_height;		
+		var cctv_x_pos = house_right;
+		var cctv_y_pos = leak_y_pos;		
+		var mailbox_x_pos = house_right + external_item_width + external_item_width;
+		var mailbox_y_pos = house_bottom-30;
+		var solar_height=80;
+		var solar_y_pos = upstairs-solar_height;
+				
+
+    function LoadAll() <!-- Load external scripts for nav bar etc. --> 
+    {
+        PageInit();
+        DoLoad();
+    }
+
+	function PageInit() <!-- Fill in page details here -->
+	{
+		Initialise("images/house_background.jpg");
+		
+		// add new rooms/furniture here
+		AddItemToCanvas( left_room, upstairs, room_width, room_height, "images/bedroom.jpg", "bedroom.html", false);
+		AddItemToCanvas( right_room, upstairs, room_width, room_height, "images/living_room.jpg", "living_room.html", false);
+		AddItemToCanvas( left_room, downstairs, room_width, room_height, "images/kitchen.png", "kitchen.html", false);
+		AddItemToCanvas( right_room, downstairs, room_width, room_height, "images/bathroom.jpg", "garage.html", false);
+
+		
+		AddItemToCanvas( cctv_x_pos, cctv_y_pos, external_item_width, external_item_height, "images/cctv.jpg", "cctv", true);
+		AddItemToCanvas( left_room, solar_y_pos, house_width, solar_height, "images/solar_cell.jpg", "solar_cell", true);
+		AddItemToCanvas( mailbox_x_pos, mailbox_y_pos, external_item_width, external_item_height, "images/mailbox.jpg", "mailbox", true);
+		AddItemToCanvas( leak_x_pos, leak_y_pos, external_item_width, external_item_height, "images/leak.jpg", "leak", true);
+		
+//		AddItemToCanvas(800,  50, 320, 180, "images/cloud.jpg", "cloud.html", false);
+//		AddItemToCanvas(800, 425, 320, 180, "images/road.jpg", "road.html", false);
+	}
+</script>
+
+
+<body onload="LoadAll()">
+<div id="navbar"></div>
+
+<div onclick="off()" id="itemOverlay">
+	<div id="innerOverlay">
+		<div id="itemImage"></div>
+		<div id="itemTagline"></div>
+		<div id="itemHeader"></div>
+		<div id="itemSummary"></div>
+		<div id="itemDescription"></div>
+	</div>
+</div>
+	
+<div id="whole_frame">
+	<div id="frame_top_left"></div>
+	<div id="frame_top"></div>
+	<div id="frame_top_right"></div>
+	<div id="frame_left"></div>
+	<div id="pageCanvas"></div>
+	<div id="frame_right"></div>
+	<div id="frame_bottom_left"></div>
+	<div id="frame_bottom"></div>
+	<div id="frame_bottom_right"></div>
+</div>
+
+</body>
+</html>

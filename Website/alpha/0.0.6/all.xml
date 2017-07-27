@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<room>
+	<!-- Living room items--> 
+	<item>
+		<id>tv</id>
+		<imgsrc>images/tv_image.jpg</imgsrc>
+		<name>Quantum Television</name>
+		<tagline>New frontiers.</tagline>
+		<summary>Quantum mechanics coming to a TV near you soon! Some Sony televisions already take advantage of quantum dots to light their pixels.</summary>
+		<description>	Quantum mechanics coming to a TV near you soon! Some Sony televisions already take advantage of quantum dots to light their pixels.</description>
+	</item>
+	<item>
+		<id>phone</id>
+		<imgsrc>images/phone.png</imgsrc>
+		<name>Quantum Television</name>
+		<tagline>New frontiers.</tagline>
+		<summary>Quantum mechanics coming to a TV near you soon! Some Sony televisions already take advantage of quantum dots to light their pixels.</summary>
+		<description>	Quantum mechanics coming to a TV near you soon! Some Sony televisions already take advantage of quantum dots to light their pixels.</description>
+	</item>
+	
+	<item>
+		<id>clock</id>
+		<imgsrc></imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description> </description>
+	</item>
+
+	<item>
+		<id>phone_charger</id>
+		<imgsrc></imgsrc>
+		<name> Phone Charger</name>
+		<tagline></tagline>
+		<summary>phone chargers use quantum because</summary>
+		<description> </description>
+	</item>
+
+	<item>
+		<id>wallet</id>
+		<imgsrc>images/wallet</imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary>Wallets for money and that</summary>
+		<description></description>
+	</item>
+
+	<item>
+		<id>camera</id>
+		<imgsrc></imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description> </description>
+	</item>
+
+	<item>
+		<id>poker_table</id>
+		<imgsrc></imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description> </description>
+	</item>
+
+
+	<!-- Kitchen items-->
+	<item>
+		<id>fridge</id>
+		<imgsrc>images/fridge.jpg</imgsrc>
+		<name>Quantum Fridge</name>
+		<tagline>What's cooler than bein' cool</tagline>
+		<summary>Ice cold!</summary>
+		<description>fridges are useful enough devices. </description>
+	</item>
+	
+	<item>
+		<id>recycling_bin</id>
+		<imgsrc>images/recycling_bin.jpg</imgsrc>
+		<name>Recycling Bin</name>
+		<tagline></tagline>
+		<summary> Quantum algorithms for sorting rubbish etc. </summary>
+		<description> Details about that.  </description>
+	</item>
+
+
+	<!-- Bedroom items --> 
+	<item>
+		<id>scanner</id>
+		<imgsrc>images/scanner.jpg</imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description></description>
+	</item>
+
+	<item>
+		<id>storage_disc</id>
+		<imgsrc></imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description></description>
+	</item>
+
+	<item>
+		<id>wheelchair</id>
+		<imgsrc></imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description></description>
+	</item>
+
+	<item>
+		<id>computer</id>
+		<imgsrc></imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description></description>
+	</item>
+
+	<item>
+		<id>tablet</id>
+		<imgsrc></imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description></description>
+	</item>
+
+	<!-- Outdoor items --> 
+
+	<item>
+		<id>car</id>
+		<imgsrc></imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description> </description>
+	</item>
+
+
+	<!-- Garage items --> 
+	<item>
+		<id>leak</id>
+		<imgsrc></imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description> </description>
+	</item>
+
+	<item>
+		<id>mailbox</id>
+		<imgsrc></imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description> </description>
+	</item>
+
+
+		<item>
+		<id>solar_cell</id>
+		<imgsrc></imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description></description>
+	</item>
+	
+	<item>
+		<id>cctv</id>
+		<imgsrc></imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description> </description>
+	</item>
+ 
+ 
+ 	<!-- Other (where are they going?) -->
+	<item>
+		<id>medicine_cabinet</id>
+		<imgsrc></imgsrc>
+		<name></name>
+		<tagline></tagline>
+		<summary></summary>
+		<description> </description>
+	</item>
+
+</room>";
