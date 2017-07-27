@@ -1,0 +1,9 @@
+c:\users\joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\bin\Debug\WebsiteItemApp.exe.config
+c:\users\joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\bin\Debug\WebsiteItemApp.exe
+c:\users\joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\bin\Debug\WebsiteItemApp.pdb
+c:\users\joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\obj\Debug\WebsiteItemApp.csprojResolveAssemblyReference.cache
+c:\users\joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\obj\Debug\WebsiteItemApp.Form1.resources
+c:\users\joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\obj\Debug\WebsiteItemApp.Properties.Resources.resources
+c:\users\joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\obj\Debug\WebsiteItemApp.csproj.GenerateResource.Cache
+c:\users\joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\obj\Debug\WebsiteItemApp.exe
+c:\users\joseph\documents\visual studio 2017\Projects\WebsiteItemApp\WebsiteItemApp\obj\Debug\WebsiteItemApp.pdb
