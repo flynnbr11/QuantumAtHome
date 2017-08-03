@@ -1,5 +1,5 @@
 
-#itemPage {
+#itemOverlay {
   width: 80%;
   height: 100%;
   float: left;
@@ -17,7 +17,7 @@
   cursor: pointer;
 }
 
-#innerPage {
+#innerOverlay {
 	width: 800px;
 	top: 100px;
 	height: 100%;
