@@ -7,45 +7,142 @@
 	<script src="scripts/repeatedCalls.js"></script>
 
 	<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/all_items.css" />
 	<link rel = "stylesheet" type = "text/css" href = "styles/accordian.css" />
 </head>
 
-<body onload="LoadAll()">
+<body onload="DoLoad()">
 
-<div onclick="off()" id="itemOverlay">
-	<div id="innerOverlay">
-		<div id="itemImage"></div>
-		<div id="itemTagline"></div>
-		<div id="itemHeader"></div>
-		<div id="itemSummary"></div>
-		<div id="itemDescription"></div>
+<div class="wrapper">
+	<div id="navbar"></div>
+	
+	<div id="whole_frame">
+		<div id="frame_top_left"></div>
+		<div id="frame_top"></div>
+		
+		<div id="frame_top_right"></div>
+		<div id="frame_left"></div>
+
+		<div id="pageCanvas"> 
+			<div id="accordianContainer"> 
+				<h2>The Quantum Technologies</h2>
+				<div>
+					<button class="accordion">Living Room</button>
+					<div class="panel">
+						<p onclick="loadXMLDoc('tv')"> TV </p>
+						<p> Computer </p>
+					</div>
+			
+					<button class="accordion">Kitchen</button>
+					<div class="panel">
+						<button class="sub_accordion"> Fridge </button>
+					 		<div class="sub_panel">
+								<p>  </p>
+				
+								<p> And more stuff here </p>
+							</div> 
+						<p> Recycling Bin</p>
+					</div>
+
+
+					<button class="accordion">Kitchen</button>
+					<div class="panel">
+						<button class="sub_accordion"> Fridge </button>
+					 		<div class="sub_panel">
+								<p>  </p>
+				
+								<p> And more stuff here </p>
+							</div> 
+						<p> Recycling Bin</p>
+					</div>
+					<button class="accordion">Kitchen</button>
+					<div class="panel">
+						<button class="sub_accordion"> Fridge </button>
+					 		<div class="sub_panel">
+								<p>  </p>
+				
+								<p> And more stuff here </p>
+							</div> 
+						<p> Recycling Bin</p>
+					</div>
+					<button class="accordion">Kitchen</button>
+					<div class="panel">
+						<button class="sub_accordion"> Fridge </button>
+					 		<div class="sub_panel">
+								<p>  </p>
+				
+								<p> And more stuff here </p>
+							</div> 
+						<p> Recycling Bin</p>
+					</div>
+					<button class="accordion">Kitchen</button>
+					<div class="panel">
+						<button class="sub_accordion"> Fridge </button>
+					 		<div class="sub_panel">
+								<p>  </p>
+				
+								<p> And more stuff here </p>
+							</div> 
+						<p> Recycling Bin</p>
+					</div>
+					<button class="accordion">Kitchen</button>
+					<div class="panel">
+						<button class="sub_accordion"> Fridge </button>
+					 		<div class="sub_panel">
+								<p>  </p>
+				
+								<p> And more stuff here </p>
+							</div> 
+						<p> Recycling Bin</p>
+					</div>
+					<button class="accordion">Kitchen</button>
+					<div class="panel">
+						<button class="sub_accordion"> Fridge </button>
+					 		<div class="sub_panel">
+								<p>  </p>
+				
+								<p> And more stuff here </p>
+							</div> 
+						<p> Recycling Bin</p>
+					</div>
+					<button class="accordion">Kitchen</button>
+					<div class="panel">
+						<button class="sub_accordion"> Fridge </button>
+					 		<div class="sub_panel">
+								<p>  </p>
+				
+								<p> And more stuff here </p>
+							</div> 
+						<p> Recycling Bin</p>
+					</div>
+			
+				</div>
+			</div>
+			
+			<div id="itemPage">
+				<div id="innerPage">
+					<div id="itemImage"></div>
+					<div id="itemTagline"></div>
+					<div id="itemHeader"></div>
+					<div id="itemSummary"></div>
+					<div id="itemDescription"></div>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="frame_right"></div>
+		<div id="frame_bottom_left"></div>
+		<div id="frame_bottom"></div>
+		<div id="frame_bottom_right"></div>
 	</div>
+	
+	<div id="footer"></div>
 </div>
  
-<div id="navbar"></div>
 
-<div margin-top="250px" left="50px"> 
-<h2>The Quantum Technologies</h2>
-
-<button class="accordion">Living Room</button>
-<div class="panel">
-  <p> TV </p>
-  <p> Computer </p>
-</div>
-
-<button class="accordion">Kitchen</button>
-<div class="panel">
-  <button class="sub_accordion", onclick="loadXMLDoc('fridge')"> Fridge </button>
- 		<div class="sub_panel">
-			<p>This is where some stuff can go. </p>
-			
-			<p> And more stuff here </p>
-		</div> 
-  <p> Recycling Bin</p>
-</div>
-	<script src="scripts/accordian.js"></script>
-
-</div>
+	<script src="scripts/accordian.js"></script> 
 
 
 </body>
