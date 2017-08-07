@@ -2,34 +2,80 @@
 <html>
 <head>
 
-<title>Quantum at Home - About Us - ALPHA</title>
-<script src="scripts/clickableCanvasTest.js"></script>
-<script src="scripts/repeatedCalls.js"></script>
+	<title>Quantum at Home - About Us</title>
+	<script src="scripts/xml_loader.js"></script>
+	<script src="scripts/repeatedCalls.js"></script>
 
-<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/all_items.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/accordian.css" />
 </head>
-<script> 
-    function LoadAll()
-    {
-        PageInit();
-        DoLoad();
-    }
 
-	function PageInit()
-	{
-		Initialise("images/cdt.jpg");
+<body onload="DoLoad()">
+
+<div class="wrapper">
+	<div id="navbar"></div>
+	
+	<div id="whole_frame">
+		<div id="frame_top_left"></div>
+		<div id="frame_top"></div>
 		
-		// add new rooms/furniture here
-		
-	}
-</script>
+		<div id="frame_top_right"></div>
+		<div id="frame_left"></div>
+
+		<div id="pageCanvas"> 
+			<div id="accordianContainer"> 
+				<h2>Click to read what people think about Quantum Technology.</h2>
+				<div>
+					<button class="accordion">Who</button>
+					<div class="panel">
+						<p onclick=loadXMLDoc('about_qecdt')> Quantum Engineering Centre for Doctoral Training  <p>
+					</div>
+			
+					<button class="accordion">Why</button>
+					<div class="panel">
+						<p onclick="loadXMLDoc('why_qah')"> Quantum at Home - Why? </p>
+					</div>
+
+					<button class="accordion">Acknowledgements</button>
+					<div class="panel">
+						<p onclick="loadXMLDoc('artwork')"> Artwork </p>
+						<p onclick="loadXMLDoc('epsrc')"> EPSRC </p>
+					</div>
+					
+					<button class="accordion">Contact Us</button>
+					<div class="panel">
+						<p onclick="loadXMLDoc('contact_us')"> Contact Details </p>
+					</div>
+
+				</div>
+			</div>
+			
+			<div id="itemOverlay">
+				<div id="innerOverlay">
+					<div id="itemImage"></div>
+					<div id="itemTagline"></div>
+					<div id="itemHeader"></div>
+					<div id="itemSummary"></div>
+					<div id="itemDescription"></div>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="frame_right"></div>
+		<div id="frame_bottom_left"></div>
+		<div id="frame_bottom"></div>
+		<div id="frame_bottom_right"></div>
+	</div>
+	
+	<div id="footer"></div>
+</div>
+ 
+
+	<script src="scripts/accordian.js"></script> 
 
 
-
-<body onload="LoadAll()">
-<div id="navbar"></div>
-<div id="pageCanvas"></div>
-Who is the CDT
-what are we doing this for
 </body>
 </html>
