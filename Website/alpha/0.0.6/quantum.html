@@ -8,16 +8,56 @@
 
 	<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
 	<link rel = "stylesheet" type = "text/css" href = "styles/all_items.css" />
-	<link rel = "stylesheet" type = "text/css" href = "styles/accordian.css" />
 	<style>
 	#quantum_frame {
 		float: left;
 		margin: 0 0 0 0;
 		padding: 0 0 0 0;
 		border: 0;
-		width: 80%;
+		width: 900px;
 		height: 100%;
 	}
+	
+	#sidebar_header {
+		font-size: 20px;
+		padding: 10px;
+		text-align: center;
+		font-weight: bold;
+		border: 0;
+		border-bottom: 3px;
+		border-style: solid;
+		background-color: #e9e9e9;
+	}
+	
+	#topics {
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		border: 0;
+		border-right: 3px;
+		border-style: solid;
+		float: left;
+		width: 297px;
+		height: 100%;
+		scroll: visible;
+		background-color: #3f3f3f;
+	}
+	
+	.topic_button {
+		width: 100%;
+		padding: 10px;
+		cursor: pointer;
+		border: 0;
+		background-color: grey;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: white;
+	}
+	.topic_button:hover {
+		color: grey;
+		background-color: #ffffff;
+		transition: background-color 0.5s, color 0.5s;
+	}
+	
 	</style>
 </head>
 
@@ -34,15 +74,15 @@
 		<div id="frame_left"></div>
 
 		<div id="pageCanvas"> 
-			<div id="accordianContainer"> 
-				<h2>Click to find out more about these quantum concepts.</h2>
-				<div>
-					<button class="accordion" onclick="LoadPageInFrame('quantum/superposition.html')">Superposition</button>
-
-			
-					<button class="accordion" onclick="LoadPageInFrame('quantum/entanglement.html')">Entanglement</button>
-				</div>
-			</div>
+			<aside id="topics"> 
+				<header id="sidebar_header">Click on a topic to find out more about these quantum concepts.</header>
+				<section id="sidebar_buttons">
+					<button class="topic_button" onclick="LoadPageInFrame('quantum/superposition.html')">Superposition</button>
+					<button class="topic_button" onclick="LoadPageInFrame('quantum/entanglement.html')">Entanglement</button>
+					<button class="topic_button" onclick="LoadPageInFrame('quantum/coherence.html')">Coherence and Decoherence</button>
+					<button class="topic_button" onclick="LoadPageInFrame('quantum/coherence.html')">Magic</button>
+				</section>
+			</aside>
 			
 			<iframe id="quantum_frame" src="quantum/superposition.html"></iframe>
 		</div>
