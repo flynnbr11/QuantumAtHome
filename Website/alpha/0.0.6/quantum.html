@@ -2,33 +2,110 @@
 <html>
 <head>
 
-<title>Quantum at Home - Quantum Physics - ALPHA</title>
-<script src="scripts/clickableCanvasTest.js"></script>
-<script src="scripts/repeatedCalls.js"></script>
+	<title>Quantum at Home - All Items</title>
+	<script src="scripts/xml_loader.js"></script>
+	<script src="scripts/repeatedCalls.js"></script>
 
-<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
-</head>
-<script> 
-    function LoadAll()
-    {
-        PageInit();
-        DoLoad();
-    }
-
-	function PageInit()
-	{
-		Initialise("images/cdt.jpg");
-		
-		// add new rooms/furniture here
-		
+	<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/all_items.css" />
+	<style>
+	#quantum_frame {
+		float: left;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		border: 0;
+		width: 900px;
+		height: 100%;
 	}
+	
+	#sidebar_header {
+		font-size: 20px;
+		padding: 10px;
+		text-align: center;
+		font-weight: bold;
+		border: 0;
+		border-bottom: 3px;
+		border-style: solid;
+		background-color: #e9e9e9;
+	}
+	
+	#topics {
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		border: 0;
+		border-right: 3px;
+		border-style: solid;
+		float: left;
+		width: 297px;
+		height: 100%;
+		scroll: visible;
+		background-color: #3f3f3f;
+	}
+	
+	.topic_button {
+		width: 100%;
+		padding: 10px;
+		cursor: pointer;
+		border: 0;
+		background-color: grey;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: white;
+	}
+	.topic_button:hover {
+		color: grey;
+		background-color: #dddddd;
+		transition: background-color 0.5s, color 0.5s;
+	}
+	
+	</style>
+</head>
+
+<body onload="DoLoad()">
+
+<div class="wrapper">
+	<div id="navbar"></div>
+	
+	<div id="whole_frame">
+		<div id="frame_top_left"></div>
+		<div id="frame_top"></div>
+		
+		<div id="frame_top_right"></div>
+		<div id="frame_left"></div>
+
+		<div id="pageCanvas"> 
+			<aside id="topics"> 
+				<header id="sidebar_header">Click on a topic to learn more about quantum physics.</header>
+				<section id="sidebar_buttons">
+					<button class="topic_button" onclick="LoadPageInFrame('quantum/superposition.html')">Superposition</button>
+					<button class="topic_button" onclick="LoadPageInFrame('quantum/entanglement.html')">Entanglement</button>
+					<button class="topic_button" onclick="LoadPageInFrame('quantum/coherence.html')">Coherence and Decoherence</button>
+					<button class="topic_button" onclick="LoadPageInFrame('quantum/coherence.html')">Magic</button>
+				</section>
+			</aside>
+			
+			<iframe id="quantum_frame" src="quantum/superposition.html"></iframe>
+		</div>
+
+		<div id="frame_right"></div>
+		<div id="frame_bottom_left"></div>
+		<div id="frame_bottom"></div>
+		<div id="frame_bottom_right"></div>
+	</div>
+	
+	<div id="footer"></div>
+</div>
+
+<script>
+
+var LoadPageInFrame = function(src)
+{
+	var frame = document.getElementById("quantum_frame");
+	
+	frame.src = src;
+}
+
 </script>
 
-
-
-<body onload="LoadAll()">
-<div id="navbar"></div>
-<div id="pageCanvas"></div>
-	What is quantum mechanics and all that
 </body>
 </html>

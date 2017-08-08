@@ -6,10 +6,10 @@ function loadXMLDoc(id) {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      openOverlay(id, this);
+      enableItemOverlay(id, this);
     }
   };
-  xmlhttp.open("GET", "test.xml" , true);
+  xmlhttp.open("GET", "all.xml" , true);
   xmlhttp.send();
 }
 
@@ -32,9 +32,11 @@ function openOverlay(id, xml) {
 }
 
 var image;
+var hasLoaded = false;
 
 function enableItemOverlay(id, xml) {
-
+	if(hasLoaded) {	off(); }
+	hasLoaded = true;
 	var parent;
 	var name;
 	var tagline;

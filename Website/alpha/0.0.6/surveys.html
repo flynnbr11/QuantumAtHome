@@ -2,34 +2,74 @@
 <html>
 <head>
 
-<title>Quantum at Home - Surveys - ALPHA</title>
-<script src="scripts/clickableCanvasTest.js"></script>
-<script src="scripts/repeatedCalls.js"></script>
+	<title>Quantum at Home - All Items</title>
+	<script src="scripts/xml_loader.js"></script>
+	<script src="scripts/repeatedCalls.js"></script>
 
-<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/all_items.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/accordian.css" />
 </head>
-<script> 
-    function LoadAll()
-    {
-        PageInit();
-        DoLoad();
-    }
 
-	function PageInit()
-	{
-		Initialise("images/tv_image.jpg");
+<body onload="DoLoad()">
+
+<div class="wrapper">
+	<div id="navbar"></div>
+	
+	<div id="whole_frame">
+		<div id="frame_top_left"></div>
+		<div id="frame_top"></div>
 		
-		// add new rooms/furniture here
-		
-	}
-</script>
+		<div id="frame_top_right"></div>
+		<div id="frame_left"></div>
 
+		<div id="pageCanvas"> 
+			<div id="accordianContainer"> 
+				<h2>Click to read what people think about Quantum Technology.</h2>
+				<div>
+					<button class="accordion">Public</button>
+					<div class="panel">
+						<p onclick=loadXMLDoc('public_survey')> Science Festival <p>
+					</div>
+			
+					<button class="accordion">University Students</button>
+					<div class="panel">
+						<p onclick="loadXMLDoc('uni_survey')"> Online Poll  </p>
+					</div>
 
+					<button class="accordion">Academics</button>
+					<div class="panel">
+						<p onclick="loadXMLDoc('quantum_experts_survey')"> Quantum Experts  </p>
+					</div>
 
-<body onload="LoadAll()">
-<div id="navbar"></div>
-<div id="pageCanvas"></div>
-This is the page we use for surveys
+				</div>
+			</div>
+			
+			<div id="itemOverlay">
+				<div id="innerOverlay">
+					<div id="itemImage"></div>
+					<div id="itemTagline"></div>
+					<div id="itemHeader"></div>
+					<div id="itemSummary"></div>
+					<div id="itemDescription"></div>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="frame_right"></div>
+		<div id="frame_bottom_left"></div>
+		<div id="frame_bottom"></div>
+		<div id="frame_bottom_right"></div>
+	</div>
+	
+	<div id="footer"></div>
+</div>
+ 
+
+	<script src="scripts/accordian.js"></script> 
+
 
 </body>
 </html>

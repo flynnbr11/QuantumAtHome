@@ -1,0 +1,69 @@
+
+#itemOverlay {
+  width: 80%;
+  height: 100%;
+  float: left;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	margin: 0 0 0 0;
+  background-color: rgba(0,0,0,0.8);
+	color:	white;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+  z-index: 2;
+  cursor: pointer;
+}
+
+#innerOverlay {
+	width: 800px;
+	top: 100px;
+	height: 100%;
+	text-align: center;
+	font-family: "Helvetica";
+}
+#itemHeader {
+	width: 500px;
+	left: 300px;
+	top: 50px;
+	z-index: 2;
+	text-align: center;
+}
+#itemTagline {
+  width: 500px;
+	left: 300px;
+	top: 150px;
+  z-index: 2;
+	text-align: center;
+}
+
+#itemImage {
+	width: 300px;
+	height: 300px;
+	z-index: 2;
+}
+#itemSummary {
+	width: 800px;
+	top: 300px;
+	z-index: 2;
+	text-align: justify;
+}
+#itemDescription {
+	width: 800px;
+	top: 400px;
+	z-index: 2;
+	text-align: justify;
+}
+
+#accordianContainer {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	width: 20%;
+	height: 100%;
+}
+
