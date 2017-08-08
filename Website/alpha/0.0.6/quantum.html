@@ -9,6 +9,16 @@
 	<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
 	<link rel = "stylesheet" type = "text/css" href = "styles/all_items.css" />
 	<link rel = "stylesheet" type = "text/css" href = "styles/accordian.css" />
+	<style>
+	#quantum_frame {
+		float: left;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		border: 0;
+		width: 80%;
+		height: 100%;
+	}
+	</style>
 </head>
 
 <body onload="DoLoad()">
@@ -27,35 +37,14 @@
 			<div id="accordianContainer"> 
 				<h2>Click to find out more about these quantum concepts.</h2>
 				<div>
-					<button class="accordion">Superposition</button>
-					<div class="panel">
-						<p onclick=loadXMLDoc('superposition_concept')> Concept <p>
-						<button class="sub_accordion"> Examples </button>
-							<div class="sub_panel">
-								<p onclick="loadXMLDoc('coin_flip')"> Coin flip </p>
-								<p onclick="loadXMLDoc('schrodingers_cat')"> Schrodinger's Cat</p>
-							</div>
-					</div>
-			
-					<button class="accordion">Entanglement</button>
-					<div class="panel">
-						<p onclick="loadXMLDoc('fridge')"> Concept  </p>
-						<p onclick="loadXMLDoc('bin')"> Example</p>
-					</div>
-				</div>
-			</div>
-			
-			<div id="itemOverlay">
-				<div id="innerOverlay">
-					<div id="itemImage"></div>
-					<div id="itemTagline"></div>
-					<div id="itemHeader"></div>
-					<div id="itemSummary"></div>
-					<div id="itemDescription"></div>
-				</div>
-			</div>
+					<button class="accordion" onclick="LoadPageInFrame('quantum/superposition.html')">Superposition</button>
 
 			
+					<button class="accordion" onclick="LoadPageInFrame('quantum/entanglement.html')">Entanglement</button>
+				</div>
+			</div>
+			
+			<iframe id="quantum_frame" src="quantum/superposition.html"></iframe>
 		</div>
 
 		<div id="frame_right"></div>
@@ -66,10 +55,17 @@
 	
 	<div id="footer"></div>
 </div>
- 
 
-	<script src="scripts/accordian.js"></script> 
+<script>
 
+var LoadPageInFrame = function(src)
+{
+	var frame = document.getElementById("quantum_frame");
+	
+	frame.src = src;
+}
+
+</script>
 
 </body>
 </html>
