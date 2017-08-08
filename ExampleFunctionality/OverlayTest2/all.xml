@@ -25,14 +25,14 @@
         <image_name>test</image_name>
         <summary>pixels are needed</summary>
         <description>Very much so</description>
-        <more_info_url>More infooo</more_info_url>
+        <more_info_url>pixels.htm</more_info_url>
       </tech>
       <tech>
         <name>flames</name>
         <image_name>bleh</image_name>
         <summary>flames are not needed</summary>
         <description>shouldn't burn TVs</description>
-        <more_info_url>hmm</more_info_url>
+        <more_info_url>flames.htm</more_info_url>
       </tech>
     </item>
     <item name="phone">
@@ -45,7 +45,7 @@
         <image_name>test2</image_name>
         <summary>magical screens</summary>
         <description>welp</description>
-        <more_info_url>tester</more_info_url>
+        <more_info_url>tester.htm</more_info_url>
       </tech>
     </item>
   </room>

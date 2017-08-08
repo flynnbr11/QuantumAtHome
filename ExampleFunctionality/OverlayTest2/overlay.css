@@ -29,7 +29,7 @@
 	top: 0;
 	width: 800px;
 	margin: auto;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 #item_image
@@ -82,7 +82,7 @@
 	cursor: pointer;
 	border: 0;
 	background-color: grey;
-	text-align: left;
+	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: white;
@@ -101,6 +101,7 @@
     width: 780px;
 	max-height: 0;
     overflow: hidden;
+	text-align: left;
 	text-transform: none;
     transition: max-height 0.4s ease-out;
 }
@@ -141,4 +142,5 @@ p
 	padding: 10px;
 	float: left;
 	background-color: blue;
+	text-align: center;
 }

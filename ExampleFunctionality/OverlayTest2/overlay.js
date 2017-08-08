@@ -182,7 +182,8 @@ function OpenOverlay(itemName)
 		
 		var container_techMoreInfo = document.createElement("section");
 		container_techMoreInfo.setAttribute("class", "tech_more_info");
-		container_techMoreInfo.innerHTML = tech_data.moreInfoURL;
+		container_techMoreInfo.setAttribute("onclick", "OpenPage(\'"+tech_data.moreInfoURL + "\')");
+		container_techMoreInfo.innerHTML = "Click here for more info about this tech.";
 		
 		tech_container.insertBefore(tech_accordion, tech_container.childNodes[0]);
 		
@@ -199,12 +200,15 @@ function OpenOverlay(itemName)
 	document.getElementById("item_overlay").style.display = "flex";
 }
 
+function OpenPage(url)
+{
+	window.location = url;
+}
+
 function off() {
 	document.getElementById("item_overlay").style.display = "none";
 	document.getElementById("item_overlay").innerHTML = "<div id=\"inner_overlay\">" +
-															"<div id=\"overlay_close_container\">" +
-																"<div id=\"overlay_close\" onclick=\"off()\">X</div>" +
-															"</div>" +
+															"<div id=\"overlay_close\" onclick=\"off()\">X</div>" +
 															"<div id=\"item_image\"></div>" +
 															"<header id=\"item_header\"></header>" +
 															"<section id=\"item_tagline\"></section>" +
