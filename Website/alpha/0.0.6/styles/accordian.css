@@ -21,9 +21,11 @@ button.accordion.active, button.accordion:hover {
 	cursor: pointer;
 	border: 0;
 	background-color: grey;
+	text-align: left;
+	padding-left: 10px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #dddddd;
+	color: white;
 }
 .accordion:hover, .accordion.active {
 	color: grey;
@@ -34,10 +36,9 @@ button.accordion.active, button.accordion:hover {
 div.panel {
     background-color: white;
     max-height: 0;
-    width: 95%;
+    width: 100%;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-		padding-left: 40px;
 }
 /*
 button.sub_accordion {
@@ -60,11 +61,11 @@ button.sub_accordion.active, button.sub_accordion:hover {
 
 div.sub_panel {
     background-color: white;
-    padding-left: 15px;
-    width: 50%;
-		max-height: 0;
+    width: 100%;
+	max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+	padding-left: 30px;
 }
 
 .sub_accordion {
@@ -74,6 +75,8 @@ div.sub_panel {
 	border: 0;
 	background-color: grey;
 	text-transform: uppercase;
+	padding-left: 20px;
+	text-align: left;
 	font-weight: bold;
 	color: #dddddd;
 }
