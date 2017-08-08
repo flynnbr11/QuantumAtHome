@@ -1,0 +1,22 @@
+<!DOCTYPE=html>
+<head>
+	<title>Overlay Test 2</title>
+	
+	<link rel="stylesheet" type="text/css" href="overlay.css" />
+	<script src="overlay.js"></script>
+</head>
+<body onload="InitXML('living_room')">
+	<div id="item_overlay">
+		<div id="inner_overlay">
+			<div id="overlay_close" onclick="off()">X</div>
+			<div id="item_image"></div>
+			<header id="item_header"></header>
+			<section id="item_tagline"></section>
+			<section id="item_summary"></section>
+			<section id="item_techs"></section>
+		</div>
+	</div>
+	
+	<button onclick="OpenOverlay('tv')">Test TV</button>
+	<button onclick="OpenOverlay('phone')">Test Phone</button>
+</body>

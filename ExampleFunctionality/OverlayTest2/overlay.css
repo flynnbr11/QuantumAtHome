@@ -1,0 +1,144 @@
+#item_overlay
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+	overflow: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	margin: auto;
+    background-color: rgba(0,0,0,0.8);
+	color:	white;
+	text-align: center;
+	justify-content: center;
+    z-index: 2;
+}
+
+#overlay_close
+{
+	width: 20px;
+	height: 20px;
+	padding-left:780px;
+    cursor: pointer;
+}
+
+#inner_overlay
+{
+	top: 0;
+	width: 800px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+#item_image
+{
+	float:left;
+	background-color: #eeeeee;
+	width: 200px;
+	height: 200px;
+}
+
+#item_header
+{
+	background-color: green;
+	width: 500px;
+	height: 50px;
+	float:left;
+	padding: 50px;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+#item_tagline
+{
+	background-color:red;
+	width: 580px;
+	height: 30px;
+	float:left;
+	padding: 10px;
+	font-style: italic;
+}
+
+#item_summary
+{
+	width: 780px;
+	padding: 10px;
+	float: left;
+	background-color: blue;
+}
+#item_techs
+{
+	float: left;
+	width: 800px;
+	max-height: 0;
+	background-color: purple;
+}
+
+.tech_name_accordion {
+	width: 780px;
+	padding: 10px;
+	cursor: pointer;
+	border: 0;
+	background-color: grey;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+}
+.tech_name_accordion:hover, .tech_name_accordion.active {
+	color: grey;
+	background-color: #dddddd;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+.tech_panel
+{
+	color: black;
+	top: 0;
+	left: 0;
+    width: 780px;
+	max-height: 0;
+    overflow: hidden;
+	text-transform: none;
+    transition: max-height 0.4s ease-out;
+}
+
+.tech_img
+{
+	width: 80px;
+	height: 80px;
+	float: left;
+	background-color: pink;
+}
+
+.tech_summary
+{
+	background-color: yellow;
+	width: 660px;
+	height: 40px;
+	padding: 20px;
+	float: left;
+}
+
+.tech_description
+{
+	width: 760px;
+	padding: 10px;
+	float: left;
+	background-color: red;
+}
+
+p
+{
+	padding-left: 25px;
+}
+
+.tech_more_info
+{
+	width: 760px;
+	padding: 10px;
+	float: left;
+	background-color: blue;
+}

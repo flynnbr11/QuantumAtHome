@@ -1,0 +1,52 @@
+<root>
+  <room name="test">
+    <item name="test">
+      <heading>Test</heading>
+      <tagline>Just a test</tagline>
+      <summary>test</summary>
+      <imgsrc>test.png</imgsrc>
+      <tech>
+        <name>test</name>
+        <image_name>test</image_name>
+        <summary>test</summary>
+        <description>test</description>
+        <more_info_url>test</more_info_url>
+      </tech>
+    </item>
+  </room>
+  <room name="living_room">
+    <item name="tv">
+      <heading>Quantum TV</heading>
+      <tagline>it's a tv</tagline>
+      <summary>still a tv</summary>
+      <imgsrc>tv.png</imgsrc>
+      <tech>
+        <name>pixels</name>
+        <image_name>test</image_name>
+        <summary>pixels are needed</summary>
+        <description>Very much so</description>
+        <more_info_url>More infooo</more_info_url>
+      </tech>
+      <tech>
+        <name>flames</name>
+        <image_name>bleh</image_name>
+        <summary>flames are not needed</summary>
+        <description>shouldn't burn TVs</description>
+        <more_info_url>hmm</more_info_url>
+      </tech>
+    </item>
+    <item name="phone">
+      <heading>Quantum Phone</heading>
+      <tagline>it's a phone</tagline>
+      <summary>fairly ubiquitous these days</summary>
+      <imgsrc>phone.png</imgsrc>
+      <tech>
+        <name>superscreen</name>
+        <image_name>test2</image_name>
+        <summary>magical screens</summary>
+        <description>welp</description>
+        <more_info_url>tester</more_info_url>
+      </tech>
+    </item>
+  </room>
+</root>

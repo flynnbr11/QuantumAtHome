@@ -4,6 +4,24 @@
 var STATEVAR_CLICKABLE_INACTIVE = 0;
 var STATEVAR_CLICKABLE_ACTIVE = 1;
 
+var RoomData = {
+	name : "";
+	itemList : [];
+}
+var ItemData = {
+	this.name = "";
+	this.tagline = "";
+	this.summary = "";
+	this.techList = [];
+}
+var TechData = {
+	this.name = "";
+	this.imgSrc = "";
+	this.summary = "";
+	this.description = "";
+	this.moreInfoURL = "";
+}
+
 function Initialise(bgSrc) {
 	var width = 1200;
 	var height = 675;
@@ -20,6 +38,46 @@ var MainCanvas = {
 	// object holding information about the primary canvas
     canvas : document.createElement("canvas"), 
     
+	// prepare to load data from XML
+	SetupRoom: function(roomName) {
+		loadXMLData(roomName, this.FillData);
+	},
+	// read data from XML
+	FillData: function(roomName, xml) {
+		var parser = new DOMParser();
+		var xmlDoc;
+	
+		xmlDoc = parser.parseFromString(xml.responseText, "text/xml");
+		
+		this.roomData = new Room();
+		this.roomData.name = roomName;
+		
+		roomList = xmlDoc.getElementsByTagName("room");
+		
+		var roomIndex = 0;
+		var foundRoom = false;
+		for (var i = 0; i < roomList.length; ++i)
+		{
+			for(var j = 0; j < roomList[i].childNodes.length; ++j)
+			{
+				var node = roomList[i].childNodes[j];
+				if (node.nodeType == 2) // if attribute
+				{
+					if (node.nodeValue == roomName)
+					{
+						// found the room
+						foundRoom = true;
+						break;
+					}
+				}
+			}
+			if (foundRoom)
+			{
+				break;
+			}
+		}
+	},
+	
 	// initialise the house area
 	Initialise : function(width, height, bgSrc) {
 		this.canvas.innerHTML = "<p>Sorry, your browser does not support this application.</p>";
@@ -183,11 +241,11 @@ function UpdateArea() {
 var parser = new DOMParser();
 var xmlDoc;
 
-function loadXMLDoc(id) {
+function loadXMLData(roomId, callbackFunc) {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      enableItemOverlay(id, this);
+      callbackFunc(id, this);
     }
   };
   xmlhttp.open("GET", "all.xml" , true); // generate all.xml by combining all other xml files 
