@@ -1,4 +1,4 @@
-button.accordion {
+/*button.accordion {
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -13,6 +13,22 @@ button.accordion {
 
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
+}*/
+
+.accordion {
+	width: 100%;
+	padding: 10px;
+	cursor: pointer;
+	border: 0;
+	background-color: grey;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #dddddd;
+}
+.accordion:hover, .accordion.active {
+	color: grey;
+	background-color: #dddddd;
+	transition: background-color 0.5s, color 0.5s;
 }
 
 div.panel {
@@ -23,8 +39,7 @@ div.panel {
     transition: max-height 0.2s ease-out;
 		padding-left: 40px;
 }
-
-
+/*
 button.sub_accordion {
     background-color: #eee;
     color: #444;
@@ -41,7 +56,7 @@ button.sub_accordion {
 
 button.sub_accordion.active, button.sub_accordion:hover {
     background-color: #ddd;
-}
+}*/
 
 div.sub_panel {
     background-color: white;
@@ -50,5 +65,21 @@ div.sub_panel {
 		max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+.sub_accordion {
+	width: 100%;
+	padding: 10px;
+	cursor: pointer;
+	border: 0;
+	background-color: grey;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #dddddd;
+}
+.sub_accordion:hover, .sub_accordion.active {
+	color: grey;
+	background-color: #dddddd;
+	transition: background-color 0.5s, color 0.5s;
 }
 
