@@ -4,29 +4,11 @@
 var STATEVAR_CLICKABLE_INACTIVE = 0;
 var STATEVAR_CLICKABLE_ACTIVE = 1;
 
-var RoomData = {
-	name : "";
-	itemList : [];
-}
-var ItemData = {
-	this.name = "";
-	this.tagline = "";
-	this.summary = "";
-	this.techList = [];
-}
-var TechData = {
-	this.name = "";
-	this.imgSrc = "";
-	this.summary = "";
-	this.description = "";
-	this.moreInfoURL = "";
-}
-
-function Initialise(bgSrc) {
+function Initialise(bgSrc, roomName) {
 	var width = 1200;
 	var height = 675;
 
-	MainCanvas.Initialise(width, height, bgSrc);
+	MainCanvas.Initialise(width, height, bgSrc, roomName);
 }
 
 function AddItemToCanvas(x, y, width, height, imgSrc, clickURL, isXML)
@@ -79,7 +61,7 @@ var MainCanvas = {
 	},
 	
 	// initialise the house area
-	Initialise : function(width, height, bgSrc) {
+	Initialise : function(width, height, bgSrc, roomName) {
 		this.canvas.innerHTML = "<p>Sorry, your browser does not support this application.</p>";
 		this.canvas.id = "mainCanvas";
         this.canvas.width = width;
@@ -89,6 +71,9 @@ var MainCanvas = {
 		this.bObjectActive = false;
 		this.img = new Image();
 		this.img.src = bgSrc;
+		this.roomName = roomName;
+		
+		InitXML(this.roomName);
 		
 		// function called when mouse is clicked while cursor is over canvas
 		// objects within the canvas cannot respond directly to events like this,
@@ -164,7 +149,7 @@ function ClickableCanvasObject(x, y, width, height, imgSrc, url, isXML)
 	this.img = new Image();
 	this.img.src = imgSrc;
 	this.url = url;
-  this.isXML = isXML;
+	this.isXML = isXML;
 	// sets the parent object of this object
 	this.SetParent = function(parentObj) {
 		this.parentObj	= parentObj;
@@ -177,45 +162,13 @@ function ClickableCanvasObject(x, y, width, height, imgSrc, url, isXML)
 	
         if (mx > this.x && mx < this.canvas.width + this.x && my > this.y && my < this.y + this.canvas.height)
         {
-        		if(isXML){
-        			loadXMLDoc(url);
+        		if(this.isXML){
+        			OpenOverlay(this.url);
         		}
         		else{
-	            window.location.href=this.url;
-						}
-        }
-		/*
-        if (this.bParentSet)
-		{
-			if (mx > this.x && mx < this.canvas.width + this.x && my > this.y && my < this.y + this.canvas.height)
-			{
-				// simple demonstration about how state tracking works
-				switch(this.state)
-				{
-					case STATEVAR_CLICKABLE_INACTIVE:
-						this.parentObj.SetActiveObject(this);
-						
-						this.state			= STATEVAR_CLICKABLE_ACTIVE;
-						this.canvas.width	= this.parentObj.canvas.width * 9/10;
-						this.canvas.height	= this.parentObj.canvas.height * 9/10;
-						this.x				= this.parentObj.canvas.width / 2 - this.canvas.width / 2;
-						this.y				= this.parentObj.canvas.height / 2 - this.canvas.height / 2;
-						break;
-					case STATEVAR_CLICKABLE_ACTIVE:
-						this.parentObj.UnsetActiveObject(this);
-						
-						this.state			= STATEVAR_CLICKABLE_INACTIVE;
-						this.x				= this.baseX;
-						this.y				= this.baseY;
-						this.canvas.width	= this.baseWidth;
-						this.canvas.height	= this.baseHeight;
-						break;
-					default:
-						break;
+					window.location.href=this.url;
 				}
-			}
-		}
-        //*/
+        }
 	
     }
     this.Update = function()
@@ -223,9 +176,10 @@ function ClickableCanvasObject(x, y, width, height, imgSrc, url, isXML)
 		// don't want to try and draw if the parent hasn't been set
 		if (this.bParentSet)
 		{
+			this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
 		//	this.context.fillStyle = this.color;
 		//	this.context.fillRect(0,0,this.canvas.width, this.canvas.height);
-			this.context.drawImage(this.img, 0, 0, this.canvas.width, this. canvas.height);
+			this.context.drawImage(this.img, 0, 0, this.canvas.width, this.canvas.height);
 			ctx = this.parentObj.context;
 			ctx.drawImage(this.canvas, this.x, this.y);
 		}
@@ -235,110 +189,227 @@ function ClickableCanvasObject(x, y, width, height, imgSrc, url, isXML)
 function UpdateArea() {
 	MainCanvas.Update();
 }
+function RoomData(name) {
+	this.name = name;
+	this.itemList = [];
+}
+function ItemData() {
+	this.name = "";
+	this.heading = "";
+	this.tagline = "";
+	this.summary = "";
+	this.img = null;
+	this.techList = [];
+}
+function TechData() {
+	this.name = "";
+	this.imgSrc = "";
+	this.summary = "";
+	this.description = "";
+	this.moreInfoURL = "";
+}
 
-
-
-var parser = new DOMParser();
-var xmlDoc;
-
-function loadXMLData(roomId, callbackFunc) {
+function InitXML(roomName)
+{
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      callbackFunc(id, this);
+      LoadXMLData(roomName, this);
     }
   };
-  xmlhttp.open("GET", "all.xml" , true); // generate all.xml by combining all other xml files 
-
-//  xmlhttp.open("GET", "all.xml" , true); // generate all.xml by combining all other xml files 
-  //xmlhttp.open("GET", "living_room.xml" , true); 
+  xmlhttp.open("GET", "all.xml" , true);
   xmlhttp.send();
 }
 
+var room_data;
 
-var text;
-
-/*function openOverlay(id, xml) {
-	var itemId;
+function LoadXMLData(roomName, xml)
+{
+	// prepare xml data
+	var parser = new DOMParser();
+	var xmlDoc = parser.parseFromString(xml.responseText, "text/xml");
 	
-	switch(id)
+	// find the correct room
+	var roomList = xmlDoc.getElementsByTagName("room");
+	
+	var roomIndex = 0;
+	for (var i = 0; i < roomList.length; ++i)
 	{
-	case 0:
-		itemId = "tv";
-		break;
-	case 1:
-		itemId = "phone";
-		break;
-	}
-	enableItemOverlay(itemId, xml);
-}*/
-
-var image;
-
-function enableItemOverlay(id, xml) {
-
-	var parent;
-	var name;
-	var tagline;
-	var summary;
-	var description;
-	
-	xmlDoc = parser.parseFromString(xml.responseText, "text/xml");
-	
-	var itemList = xmlDoc.getElementsByTagName("id");
-	var itemIndex;
-	
-	for (var i = 0; i < itemList.length; ++i)
-	{
-		if (itemList[i].innerHTML == id)
+		if(roomList[i].attributes[0].nodeValue == roomName)
 		{
-			itemIndex = i;
+			roomIndex = i;
 			break;
 		}
 	}
 	
-	image = new Image();
+	var room = roomList[roomIndex];
+	room_data = new RoomData(roomList[roomIndex].attributes[0].nodeValue);
 	
-	parent = itemList[itemIndex].parentNode;
-	var i;
-	for (i = 0; i < parent.childNodes.length; ++i)
+	for (var i = 0; i < room.childNodes.length;  ++i)
 	{
-		if (parent.childNodes[i].localName == "imgsrc")
+		if (room.childNodes[i].nodeName == "item")
 		{
-			image.src = parent.childNodes[i].innerHTML;
+			// add new item to the list
+			var item_data = new ItemData();
+			var item = room.childNodes[i];
+			
+			item_data.name = item.attributes[0].nodeValue;
+			
+			for (var j = 0; j < item.childNodes.length; ++j)
+			{
+				if (item.childNodes[j].nodeName == "heading")
+				{
+					item_data.heading = item.childNodes[j].innerHTML;
+				}
+				else if (item.childNodes[j].nodeName == "tagline")
+				{
+					item_data.tagline = item.childNodes[j].innerHTML;
+				}
+				else if (item.childNodes[j].nodeName == "summary")
+				{
+					item_data.summary = item.childNodes[j].innerHTML;
+				}
+				else if (item.childNodes[j].nodeName == "imgsrc")
+				{
+					item_data.img = new Image();
+					item_data.img.src = item.childNodes[j].innerHTML;
+				}
+				else if (item.childNodes[j].nodeName == "tech")
+				{
+					var tech_data = new TechData();
+					var tech = item.childNodes[j];
+					
+					for (var k = 0; k < tech.childNodes.length; ++k)
+					{
+						var tech_tag_name = tech.childNodes[k].nodeName;
+						
+						if (tech_tag_name == "name")
+						{
+							tech_data.name = tech.childNodes[k].innerHTML;
+						}
+						else if (tech_tag_name == "image_name")
+						{
+							tech_data.imgSrc = tech.childNodes[k].innerHTML;
+						}
+						else if (tech_tag_name == "summary")
+						{
+							tech_data.summary = tech.childNodes[k].innerHTML;
+						}
+						else if (tech_tag_name == "description")
+						{
+							tech_data.description = tech.childNodes[k].innerHTML;
+						}
+						else if (tech_tag_name == "more_info_url")
+						{
+							tech_data.moreInfoURL = tech.childNodes[k].innerHTML;
+						}
+					}
+					
+					item_data.techList.push(tech_data);
+				}
+			}
+			
+			room_data.itemList.push(item_data);
 		}
-		if (parent.childNodes[i].localName == "name")
+	}
+}
+
+function OpenOverlay(itemName)
+{
+	var item_data;
+	for (var i = 0; i < room_data.itemList.length; ++i)
+	{
+		if (room_data.itemList[i].name == itemName)
 		{
-			name = parent.childNodes[i].innerHTML;
-		}
-		else if (parent.childNodes[i].localName == "tagline")
-		{
-			tagline = parent.childNodes[i].innerHTML;
-		}
-		else if (parent.childNodes[i].localName == "summary")
-		{
-			summary = parent.childNodes[i].innerHTML;
-		}
-		else if (parent.childNodes[i].localName == "description")
-		{
-			description = parent.childNodes[i].innerHTML;
+			item_data = room_data.itemList[i];
+			break;
 		}
 	}
 	
-	document.getElementById("itemImage").insertBefore(image, document.getElementById("itemImage").childNodes[0]);
-	document.getElementById("itemHeader").innerHTML = "<h1>" + name + "</h1>";
-	document.getElementById("itemTagline").innerHTML = "<p><i>" + tagline + "</i></p>";
-	document.getElementById("itemSummary").innerHTML = "<p>" + summary + "</p>";
-	document.getElementById("itemDescription").innerHTML = "<h2>Detailed Description</h2><p>" + description + "</p>";
+	// fill in item data
+	document.getElementById("item_header").innerHTML = item_data.heading;
 	
-	document.getElementById("itemOverlay").style.display = "flex";
+	var imgCanvas = document.getElementById("item_image");
+	var imgCtx = imgCanvas.getContext("2d");
+//	imgCtx.clearRect(0, 0, imgCanvas.width, imgCanvas.height);
+	imgCtx.drawImage(item_data.img, 0, 0, imgCanvas.width, imgCanvas.height);
+//	img.insertBefore(item_data.img, img.childNodes[0]);
+	
+	
+	document.getElementById("item_tagline").innerHTML = item_data.tagline;
+	document.getElementById("item_summary").innerHTML = item_data.summary;
+	
+	// fill in tech data
+	var tech_container = document.getElementById("item_techs");
+	for (var i = 0; i < item_data.techList.length; ++i)
+	{
+		// for each tech...
+		var tech_data = item_data.techList[i];
+		
+		// ... create a new accordion
+		var tech_accordion = document.createElement("header");
+		tech_accordion.setAttribute("class", "tech_name_accordion");
+		tech_accordion.innerHTML = tech_data.name;
+		
+		var tech_panel = document.createElement("div");
+		tech_panel.setAttribute("class", "tech_panel");
+		
+		var container_techImg = document.createElement("div");
+		container_techImg.setAttribute("class", "tech_img");
+		
+		var container_techSummary = document.createElement("section");
+		container_techSummary.setAttribute("class", "tech_summary");
+		container_techSummary.innerHTML = tech_data.summary;
+		
+		var container_techDescription = document.createElement("section");
+		container_techDescription.setAttribute("class", "tech_description");
+		container_techDescription.innerHTML = "Description";
+		container_techDescription.innerHTML += "<p>" + tech_data.description + "</p>";
+		
+		var container_techMoreInfo = document.createElement("section");
+		container_techMoreInfo.setAttribute("class", "tech_more_info");
+		container_techMoreInfo.setAttribute("onclick", "OpenPage(\'" + tech_data.moreInfoURL + "\')");
+		container_techMoreInfo.innerHTML = "Click here for more info about this tech.";
+		
+		tech_container.insertBefore(tech_accordion, tech_container.childNodes[0]);
+		
+		tech_accordion.appendChild(tech_panel);
+		
+		tech_panel.insertBefore(container_techMoreInfo, tech_panel.childNodes[0]);
+		tech_panel.insertBefore(container_techDescription, tech_panel.childNodes[0]);
+		tech_panel.insertBefore(container_techSummary, tech_panel.childNodes[0]);
+		tech_panel.insertBefore(container_techImg, tech_panel.childNodes[0]);
+		
+		tech_accordion.onclick = accordionOnClick;
+	}
+	
+	document.getElementById("item_overlay").style.display = "flex";
+}
+
+function OpenPage(url)
+{
+	window.location = url;
 }
 
 function off() {
-	document.getElementById("itemOverlay").style.display = "none";
-	image.src = null;
-	document.getElementById("itemImage").innerHTML = "";
+	document.getElementById("item_overlay").style.display = "none";
+	document.getElementById("item_overlay").innerHTML = "<div id=\"inner_overlay\">" +
+															"<div id=\"overlay_close\" onclick=\"off()\">X</div>" +
+															"<canvas id=\"item_image\"></canvas>" +
+															"<header id=\"item_header\"></header>" +
+															"<section id=\"item_tagline\"></section>" +
+															"<section id=\"item_summary\"></section>" +
+															"<section id=\"item_techs\"></section>" +
+														"</div>";
 }
 
-
-
+function accordionOnClick()
+{
+    this.classList.toggle("active");
+    var panel = this.childNodes[1];
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+}
