@@ -8,7 +8,7 @@ function LoadNavbar() {
 }
 
 function LoadFooter() {
-	document.getElementById("footer").innerHTML+="<a href=\"about.html\" class=\"navbarItem\">About Us</a>";
+//	document.getElementById("footer").innerHTML+="<a href=\"about.html\" class=\"navbarItem\">About Us</a>";
 }
 
 
