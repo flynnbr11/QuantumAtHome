@@ -84,16 +84,13 @@
     <item name="wallet">
       <heading>Wallet</heading>
       <tagline>How quantum security will improve financial security</tagline>
-      <summary>
-      </summary>
-      <imgsrc>images/wallet.png</imgsrc>
+      <summary>Wallets hold the key to our finances: they represent our financial transaction security.</summary>
+      <imgsrc>images/wallet_open.png</imgsrc>
       <tech>
-        <name>qkd_atm</name>
-        <image_name>
-        </image_name>
-        <summary>QKD used for verification in ATMs and online transactions</summary>
-        <description>
-        </description>
+        <name>qkd atm</name>
+        <image_name>images/atm_dock.jpg</image_name>
+        <summary>QKD using a handheld transmitter to perform authentication, with applications in cash withdrawals, secure card transactions and potentially in eBanking</summary>
+        <description>Classical methods of securely transferring money by credit/debit card and withdrawing money using an ATM, as well as authentication, where an automated method using random numbers (or, currently more often, pseudo-random numbers) is used to check that the user is who they say they are have potential security flaws. These can be solved using the ideas of Quantum Key Distribution (QKD). Random numbers are generated using a quantum random number generator (or otherwise) and stored in memory of the device. For each random bit, one of four LEDs is used to emit a single photon polarised in either the horizontal, vertical, diagonal or antidiagonal direction. Each photon is then measured by the receiving device, which is the only other device that knows the random number being used. The received random number is then compared with what it should have been and a match indicates that the person is who they say they are, assuming the card hasn’t been physically stolen. The same method can be used to authenticate card transactions and cash withdrawals. The technology already exists and could potentially cost around £10 for each</description>
         <more_info_url>
         </more_info_url>
       </tech>
@@ -269,14 +266,33 @@ Quantum computers won't replace your current laptop, but may enhance them throug
     <item name="scanner">
       <heading>Scanner</heading>
       <tagline>Scan in your home</tagline>
-      <summary>Use quantum scanners to save you trips to the doctor, dentist and </summary>
+      <summary>Use quantum scanners to save you trips to the doctor and dentist.</summary>
       <imgsrc>images/scanner.jpg</imgsrc>
       <tech>
         <name>medical</name>
         <image_name>
         </image_name>
         <summary>Medical scanners to assess your insides</summary>
-        <description>Uses superposition somehow</description>
+        <description>It is known that both the human heart and brain generate a detectable magnetic field, and
+measurement of this field has been used in medical research and diagnosis for many years. Such
+measurements have previously been carried out using superconducting quantum interference
+devices, or SQUIDS. These devices can sense changes in biomagnetic fields with extreme precision by
+using interference in a superconducting circuit (a circuit which has zero electrical resistance).
+However, this technique is limited as the circuit requires cooling to temperatures of at most -200ºC.
+This makes it difficult to imagine having such a device for health monitoring in the home. However,
+recent developments have enabled quantum magnetic field sensors to operate at room
+temperature. These devices use atomic magnetrometry, whereby one laser beam is used to align the
+atomic spins of a vapour in the presence of a magnetic field to be measured. Then a second laser
+beam can be used to estimate the magnetic field from the rotation in the polarisation of this beam
+as it passes through this vapour. The measurement in this case is a special kind of quantum
+measurement called a ‘quantum non-demolition measurement’, which means the measurement can
+occur without altering the atomic spins when the light passes through. This technique can in theory
+increase the sensitivity of these devices while not needing extreme cooling, and has already been
+shown to improve the bandwidth of magnetic sensors. This has been used to sense the magnetic
+fields in the heart and brain, and can also be used to achieve MRI scanning without having to
+cryogenically cool the device. The ability to make such a device compact and work at room
+temperature could lead to their use in the home for regular health monitoring, which could lead to
+early diagnosis of many diseases, potentially saving many lives in the near future.</description>
         <more_info_url>
         </more_info_url>
       </tech>
@@ -291,7 +307,23 @@ Quantum computers won't replace your current laptop, but may enhance them throug
         <image_name>
         </image_name>
         <summary>Neural transmitters</summary>
-        <description>magical</description>
+        <description>Mind controlled wheelchairs may seem like a thing of the distant future, but electromagnetic
+sensing of brain signals is already being used to develop a Brain-computer Interface (BCI) to enable
+direct communication between the brain the wheelchair. These systems detect
+electroencephalographic (EEG) signals with a number of electrodes placed on the persons head.
+However, they often suffer from poor resolution and excess noise, making it difficult to accurately
+translate the brain signal to move the wheelchair in the right direction. Quantum-enhanced sensing
+could provide the means to provide a commercially viable Neural-sensing wheelchair, due to the
+latest developments in devices for the quantum magnetic sensing of brain signals. These devices use
+atomic magnetrometry, whereby a laser beam is used to align the atomic spins of a vapour in the
+presence of a magnetic field to be measured. Then a second laser beam can be used to estimate the
+magnetic field from the rotation in the polarisation of this beam as it passes through this vapour.
+The measurement in this case is a special kind of quantum measurement called a ‘quantum non-
+demolition measurement’, which means the measurement can occur without altering the atomic
+spins when the light passes through. This technique can increase the sensitivity of magnetic field
+measurements dramatically, and has already been used to sense magnetic fields from the brain. If
+such a device could be made more compact it is entirely possible that the technology could provide
+people suffering from paralysis the ability to control their wheelchair just by thinking!</description>
         <more_info_url>
         </more_info_url>
       </tech>
@@ -301,47 +333,104 @@ Quantum computers won't replace your current laptop, but may enhance them throug
     <item name="mailbox">
       <heading>Mailbox</heading>
       <tagline>quantum post</tagline>
-      <summary>ff</summary>
-      <imgsrc>ff</imgsrc>
+      <summary>
+      </summary>
+      <imgsrc>images/mailbox.jpg</imgsrc>
       <tech>
         <name>mail</name>
         <image_name>
         </image_name>
-        <summary>ff</summary>
-        <description>ff</description>
+        <summary>Spam filters on your email will benefit from improved classification algorithms based on quantum machine learning.</summary>
+        <description>
+        </description>
         <more_info_url>
         </more_info_url>
       </tech>
     </item>
     <item name="leak">
-      <heading>
-      </heading>
-      <tagline>
-      </tagline>
+      <heading>Leak detection</heading>
+      <tagline>Helping to identify problems faster</tagline>
       <summary>
       </summary>
-      <imgsrc>
-      </imgsrc>
+      <imgsrc>images/leak.jpg</imgsrc>
+      <tech>
+        <name>leak_detection</name>
+        <image_name>
+        </image_name>
+        <summary>Quantum sensors used in maintenance</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
     </item>
     <item name="cctv">
-      <heading>
-      </heading>
-      <tagline>
-      </tagline>
+      <heading>CCTV</heading>
+      <tagline>Better, more secure footage</tagline>
       <summary>
       </summary>
-      <imgsrc>
-      </imgsrc>
+      <imgsrc>images/cctv.png</imgsrc>
+      <tech>
+        <name>security</name>
+        <image_name>
+        </image_name>
+        <summary>QCCTV: Quantum Closed Circuit Television</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
     </item>
     <item name="solar_cell">
-      <heading>
-      </heading>
-      <tagline>
-      </tagline>
-      <summary>
-      </summary>
-      <imgsrc>
-      </imgsrc>
+      <heading>Solar Cells</heading>
+      <tagline>Cleaner energy harvested using quantum technology</tagline>
+      <summary>Solar panels for clean energy.</summary>
+      <imgsrc>images/solar_cell.jpg</imgsrc>
+      <tech>
+        <name>security</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+      <tech>
+        <name>solar_energy</name>
+        <image_name>
+        </image_name>
+        <summary>Solar energy will be vital over the next century as we move into renewable energies</summary>
+        <description>Solar cells have transformed the way we harvest energy in recent years, and promise to be a
+significant part of achieving a sustainable future. However, a major barrier to this progress is the
+limited efficiency which has been achieved in solar cells to date, and in current solar technologies
+these inefficiencies stem from fluctuations in the light received by the solar cell. Quantum physics
+has recently been shown to provide a significant advantage in improving the efficiency of solar
+power, by naturally regulating the energy received to produce a steady state output from the
+fluctuating input. These quantum solar cells are made by combining two materials that are linked by
+a quantum energy transition. This means that incoming particle of light (photon) can be absorbed
+such that its energy is converted to electronic energy in the form of electric power. Today’s solar
+technology also works by joining material linked by an energy gap such that individual photons are
+absorbed, giving extra energy to electrons. However, the quantum solar cells are distinct from their
+classical counterpart because in the quantum case the energy gap is formed from two individual
+quantum states with different energy, such as you would find in an atom, rather than the energy
+levels arising as a property of a large-scale material, as in the classical case.
+The energy regulation works by having two ‘quantum channels’ which are used to channel energy
+efficiently through the photocell. One channel absorbs at a colour of light which is providing a high
+average intensity, and the other channel absorbs colours of light with low intensity. In order to make
+the output energy as constant as possible, the quantum solar cell switches randomly between the
+high and the low energy channel. Incredibly, it was found that green light does not provide a benefit
+by switching in this way, so the device can increase the amount of energy it can make by not
+absorbing as much green light as it does all the other colours. Plants all around us have this same
+property, and this may be because of a similar kind of quantum benefit researchers have found using
+these devices. In fact, in recent studies of the microscopic nature of plants, a molecular structure
+proposed on the basis of its photosynthetic properties has interesting similarities to the quantum
+solar cells discussed here. It is remarkable that we can turn to nature for hints about how we can
+reduce our carbon footprint with the latest quantum technologies.</description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
     </item>
   </room>
 </root>
