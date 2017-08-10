@@ -34,6 +34,16 @@
         <description>shouldn't burn TVs</description>
         <more_info_url>flames.htm</more_info_url>
       </tech>
+      <tech>
+        <name>netflix</name>
+        <image_name>
+        </image_name>
+        <summary>Better reccommendation algorithms from quantum algorithm</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
     </item>
     <item name="phone">
       <heading>Quantum Phone</heading>
@@ -46,6 +56,16 @@
         <summary>magical screens</summary>
         <description>welp</description>
         <more_info_url>tester.htm</more_info_url>
+      </tech>
+      <tech>
+        <name>port router</name>
+        <image_name>
+        </image_name>
+        <summary>Port router for QComms</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
       </tech>
     </item>
     <item name="clock">
@@ -80,6 +100,16 @@
         <more_info_url>
         </more_info_url>
       </tech>
+      <tech>
+        <name>quantum processing</name>
+        <image_name>
+        </image_name>
+        <summary>Video games exploiting quantum computation</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
     </item>
     <item name="wallet">
       <heading>Wallet</heading>
@@ -94,6 +124,16 @@
         <more_info_url>
         </more_info_url>
       </tech>
+      <tech>
+        <name>quantum money</name>
+        <image_name>
+        </image_name>
+        <summary>Quantum Money</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
     </item>
     <item name="camera">
       <heading>Quantum Camera</heading>
@@ -105,8 +145,17 @@
         <name>photography</name>
         <image_name>
         </image_name>
-        <summary>
-        </summary>
+        <summary>Quantum enhanced camera for entertainment</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+      <tech>
+        <name>object_locater</name>
+        <image_name>
+        </image_name>
+        <summary>Camera for locating items</summary>
         <description>
         </description>
         <more_info_url>
@@ -123,7 +172,7 @@
         <name>charger</name>
         <image_name>
         </image_name>
-        <summary>charger will use this concept in this way</summary>
+        <summary>Quantum battery for faster charging</summary>
         <description>
         </description>
         <more_info_url>
@@ -150,6 +199,17 @@
         <more_info_url>
         </more_info_url>
       </tech>
+      <tech>
+        <name>bacteria sensor</name>
+        <image_name>
+        </image_name>
+        <summary>Quantum enhanced detection of bacteria for better and real time "best before dates" for items in the fridge
+</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
     </item>
     <item name="recycling_bin">
       <heading>Recycling Bin</heading>
@@ -160,8 +220,27 @@
         <name>recycling_sorter</name>
         <image_name>
         </image_name>
-        <summary>
-        </summary>
+        <summary>Quantum enhanced detection of chemicals for accurate recycling</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="first_aid_box">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>
+      </imgsrc>
+      <tech>
+        <name>medicines</name>
+        <image_name>
+        </image_name>
+        <summary>Medicines developed using quantum simulation of chemistry.</summary>
         <description>
         </description>
         <more_info_url>
@@ -180,6 +259,36 @@
         <image_name>
         </image_name>
         <summary>Motors will benefit from quantum goodness</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+      <tech>
+        <name>gps</name>
+        <image_name>
+        </image_name>
+        <summary>Gravity sensors for GPS</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+      <tech>
+        <name>self_driving_cars</name>
+        <image_name>
+        </image_name>
+        <summary>Gravity sensors for self driving cars</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+      <tech>
+        <name>door_lock</name>
+        <image_name>
+        </image_name>
+        <summary>QKD Door lock</summary>
         <description>
         </description>
         <more_info_url>
@@ -228,6 +337,16 @@ Quantum computers won't replace your current laptop, but may enhance them throug
         <more_info_url>
         </more_info_url>
       </tech>
+      <tech>
+        <name>processor</name>
+        <image_name>
+        </image_name>
+        <summary>Quantum processor for enhanced computing speed.</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
     </item>
     <item name="tablet">
       <heading>Tablet</heading>
@@ -241,6 +360,26 @@ Quantum computers won't replace your current laptop, but may enhance them throug
         </image_name>
         <summary>
         </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+      <tech>
+        <name>spam filter</name>
+        <image_name>
+        </image_name>
+        <summary>Stronger spam filters through quantum classification algorithms</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+      <tech>
+        <name>passwords</name>
+        <image_name>
+        </image_name>
+        <summary>QRNG for creating daily and more secure passwords</summary>
         <description>
         </description>
         <more_info_url>
@@ -296,6 +435,26 @@ early diagnosis of many diseases, potentially saving many lives in the near futu
         <more_info_url>
         </more_info_url>
       </tech>
+      <tech>
+        <name>disease detection</name>
+        <image_name>
+        </image_name>
+        <summary>Chemical sensor for disease detection</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+      <tech>
+        <name>magnetic sensor</name>
+        <image_name>
+        </image_name>
+        <summary>Magnetic sensor for sensing biomagnetic field of the heart and the brain</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
     </item>
     <item name="wheelchair">
       <heading>Wheelchair</heading>
@@ -328,6 +487,16 @@ people suffering from paralysis the ability to control their wheelchair just by 
         </more_info_url>
       </tech>
     </item>
+    <item name="first_aid_box">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>
+      </imgsrc>
+    </item>
   </room>
   <room name="outside">
     <item name="mailbox">
@@ -340,7 +509,7 @@ people suffering from paralysis the ability to control their wheelchair just by 
         <name>mail</name>
         <image_name>
         </image_name>
-        <summary>Spam filters on your email will benefit from improved classification algorithms based on quantum machine learning.</summary>
+        <summary>Teleportation Device</summary>
         <description>
         </description>
         <more_info_url>
@@ -375,8 +544,7 @@ people suffering from paralysis the ability to control their wheelchair just by 
         <image_name>
         </image_name>
         <summary>QCCTV: Quantum Closed Circuit Television</summary>
-        <description>
-        </description>
+        <description>Pattern matching for security and facial recognition</description>
         <more_info_url>
         </more_info_url>
       </tech>
@@ -428,6 +596,17 @@ these devices. In fact, in recent studies of the microscopic nature of plants, a
 proposed on the basis of its photosynthetic properties has interesting similarities to the quantum
 solar cells discussed here. It is remarkable that we can turn to nature for hints about how we can
 reduce our carbon footprint with the latest quantum technologies.</description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+      <tech>
+        <name>quantum dot enhanced solar cells</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
         <more_info_url>
         </more_info_url>
       </tech>
