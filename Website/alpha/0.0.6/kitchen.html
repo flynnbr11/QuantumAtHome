@@ -6,6 +6,7 @@
 <script src="scripts/clickableCanvasTest.js"></script>
 <script src="scripts/repeatedCalls.js"></script>
 
+<link rel = "stylesheet" type = "text/css" href = "styles/overlay.css" />
 <link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
 <link rel = "stylesheet" type = "text/css" href = "styles/house_items.css" />
 </head>
@@ -18,7 +19,7 @@
 
 	function PageInit() <!-- Fill in page details here -->
 	{
-		Initialise("images/kitchen.png");
+		Initialise("images/kitchen.png", "kitchen");
 		
 		AddItemToCanvas( 925, 325, 250, 350, "images/fridge.png", "fridge", true);
 		AddItemToCanvas( 500, 480, 100, 150, "images/recycling_bin.png", "recycling_bin", true);
@@ -30,15 +31,19 @@
 
 <body onload="LoadAll()">
 
-<div onclick="off()" id="itemOverlay">
-	<div id="innerOverlay">
-		<div id="itemImage"></div>
-		<div id="itemTagline"></div>
-		<div id="itemHeader"></div>
-		<div id="itemSummary"></div>
-		<div id="itemDescription"></div>
+
+<div id="item_overlay">
+		<div id="inner_overlay">
+			<div id="overlay_close" onclick="off()">X</div>
+			<canvas id="item_image"></canvas>
+			<header id="item_header"></header>
+			<section id="item_tagline"></section>
+			<section id="item_summary"></section>
+			<section id="item_techs"></section>
+		</div>
 	</div>
 </div>
+
 <div class="wrapper">
 	<div id="navbar"></div>
 	

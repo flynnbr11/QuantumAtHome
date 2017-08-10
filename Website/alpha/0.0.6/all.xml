@@ -48,5 +48,253 @@
         <more_info_url>tester.htm</more_info_url>
       </tech>
     </item>
+    <item name="clock">
+      <heading>Quantum Clock</heading>
+      <tagline>
+      </tagline>
+      <summary>Clocks can use quantum to do this, that and the other. </summary>
+      <imgsrc>images/clock.png</imgsrc>
+      <tech>
+        <name>atomic_clock</name>
+        <image_name>
+        </image_name>
+        <summary>Atomic clocks give incredibly precise timings - with error less than one second over the age of the universe!</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="games_console">
+      <heading>Games Console</heading>
+      <tagline>Using true quantum randomness to enhance gaming</tagline>
+      <summary>Games may be changed forever</summary>
+      <imgsrc>images/games_console.png</imgsrc>
+      <tech>
+        <name>random_number_generator</name>
+        <image_name>
+        </image_name>
+        <summary>RNG use quantum superposition and measurement to give real randomness</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="wallet">
+      <heading>Wallet</heading>
+      <tagline>How quantum security will improve financial security</tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/wallet.png</imgsrc>
+      <tech>
+        <name>qkd_atm</name>
+        <image_name>
+        </image_name>
+        <summary>QKD used for verification in ATMs and online transactions</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="camera">
+      <heading>Quantum Camera</heading>
+      <tagline>quantum precision</tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/camera.png</imgsrc>
+      <tech>
+        <name>photography</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="phone_charger">
+      <heading>Phone Charger</heading>
+      <tagline>
+      </tagline>
+      <summary>Using quantum mechanics to charge electronic batteries faster</summary>
+      <imgsrc>images/phone_charger.png</imgsrc>
+      <tech>
+        <name>charger</name>
+        <image_name>
+        </image_name>
+        <summary>charger will use this concept in this way</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+  </room>
+  <room name="kitchen">
+    <item name="fridge">
+      <heading>Quantum Fridge</heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/fridge.png</imgsrc>
+      <tech>
+        <name>cooler</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="recycling_bin">
+      <heading>Recycling Bin</heading>
+      <tagline>Using quantum sensing as a filter</tagline>
+      <summary>Quantum sensors can distinguish between...</summary>
+      <imgsrc>images/recycling_bin.png</imgsrc>
+      <tech>
+        <name>recycling_sorter</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+  </room>
+  <room name="garage">
+    <item name="car">
+      <heading>Car</heading>
+      <tagline>Driving the future</tagline>
+      <summary>Cars will use quantum technology in the following way</summary>
+      <imgsrc>images.car.png</imgsrc>
+      <tech>
+        <name>motor</name>
+        <image_name>
+        </image_name>
+        <summary>Motors will benefit from quantum goodness</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="poker_table">
+      <heading>Gambling</heading>
+      <tagline>Online and Offline gambling</tagline>
+      <summary>True randomness from quantum sources will level the playing field in online games such as poker. </summary>
+      <imgsrc>images/poker_table.png</imgsrc>
+      <tech>
+        <name>random_number_generator</name>
+        <image_name>
+        </image_name>
+        <summary>Random number generator</summary>
+        <description>used to make sure results are truly random</description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+  </room>
+  <room name="bedroom">
+    <item name="computer">
+      <heading>Quantum Computer</heading>
+      <tagline>More powerful computers</tagline>
+      <summary>The crux of quantum technology: Quantum Computers. 
+Quantum computers won't replace your current laptop, but may enhance them through cloud based services</summary>
+      <imgsrc>images/computer.png</imgsrc>
+      <tech>
+        <name>algorithms</name>
+        <image_name>
+        </image_name>
+        <summary>Quantum algorithms are one of the most researched quantum technologies. These utilise quantum mechanics to achieve processing power stronger than what is achievable with classical technology.</summary>
+        <description>Shor's Algorithm can factorise numbers into their prime componenets. </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+      <tech>
+        <name>machine_learning</name>
+        <image_name>
+        </image_name>
+        <summary>Another huge improvement is promised by quantum machine learning. This will help computers with tasks such as classification (e.g. spam filters), .....</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="tablet">
+      <heading>Tablet</heading>
+      <tagline>From iPad to qPad</tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/tablet.png</imgsrc>
+      <tech>
+        <name>tablet</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="storage_disc">
+      <heading>Storage Disc</heading>
+      <tagline>More secure memory in less space</tagline>
+      <summary>Quantum storage devices </summary>
+      <imgsrc>images/storage_disc.png</imgsrc>
+      <tech>
+        <name>storage</name>
+        <image_name>
+        </image_name>
+        <summary>Storage stands to benefit from improvements in size, security and environmental output.</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="scanner">
+      <heading>Scanner</heading>
+      <tagline>Scan in your home</tagline>
+      <summary>Use quantum scanners to save you trips to the doctor, dentist and </summary>
+      <imgsrc>images/scanner.png</imgsrc>
+      <tech>
+        <name>medical</name>
+        <image_name>
+        </image_name>
+        <summary>Medical scanners to assess your insides</summary>
+        <description>Uses superposition somehow</description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="wheelchair">
+      <heading>Wheelchair</heading>
+      <tagline>Connecting your brain to the outside world without speech</tagline>
+      <summary>Quantum wheelchairs use neural links to communicate your intentions to the wheelchair</summary>
+      <imgsrc>images/wheelchair.png</imgsrc>
+      <tech>
+        <name>neural_transmitter</name>
+        <image_name>
+        </image_name>
+        <summary>Neural transmitters</summary>
+        <description>magical</description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
   </room>
 </root>
