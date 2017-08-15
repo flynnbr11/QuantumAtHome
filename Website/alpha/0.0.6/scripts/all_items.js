@@ -53,11 +53,14 @@ function LoadXMLData(xml)
 		var room_accordion = document.createElement("header");
 		room_accordion.setAttribute("class", "room_name_accordion");
 		room_accordion.innerHTML = room_name;
+		room_accordion.onclick = accordionOnClick;
 		room_accordion_container.appendChild(room_accordion);
 		
+		var room_panel = document.createElement("section");
+		room_panel.setAttribute("class", "room_panel");
+		room_accordion.appendChild(room_panel);
 		
 		var roomData = new RoomData(room_name);
-		
 		
 		for (var i = 0; i < room.childNodes.length;  ++i)
 		{
@@ -72,6 +75,7 @@ function LoadXMLData(xml)
 				var item_accordion = document.createElement("section");
 				item_accordion.setAttribute("class", "item_name_accordion");
 				item_accordion.innerHTML = item_data.name;
+				item_accordion.onclick = OpenOverlay;
 				
 				for (var j = 0; j < item.childNodes.length; ++j)
 				{
@@ -126,11 +130,124 @@ function LoadXMLData(xml)
 						item_data.techList.push(tech_data);
 					}
 				}
-				room_accordion.appendChild(item_accordion);
+				room_panel.appendChild(item_accordion);
 				roomData.itemList.push(item_data);
 			}
 			
 			roomList.push(roomData);
+		}
+	}
+}
+
+var itemWasClicked = false;
+
+function OpenOverlay()
+{
+	itemWasClicked = true;
+	var itemName = this.innerHTML;
+	var item_data;
+	for (var j = 0; j < roomList.length; ++j)
+	{
+		var room_data = roomList[j];
+		
+		for (var i = 0; i < room_data.itemList.length; ++i)
+		{
+			if (room_data.itemList[i].name == itemName)
+			{
+				item_data = room_data.itemList[i];
+				break;
+			}
+		}
+	}
+	document.getElementById("content_container").innerHTML = "<div id=\"inner_overlay\">" +
+															"<div id=\"overlay_close\" onclick=\"off()\">X</div>" +
+															"<canvas id=\"item_image\"></canvas>" +
+															"<header id=\"item_header\"></header>" +
+															"<section id=\"item_tagline\"></section>" +
+								 							"<section id=\"item_summary\"></section>" +
+															"<section id=\"item_techs\"></section>" +
+														"</div>";
+	
+	// fill in item data
+	document.getElementById("item_header").innerHTML = item_data.heading;
+	
+	var imgCanvas = document.getElementById("item_image");
+	var imgCtx = imgCanvas.getContext("2d");
+//	imgCtx.clearRect(0, 0, imgCanvas.width, imgCanvas.height);
+	imgCtx.drawImage(item_data.img, 0, 0, imgCanvas.width, imgCanvas.height);
+//	img.insertBefore(item_data.img, img.childNodes[0]);
+	
+	
+	document.getElementById("item_tagline").innerHTML = item_data.tagline;
+	document.getElementById("item_summary").innerHTML = item_data.summary;
+	
+	// fill in tech data
+	var tech_container = document.getElementById("item_techs");
+	for (var i = 0; i < item_data.techList.length; ++i)
+	{
+		// for each tech...
+		var tech_data = item_data.techList[i];
+		
+		// ... create a new accordion
+		var tech_accordion = document.createElement("header");
+		tech_accordion.setAttribute("class", "tech_name_accordion");
+		tech_accordion.innerHTML = tech_data.name;
+		
+		var tech_panel = document.createElement("div");
+		tech_panel.setAttribute("class", "tech_panel");
+		
+		var container_techImg = document.createElement("div");
+		container_techImg.setAttribute("class", "tech_img");
+		
+		var container_techSummary = document.createElement("section");
+		container_techSummary.setAttribute("class", "tech_summary");
+		container_techSummary.innerHTML = tech_data.summary;
+		
+		var container_techDescription = document.createElement("section");
+		container_techDescription.setAttribute("class", "tech_description");
+		container_techDescription.innerHTML = "Description";
+		container_techDescription.innerHTML += "<p>" + tech_data.description + "</p>";
+		
+		var container_techMoreInfo = document.createElement("section");
+		container_techMoreInfo.setAttribute("class", "tech_more_info");
+		container_techMoreInfo.setAttribute("onclick", "OpenPage(\'" + tech_data.moreInfoURL + "\')");
+		container_techMoreInfo.innerHTML = "Click here for more info about this tech.";
+		
+		tech_container.insertBefore(tech_accordion, tech_container.childNodes[0]);
+		
+		tech_accordion.appendChild(tech_panel);
+		
+		tech_panel.insertBefore(container_techMoreInfo, tech_panel.childNodes[0]);
+		tech_panel.insertBefore(container_techDescription, tech_panel.childNodes[0]);
+		tech_panel.insertBefore(container_techSummary, tech_panel.childNodes[0]);
+		tech_panel.insertBefore(container_techImg, tech_panel.childNodes[0]);
+		
+		tech_accordion.onclick = accordionOnClick;
+	}
+	
+	document.getElementById("content_container").style.display = "flex";
+}
+
+
+function off() {
+	document.getElementById("content_container").style.display = "none";
+	document.getElementById("content_container").innerHTML = "";
+}
+
+function accordionOnClick()
+{
+	if (itemWasClicked)
+	{
+		itemWasClicked = false;
+	}
+	else
+	{
+		this.classList.toggle("active");
+		var panel = this.childNodes[1];
+		if (panel.style.maxHeight){
+		  panel.style.maxHeight = null;
+		} else {
+		  panel.style.maxHeight = panel.scrollHeight + "px";
 		}
 	}
 }
