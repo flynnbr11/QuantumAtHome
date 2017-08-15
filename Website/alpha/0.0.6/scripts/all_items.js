@@ -45,13 +45,19 @@ function LoadXMLData(xml)
 	
 	var room_accordion_container = document.getElementById("room_list");
 	
-	for (var i = 0; i < rooms.length; ++i)
+	for (var l = 0; l < rooms.length; ++l)
 	{
-		roomList[i].name = rooms[i].attributes[0].nodeValue;
+		var room = rooms[l];
 		
+		var room_name = room.attributes[0].nodeValue;
 		var room_accordion = document.createElement("header");
 		room_accordion.setAttribute("class", "room_name_accordion");
-		room_accordion.innerHTML = roomList[i].name;
+		room_accordion.innerHTML = room_name;
+		room_accordion_container.appendChild(room_accordion);
+		
+		
+		var roomData = new RoomData(room_name);
+		
 		
 		for (var i = 0; i < room.childNodes.length;  ++i)
 		{
@@ -59,13 +65,13 @@ function LoadXMLData(xml)
 			{
 				// add new item to the list
 				var item_data = new ItemData();
-				var item = roomList[i].childNodes[i];
+				var item = room.childNodes[i];
 				
 				item_data.name = item.attributes[0].nodeValue;
 				
-				var item_accordion = document.createElement("header");
+				var item_accordion = document.createElement("section");
 				item_accordion.setAttribute("class", "item_name_accordion");
-				item_accordion.innerHTML = roomList[i].name;
+				item_accordion.innerHTML = item_data.name;
 				
 				for (var j = 0; j < item.childNodes.length; ++j)
 				{
@@ -121,9 +127,10 @@ function LoadXMLData(xml)
 					}
 				}
 				room_accordion.appendChild(item_accordion);
-				roomList[i].itemList.push(item_data);
+				roomData.itemList.push(item_data);
 			}
-			room_accordion_container.appendChild(room_accordion);
+			
+			roomList.push(roomData);
 		}
 	}
 }
