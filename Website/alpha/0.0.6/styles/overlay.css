@@ -26,9 +26,6 @@
 
 #inner_overlay
 {
-    border-style: solid;    
-    border-width: 3px;
-    border-color: white;
 	top: 0;
 	width: 800px;
 	margin: auto;
