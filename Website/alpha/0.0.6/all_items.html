@@ -3,15 +3,25 @@
 <head>
 
 	<title>Quantum at Home - All Items</title>
-	<script src="scripts/xml_loader.js"></script>
+	<script src="scripts/all_items.js"></script>
 	<script src="scripts/repeatedCalls.js"></script>
 
 	<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
 	<link rel = "stylesheet" type = "text/css" href = "styles/all_items.css" />
 	<link rel = "stylesheet" type = "text/css" href = "styles/accordian.css" />
+	
+	<script>
+	
+	function PageLoad()
+	{
+		InitXML();
+		DoLoad();
+	}
+	
+	</script>
 </head>
 
-<body onload="DoLoad()">
+<body onload="PageLoad()">
 
 <div class="wrapper">
 	<div id="navbar"></div>
@@ -26,68 +36,10 @@
 		<div id="pageCanvas"> 
 			<div id="accordianContainer"> 
 				<h2>The Quantum Technologies</h2>
-				<div>
-					<button class="accordion">Living Room</button>
-					<div class="panel">
-						<button class="sub_accordion"> TV </button>
-							<div class="sub_panel">
-								<p onclick="loadXMLDoc('netflix')"> Netflix </p>
-								<p onclick="loadXMLDoc('n')"> Nonclassical Pixel TV</p>
-							</div>
-						<p onclick="loadXMLDoc('phone')"> Phone </p>
-						<p onclick="loadXMLDoc('clock')"> Clock </p>
-						<p onclick="loadXMLDoc('phone')"> Phone </p>
-						<p onclick="loadXMLDoc('wallet')"> Wallet </p>
-						<p onclick="loadXMLDoc('camera')"> Camera </p>
-						<p onclick="loadXMLDoc('phone_charger')"> Phone Charger</p>
-
-					</div>
-			
-					<button class="accordion">Kitchen</button>
-					<div class="panel">
-						<p onclick="loadXMLDoc('fridge')"> Fridge </p>
-						<p onclick="loadXMLDoc('bin')"> Recycling Bin</p>
-					</div>
+				<div id="room_list">
 					
-					<button class="accordion"> Bedroom </button> 
-						<div class="panel"> 
-							<p onclick="loadXMLDoc('computer')"> Computer </p>
-							<p onclick="loadXMLDoc('tablet')"> Tablet </p>
-							<p onclick="loadXMLDoc('storage_disc')"> Storage Disc </p>
-							<p onclick="loadXMLDoc('scanner')"> Scanner </p>
-							<p onclick="loadXMLDoc('wheelchair')"> Wheelchair </p>
-						</div>
-					
-					
-					<button class="accordion"> Garage </button>  
-						<div class="panel"> 
-							<p onclick="loadXMLDoc('car')"> Car </p>
-							<p onclick="loadXMLDoc('poker_table')"> Poker Table </p>
-						</div>
-
-					<button class="accordion"> Other </button> 
-						<div class="panel">
-							<p onclick="loadXMLDoc('mailbox')"> Mail Box </p>
-							<p onclick="loadXMLDoc('leak')"> Leak </p>
-							<p onclick="loadXMLDoc('solar_cell')"> Solar Cell </p>
-							<p onclick="loadXMLDoc('cctv')"> CCTV </p>
-							
-						</div>
-				
 				</div>
 			</div>
-			
-			<div id="itemOverlay">
-				<div id="innerOverlay">
-					<div id="itemImage"></div>
-					<div id="itemTagline"></div>
-					<div id="itemHeader"></div>
-					<div id="itemSummary"></div>
-					<div id="itemDescription"></div>
-				</div>
-			</div>
-
-			
 		</div>
 
 		<div id="frame_right"></div>
@@ -99,9 +51,13 @@
 	<div id="footer"></div>
 </div>
  
+<script src="scripts/accordian.js"></script>
 
-	<script src="scripts/accordian.js"></script> 
+<script>
 
+
+
+</script>
 
 </body>
 </html>
