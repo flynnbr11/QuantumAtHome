@@ -9,6 +9,7 @@
 	<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
 	<link rel = "stylesheet" type = "text/css" href = "styles/all_items.css" />
 	<link rel = "stylesheet" type = "text/css" href = "styles/accordian.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/quantum_page.css" />
 </head>
 
 <body onload="DoLoad()">
@@ -23,38 +24,21 @@
 		<div id="frame_top_right"></div>
 		<div id="frame_left"></div>
 
+		<div id="pageCanvas">
 		<div id="pageCanvas"> 
-			<div id="accordianContainer"> 
-				<h2>Click to read what people think about Quantum Technology.</h2>
-				<div>
-					<button class="accordion">Public</button>
-					<div class="panel">
-						<p onclick=loadXMLDoc('public_survey')> Science Festival <p>
-					</div>
+			<aside id="topics"> 
+				<header id="sidebar_header">Click to read what people think about Quantum Technology.</header>
+				<section id="sidebar_buttons">
+					<button class="topic_button" onclick="LoadPageInFrame('surveys/public.html')">Public</button>
+					<button class="topic_button" onclick="LoadPageInFrame('surveys/intro.html')">Science Festival</button>
+					<button class="topic_button" onclick="LoadPageInFrame('surveys/intro.html')">University Students</button>
+					<button class="topic_button" onclick="LoadPageInFrame('surveys/intro.html')">Online Poll</button>
+					<button class="topic_button" onclick="LoadPageInFrame('surveys/intro.html')">Quantum Experts</button>
+				</section>
+			</aside>
 			
-					<button class="accordion">University Students</button>
-					<div class="panel">
-						<p onclick="loadXMLDoc('uni_survey')"> Online Poll  </p>
-					</div>
-
-					<button class="accordion">Academics</button>
-					<div class="panel">
-						<p onclick="loadXMLDoc('quantum_experts_survey')"> Quantum Experts  </p>
-					</div>
-
-				</div>
-			</div>
-			
-			<div id="itemOverlay">
-				<div id="innerOverlay">
-					<div id="itemImage"></div>
-					<div id="itemTagline"></div>
-					<div id="itemHeader"></div>
-					<div id="itemSummary"></div>
-					<div id="itemDescription"></div>
-				</div>
-			</div>
-
+			<iframe id="quantum_frame" src="surveys/intro.html"></iframe>
+		</div>
 			
 		</div>
 
@@ -70,6 +54,16 @@
 
 	<script src="scripts/accordian.js"></script> 
 
+<script>
+
+var LoadPageInFrame = function(src)
+{
+	var frame = document.getElementById("quantum_frame");
+	
+	frame.src = src;
+}
+
+</script>	
 
 </body>
 </html>
