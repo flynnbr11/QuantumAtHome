@@ -1,0 +1,423 @@
+<root>
+  <room name="kitchen">
+    <item name="phone_charger">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/phone_charger.png</imgsrc>
+      <tech>
+        <name>battery</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="recycling_bin">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/recycling_bin.png</imgsrc>
+      <tech>
+        <name>quantum enhanced material detection</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="tablet">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/tablet.png</imgsrc>
+      <tech>
+        <name>passwords</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+      <tech>
+        <name>spam filter</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+      <tech>
+        <name>weather forecasting</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="fridge">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/fridge.png</imgsrc>
+      <tech>
+        <name>quantum enhanced chemical/biologiacl detection</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="first_aid_kit">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>
+      </imgsrc>
+      <tech>
+        <name>medicine and simluation</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+  </room>
+  <room name="living_room">
+    <item name="camera">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/camera.png</imgsrc>
+    </item>
+    <item name="games_console">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/games_console.png</imgsrc>
+      <tech>
+        <name>quantum processor in video games</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+      <tech>
+        <name>random number generation</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="router">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/phone.png</imgsrc>
+      <tech>
+        <name>port and router</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="storage_disc">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>
+      </imgsrc>
+      <tech>
+        <name>optical storage</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="tv">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/tv_image_2.png</imgsrc>
+      <tech>
+        <name>reccommendation engines</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+  </room>
+  <room name="bedroom">
+    <item name="computer">
+      <heading>Quantum Computer</heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/computer.png</imgsrc>
+      <tech>
+        <name>processor</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+      <tech>
+        <name>simulation</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="wheelchair">
+      <heading>Wheelchair</heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/wheelchair.png</imgsrc>
+      <tech>
+        <name>neural transmitter</name>
+        <image_name>
+        </image_name>
+        <summary>Quantum communication between your brain and your devices.</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="wallet">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/wallet.png</imgsrc>
+      <tech>
+        <name>quantum atm</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+  </room>
+  <room name="garage">
+    <item name="car">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/car.png</imgsrc>
+      <tech>
+        <name>gps location</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="leak">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/leak.png</imgsrc>
+      <tech>
+        <name>construction</name>
+        <image_name>
+        </image_name>
+        <summary>Using quantum gravity sensors</summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="scanner">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/scanner.jpg</imgsrc>
+      <tech>
+        <name>medical scanner</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+  </room>
+  <room name="outside">
+    <item name="mailbox">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/mailbox.jpg</imgsrc>
+      <tech>
+        <name>quantum teleportation device</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="solar_cell">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/solar_cell.jpg</imgsrc>
+      <tech>
+        <name>solar cells</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="cctv">
+      <heading>
+      </heading>
+      <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      <imgsrc>images/cctv.png</imgsrc>
+      <tech>
+        <name>facial recognition</name>
+        <image_name>
+        </image_name>
+        <summary>
+        </summary>
+        <description>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+  </room>
+</root>
