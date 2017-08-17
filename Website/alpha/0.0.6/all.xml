@@ -1,6 +1,6 @@
 <root>
   <room name="kitchen">
-    <item name="phone_charger">
+    <item name="phone charger">
       <heading>
       </heading>
       <tagline>
@@ -20,7 +20,7 @@
         </more_info_url>
       </tech>
     </item>
-    <item name="recycling_bin">
+    <item name="recycling bin">
       <heading>
       </heading>
       <tagline>
@@ -102,7 +102,7 @@
         </more_info_url>
       </tech>
     </item>
-    <item name="first_aid_kit">
+    <item name="first aid kit">
       <heading>
       </heading>
       <tagline>
@@ -134,7 +134,7 @@
       </summary>
       <imgsrc>images/camera.png</imgsrc>
     </item>
-    <item name="games_console">
+    <item name="games console">
       <heading>
       </heading>
       <tagline>
@@ -185,15 +185,14 @@
         </more_info_url>
       </tech>
     </item>
-    <item name="storage_disc">
+    <item name="storage disc">
       <heading>
       </heading>
       <tagline>
       </tagline>
       <summary>
       </summary>
-      <imgsrc>
-      </imgsrc>
+      <imgsrc>images/storage_disc.png</imgsrc>
       <tech>
         <name>optical storage</name>
         <image_name>
@@ -277,8 +276,7 @@
       </tech>
     </item>
     <item name="wallet">
-      <heading>
-      </heading>
+      <heading>Wallet</heading>
       <tagline>
       </tagline>
       <summary>
@@ -286,8 +284,7 @@
       <imgsrc>images/wallet.png</imgsrc>
       <tech>
         <name>quantum atm</name>
-        <image_name>
-        </image_name>
+        <image_name>images/wallet_open.png</image_name>
         <summary>
         </summary>
         <description>
@@ -344,7 +341,7 @@
       </tagline>
       <summary>
       </summary>
-      <imgsrc>images/scanner.jpg</imgsrc>
+      <imgsrc>images/scanner.png</imgsrc>
       <tech>
         <name>medical scanner</name>
         <image_name>
@@ -379,11 +376,9 @@
         </more_info_url>
       </tech>
     </item>
-    <item name="solar_cell">
-      <heading>
-      </heading>
-      <tagline>
-      </tagline>
+    <item name="solar cell">
+      <heading>Solar Cells</heading>
+      <tagline>Improved energy efficiency using quantum devices.</tagline>
       <summary>
       </summary>
       <imgsrc>images/solar_cell.jpg</imgsrc>
@@ -393,8 +388,11 @@
         </image_name>
         <summary>
         </summary>
-        <description>
-        </description>
+        <description>Solar cells have transformed the way we harvest energy in recent years, and promise to be a significant part of achieving a sustainable future. However, a major barrier to this progress is the limited efficiency which has been achieved in solar cells to date, and in current solar technologies these inefficiencies stem from fluctuations in the light received by the solar cell. Quantum physics has recently been shown to provide a significant advantage in improving the efficiency of solar power, by naturally regulating the energy received to produce a steady state output from the fluctuating input. These quantum solar cells are made by combining two materials that are linked by a quantum energy transition. This means that incoming particle of light (photon) can be absorbed such that its energy is converted to electronic energy in the form of electric power. Today’s solar technology also works by joining material linked by an energy gap such that individual photons are absorbed, giving extra energy to electrons. However, the quantum solar cells are distinct from their classical counterpart because in the quantum case the energy gap is formed from two individual quantum states with different energy, such as you would find in an atom, rather than the energy levels arising as a property of a large-scale material, as in the classical case. 
+
+
+
+The energy regulation works by having two ‘quantum channels’ which are used to channel energy efficiently through the photocell. One channel absorbs at a colour of light which is providing a high average intensity, and the other channel absorbs colours of light with low intensity. In order to make the output energy as constant as possible, the quantum solar cell switches randomly between the high and the low energy channel.  Incredibly, it was found that green light does not provide a benefit by switching in this way, so the device can increase the amount of energy it can make by not absorbing as much green light as it does all the other colours. Plants all around us have this same property, and this may be because of a similar kind of quantum benefit researchers have found using these devices. In fact, in recent studies of the microscopic nature of plants, a molecular structure proposed on the basis of its photosynthetic properties has interesting similarities to the quantum solar cells discussed here. It is remarkable that we can turn to nature for hints about how we can reduce our carbon footprint with the latest quantum technologies.</description>
         <more_info_url>
         </more_info_url>
       </tech>
