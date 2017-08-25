@@ -392,6 +392,7 @@
 
 		<p>The energy regulation works by having two ‘quantum channels’ which are used to channel energy efficiently through the photocell. One channel absorbs at a colour of light which is providing a high average intensity, and the other channel absorbs colours of light with low intensity. In order to make the output energy as constant as possible, the quantum solar cell switches randomly between the high and the low energy channel.  Incredibly, it was found that green light does not provide a benefit by switching in this way, so the device can increase the amount of energy it can make by not absorbing as much green light as it does all the other colours. Plants all around us have this same property, and this may be because of a similar kind of quantum benefit researchers have found using these devices. In fact, in recent studies of the microscopic nature of plants, a molecular structure proposed on the basis of its photosynthetic properties has interesting similarities to the quantum solar cells discussed here. It is remarkable that we can turn to nature for hints about how we can reduce our carbon footprint with the latest quantum technologies.</p></description>
         <more_info_url>
+		./Quantum_At_Home.pdf#solar_cells
         </more_info_url>
       </tech>
     </item>
