@@ -36,3 +36,18 @@ article {
 	padding: 10px;
 	background-color: white;
 }
+
+
+
+.video_container {
+	width=100%;
+	justify-content: center;
+}
+
+.quantum_video {
+	display: block;
+	margin: auto;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
