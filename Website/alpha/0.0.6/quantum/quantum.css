@@ -6,8 +6,9 @@ header {
 	text-align: center;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: pink;
+	background-color: #333A56;
 	font-size: 50px;
+	color: white;
 }
 
 article {
@@ -17,6 +18,7 @@ article {
 	margin: 0;
 	left: 0;
 	top: 0;
+	padding-bottom: 50px;
 	text-align: justify;
 }
 
@@ -34,4 +36,32 @@ article {
 	top: 0;
 	padding: 10px;
 	background-color: white;
+}
+
+
+
+.video_container {
+	width=100%;
+	justify-content: center;
+}
+
+.quantum_video {
+	display: block;
+	margin: auto;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 560px;
+	height: 315px;
+}
+.quantum_video_caption
+{
+	width: 500px;
+	text-align: center;
+	font-size: 16px;
+	display: block;
+	margin: 0;
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }

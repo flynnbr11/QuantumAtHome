@@ -51,8 +51,9 @@ function LoadXMLData(xml)
 		
 		var room_name = room.attributes[0].nodeValue;
 		var room_accordion = document.createElement("header");
+		var str = room_name.replace("_", " ");
 		room_accordion.setAttribute("class", "room_name_accordion");
-		room_accordion.innerHTML = room_name;
+		room_accordion.innerHTML = str;
 		room_accordion.onclick = accordionOnClick;
 		room_accordion_container.appendChild(room_accordion);
 		
@@ -160,10 +161,9 @@ function OpenOverlay()
 		}
 	}
 	document.getElementById("content_container").innerHTML = "<div id=\"inner_overlay\">" +
-															"<div id=\"overlay_close\" onclick=\"off()\">X</div>" +
-															"<canvas id=\"item_image\"></canvas>" +
 															"<header id=\"item_header\"></header>" +
 															"<section id=\"item_tagline\"></section>" +
+															"<div id=\"item_image_container\"><canvas id=\"item_image\"></canvas></div>" +
 								 							"<section id=\"item_summary\"></section>" +
 															"<section id=\"item_techs\"></section>" +
 														"</div>";
@@ -188,39 +188,42 @@ function OpenOverlay()
 		// for each tech...
 		var tech_data = item_data.techList[i];
 		
+		var container_techImg = document.createElement("div");
+		container_techImg.setAttribute("class", "tech_img");
+		
 		// ... create a new accordion
 		var tech_accordion = document.createElement("header");
 		tech_accordion.setAttribute("class", "tech_name_accordion");
-		tech_accordion.innerHTML = tech_data.name;
+//		tech_accordion.innerHTML = tech_data.name;
 		
 		var tech_panel = document.createElement("div");
 		tech_panel.setAttribute("class", "tech_panel");
 		
-		var container_techImg = document.createElement("div");
-		container_techImg.setAttribute("class", "tech_img");
-		
-		var container_techSummary = document.createElement("section");
+/*		var container_techSummary = document.createElement("section");
 		container_techSummary.setAttribute("class", "tech_summary");
-		container_techSummary.innerHTML = tech_data.summary;
+		container_techSummary.innerHTML = tech_data.summary;*/
 		
 		var container_techDescription = document.createElement("section");
 		container_techDescription.setAttribute("class", "tech_description");
-		container_techDescription.innerHTML = "Description";
+//		container_techDescription.innerHTML = "Description";
 		container_techDescription.innerHTML += "<p>" + tech_data.description + "</p>";
 		
-		var container_techMoreInfo = document.createElement("section");
+		var container_techMoreInfo = document.createElement("a");
 		container_techMoreInfo.setAttribute("class", "tech_more_info");
-		container_techMoreInfo.setAttribute("onclick", "OpenPage(\'" + tech_data.moreInfoURL + "\')");
-		container_techMoreInfo.innerHTML = "Click here for more info about this tech.";
+		container_techMoreInfo.setAttribute("href", tech_data.moreInfoURL);
+		container_techMoreInfo.innerHTML = "Click here for a full scientific discussion.";
 		
 		tech_container.insertBefore(tech_accordion, tech_container.childNodes[0]);
 		
 		tech_accordion.appendChild(tech_panel);
 		
+		var hr = document.createElement("hr");
+		
+		tech_panel.insertBefore(hr, tech_panel.childNodes[0]);
 		tech_panel.insertBefore(container_techMoreInfo, tech_panel.childNodes[0]);
 		tech_panel.insertBefore(container_techDescription, tech_panel.childNodes[0]);
-		tech_panel.insertBefore(container_techSummary, tech_panel.childNodes[0]);
 		tech_panel.insertBefore(container_techImg, tech_panel.childNodes[0]);
+		//tech_panel.insertBefore(container_techSummary, tech_panel.childNodes[0]);
 		
 		tech_accordion.onclick = accordionOnClick;
 	}
