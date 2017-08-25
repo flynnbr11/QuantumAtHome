@@ -55,6 +55,7 @@
 	width: 297px;
 	height: 623px;
 	scroll: visible;
+	overflow: auto;
 	background-color: #3f3f3f;
 }
 /*
@@ -79,8 +80,17 @@
 	height: 603px;
 }
 
+#item_image_container
+{
+	width: 100%;
+	justify-content: center;
+}
 #item_image
 {
+	display: block;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 #inner_overlay
 {
@@ -89,10 +99,12 @@
 #item_header
 {
 	padding: 10px;
+	text-align: center;
 	font-weight: bold;
 }
 #item_tagline
 {
+	text-align: center;
 	padding: 10px;
 	font-style: italic;
 }
