@@ -6,8 +6,9 @@ header {
 	text-align: center;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: pink;
+	background-color: #333A56;
 	font-size: 50px;
+	color: white;
 }
 
 article {
