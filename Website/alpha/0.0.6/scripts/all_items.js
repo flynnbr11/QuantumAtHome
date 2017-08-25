@@ -217,6 +217,9 @@ function OpenOverlay()
 		
 		tech_accordion.appendChild(tech_panel);
 		
+		var hr = document.createElement("hr");
+		
+		tech_panel.insertBefore(hr, tech_panel.childNodes[0]);
 		tech_panel.insertBefore(container_techMoreInfo, tech_panel.childNodes[0]);
 		tech_panel.insertBefore(container_techDescription, tech_panel.childNodes[0]);
 		tech_panel.insertBefore(container_techImg, tech_panel.childNodes[0]);
