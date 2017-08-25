@@ -51,8 +51,9 @@ function LoadXMLData(xml)
 		
 		var room_name = room.attributes[0].nodeValue;
 		var room_accordion = document.createElement("header");
+		var str = room_name.replace("_", " ");
 		room_accordion.setAttribute("class", "room_name_accordion");
-		room_accordion.innerHTML = room_name;
+		room_accordion.innerHTML = str;
 		room_accordion.onclick = accordionOnClick;
 		room_accordion_container.appendChild(room_accordion);
 		
@@ -162,7 +163,7 @@ function OpenOverlay()
 	document.getElementById("content_container").innerHTML = "<div id=\"inner_overlay\">" +
 															"<header id=\"item_header\"></header>" +
 															"<section id=\"item_tagline\"></section>" +
-															"<canvas id=\"item_image\"></canvas>" +
+															"<div id=\"item_image_container\"><canvas id=\"item_image\"></canvas></div>" +
 								 							"<section id=\"item_summary\"></section>" +
 															"<section id=\"item_techs\"></section>" +
 														"</div>";
