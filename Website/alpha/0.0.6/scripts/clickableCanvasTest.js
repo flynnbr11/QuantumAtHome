@@ -369,7 +369,7 @@ function OpenOverlay(itemName)
 		var container_techMoreInfo = document.createElement("section");
 		container_techMoreInfo.setAttribute("class", "tech_more_info");
 		container_techMoreInfo.setAttribute("onclick", "OpenPage(\'" + tech_data.moreInfoURL + "\')");
-		container_techMoreInfo.innerHTML = "Click here for more info about this tech.";
+		container_techMoreInfo.innerHTML = "Click here for the full article and references.";
 		
 		tech_container.insertBefore(tech_accordion, tech_container.childNodes[0]);
 		

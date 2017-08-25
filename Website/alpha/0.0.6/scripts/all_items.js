@@ -219,7 +219,7 @@ function OpenOverlay()
 		tech_panel.insertBefore(container_techMoreInfo, tech_panel.childNodes[0]);
 		tech_panel.insertBefore(container_techDescription, tech_panel.childNodes[0]);
 		tech_panel.insertBefore(container_techImg, tech_panel.childNodes[0]);
-		tech_panel.insertBefore(container_techSummary, tech_panel.childNodes[0]);
+		//tech_panel.insertBefore(container_techSummary, tech_panel.childNodes[0]);
 		
 		tech_accordion.onclick = accordionOnClick;
 	}
