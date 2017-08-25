@@ -4,8 +4,11 @@ body
 }
 
 #navbar {
-/*	background-image: url("../images/roof_tiles.png");*/
+	background-image: url("../images/Q@H logo proposal 1.png");
+	background-repeat: no-repeat;
+    background-position: left top;
 	background-color: #333A56;
+    background-size: contain;
 	margin: 0 0 0 0;
 	top: 0;
 	left: 0;
