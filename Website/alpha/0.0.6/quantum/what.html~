@@ -15,7 +15,7 @@
     </p>
      
      <p>
-     <i>Classical</i> physics is what we experience every day. It describes nature on the <i>macro</i>scopic scale - at the size humans exist. It's (broadly speaking) intuitive: classical physics describes things like how a car engine works, what keeps planes in the air and how the Earth orbits the Sun. It describes things that are 'big', or at least bigger than single particles.
+     <i>Classical</i> physics is what you experience every day. It describes nature on the <i>macro</i>scopic scale, which means at the size humans exist. It's intuitive: classical physics describes things like pendulumns swinging and gravity making apples fall from trees and the earth revolve around the sun. In the simplest terms, classical physics describes things that are big, or at least bigger than single particles.
      
      </p>
 
@@ -32,7 +32,7 @@
 
 		<div class="video_container">
 			<iframe class="quantum_video" src="https://www.youtube.com/embed/JODJYwYz088" frameborder="0" allowfullscreen></iframe>
-			<div class="quantum_video_caption"> Bristol's Professor John Rarity explains how quantum computers promise ...</div>
+			<div class="quantum_video_caption"> Bristol Professor John Rarity explains how quantum computers promise ...</div>
 		</div>
 
 		</div>
