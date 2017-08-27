@@ -336,7 +336,7 @@ function OpenOverlay(itemName)
 //	img.insertBefore(item_data.img, img.childNodes[0]);
 	
 	
-<!--	document.getElementById("item_tagline").innerHTML = item_data.tagline;-->
+	document.getElementById("item_tagline").innerHTML = item_data.tagline;
 <!--	document.getElementById("item_summary").innerHTML = item_data.summary;-->
 	
 	// fill in tech data
