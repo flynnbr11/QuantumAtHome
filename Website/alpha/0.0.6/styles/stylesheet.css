@@ -6,7 +6,7 @@ body
 
 
 #navbar {
-<!--	background-image: url("../images/Q@H logo proposal 1.png");-->
+  background-image: url("../images/qah_logo.png");
 	background-repeat: no-repeat;
   background-position: left top;
 	background-color: #213E7B; /* #333A56; */
@@ -65,7 +65,7 @@ a.navbarItem:hover {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1700px;
-	height: 1050px;
+	height: 950px;
 	background-color: #f7f5e6;
 /*	background-image: url("../images/background_tile.png");*/
 }
@@ -89,7 +89,7 @@ a.navbarItem:hover {
 }
 
 #frame_right {
-	background-image: url("../images/frame_right_2.png");
+	background-image: url("../images/frame_left_2.png");
 	width: 61px;
 	height: 710px;
 	float: left;
