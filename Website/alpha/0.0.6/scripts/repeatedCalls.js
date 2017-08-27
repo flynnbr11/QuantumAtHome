@@ -1,4 +1,5 @@
 function LoadNavbar() {
+	document.getElementById("navbar").innerHTML+="<a href=\"index.html\" class=\"navbarItem\"> <img width=\"8%\" src=\"../images/qah_logo.png\"> </img> </a>";
 	document.getElementById("navbar").innerHTML+="<a href=\"house.html\" class=\"navbarItem\">Home</a>";
 	document.getElementById("navbar").innerHTML+="<a href=\"surveys.html\" class=\"navbarItem\">Surveys</a>";
 	document.getElementById("navbar").innerHTML+="<a href=\"quantum.html\" class=\"navbarItem\">Quantum Physics</a>";

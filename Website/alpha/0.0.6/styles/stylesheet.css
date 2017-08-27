@@ -4,11 +4,11 @@ body
 }
 
 #navbar {
-	background-image: url("../images/Q@H logo proposal 1.png");
+<!--	background-image: url("../images/Q@H logo proposal 1.png");-->
 	background-repeat: no-repeat;
-    background-position: left top;
+  background-position: left top;
 	background-color: #213E7B; /* #333A56; */
-    background-size: contain;
+  background-size: contain;
 	margin: 0 0 0 0;
 	top: 0;
 	left: 0;
@@ -21,11 +21,32 @@ body
 	border-color: black;
 }
 
+#range-logo {
+    background-image:url("../images/Q@H logo proposal 1.png");
+    display:block;
+    height:50px;
+    text-indent:-9999px;
+    width:100px;
+}
+
+#logo_class {
+	background-repeat: no-repeat;
+  background-position: left top;
+	background-color: #213E7B; /* #333A56; */
+  background-size: contain;
+	margin: 0 0 0 0;
+	top: 0;
+	left: 0;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+    height:50px;
+    width:100px;
+}
+
 img {
 	background-color: transparent;
 	border: none;
 }
-
 
 a.navbarItem {
 	padding: 10px 50px 10px 50px;
@@ -72,15 +93,16 @@ a.navbarItem:hover {
 }
 
 #frame_top {
-	background-image: url("../images/frame_top.png");
+	background-image: url("../images/frame_top_2.png");
+  background-repeat: no-repeat;
 	height: 50px;
 	float: left;
 	padding: 0 0 0 0;
-	width: 1200px;
+	width: 1300px;
 }
 
 #frame_top_right {
-	background-image: url("../images/frame_top_right.png");
+	background-image: url("../images/frame_top_right_2.png");
 	width: 50px;
 	float: left;
 	height: 50px;
@@ -88,7 +110,7 @@ a.navbarItem:hover {
 
 
 #frame_left {
-	background-image: url("../images/frame_left.png");
+	background-image: url("../images/frame_left_2.png");
 	width: 50px;
 	height: 676px;
 	float: left;
@@ -107,7 +129,7 @@ a.navbarItem:hover {
 }
 
 #frame_right {
-	background-image: url("../images/frame_right.png");
+	background-image: url("../images/frame_right_2.png");
 	width: 50px;
 	height: 676px;
 	float: left;
@@ -123,11 +145,12 @@ a.navbarItem:hover {
 }
 
 #frame_bottom {
-	background-image: url("../images/frame_bottom.png");
+	background-image: url("../images/frame_bottom_2.png");
+  background-repeat: no-repeat;
 	height: 50px;
 	padding: 0 0 0 0;
 	float: left;
-	width: 1200px;
+	width: 1400px;
 }
 
 #frame_bottom_right {
