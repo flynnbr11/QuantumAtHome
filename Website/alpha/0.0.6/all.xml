@@ -84,19 +84,28 @@
     </item>
     <item name="fridge">
       <heading>
+      Fridge
       </heading>
       <tagline>
+      
       </tagline>
       <summary>
       </summary>
+      
       <imgsrc>images/fridge.png</imgsrc>
       <tech>
         <name>quantum enhanced chemical/biologiacl detection</name>
-        <image_name>
-        </image_name>
         <summary>
+      Quantum dots offer more versatility over fluorescent dyes in fluorescence imaging, with longer lifetime and the ability to set their colour. Detection of microbes in food could be done at home in the future using fluorescence techniques with quantum dots.
+
         </summary>
         <description>
+        <p> 10 million tonnes of food is thrown away each year in the UK, <a href="http://www.wrap.org.uk/sites/files/wrap/Estimates_%20in_the_UK_Jan17.pdf"> 70% of which is attributed to households </a>. One problem identified is ‘best before’ dates, which can lead people to throw away perfectly good food. An easy way to test the safety of food at home would go a long way to solving this problem, by reassuring people that their food is still safe to eat. An affordable device which tests for harmful microbes (fungi, bacteria and viruses) is required, and it should provide results in the near future.
+        </p>
+        <p>
+Fluorescence techniques are a modern way to screen for almost any chemical or biological entity (eg. bacteria, proteins). Fluorescence is the effect whereby light is emitted by an object, in response to absorption of light by the object. This is the reason fluorescent objects <a href="http://friends.wikia.com/wiki/The_One_With_Ross%27s_Teeth?_Phoebe_(9x04).png=undefined&file=Teeth.jpg"> glow when illuminated with UV light </a> (which we can’t see). In fluorescence microscopy, fluorescent molecules (known as dyes) are used to label entities. These molecules can be designed to attach to, for example, specific proteins characteristic of a species of bacteria, so that by observing the fluorescent light through a microscope, the presence of that species can be determined. This approach provides results much faster than the traditional method of growing a culture over a period of days until the bacteria can be detected by eye.
+        </p>
+        
         </description>
         <more_info_url>
         </more_info_url>

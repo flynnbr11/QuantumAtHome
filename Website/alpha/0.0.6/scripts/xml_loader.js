@@ -88,7 +88,7 @@ function enableItemOverlay(id, xml) {
 	document.getElementById("itemImage").insertBefore(image, document.getElementById("itemImage").childNodes[0]);
 	document.getElementById("itemHeader").innerHTML = "<h1>" + name + "</h1>";
 	document.getElementById("itemTagline").innerHTML = "<p><i>" + tagline + "</i></p>";
-	document.getElementById("itemSummary").innerHTML = "<p>" + summary + "</p>";
+	document.getElementById("itemSummary").innerHTML = "<p>" + summary + " </p>";
 	document.getElementById("itemDescription").innerHTML = "<h2>Detailed Description</h2><p>" + description + "</p>";
 	
 	document.getElementById("itemOverlay").style.display = "flex";

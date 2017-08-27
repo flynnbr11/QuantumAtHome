@@ -363,7 +363,7 @@ function OpenOverlay(itemName)
 		
 		var container_techDescription = document.createElement("section");
 		container_techDescription.setAttribute("class", "tech_description");
-		container_techDescription.innerHTML = "Description";
+		container_techDescription.innerHTML = "<h3> <center> <u> </br> Description </u> </center> </h3>";
 		container_techDescription.innerHTML += "<p>" + tech_data.description + "</p>";
 		
 		var container_techMoreInfo = document.createElement("section");
@@ -378,7 +378,7 @@ function OpenOverlay(itemName)
 		tech_panel.insertBefore(container_techMoreInfo, tech_panel.childNodes[0]);
 		tech_panel.insertBefore(container_techDescription, tech_panel.childNodes[0]);
 		tech_panel.insertBefore(container_techSummary, tech_panel.childNodes[0]);
-		tech_panel.insertBefore(container_techImg, tech_panel.childNodes[0]);
+		<!--tech_panel.insertBefore(container_techImg, tech_panel.childNodes[0]);-->
 		
 		tech_accordion.onclick = accordionOnClick;
 	}
