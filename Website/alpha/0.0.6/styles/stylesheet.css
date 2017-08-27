@@ -3,6 +3,8 @@ body
 	font-family: Trebuchet, Arial, sans-serif;
 }
 
+
+
 #navbar {
 <!--	background-image: url("../images/Q@H logo proposal 1.png");-->
 	background-repeat: no-repeat;
@@ -30,17 +32,9 @@ body
 }
 
 #logo_class {
-	background-repeat: no-repeat;
-  background-position: left top;
-	background-color: #213E7B; /* #333A56; */
-  background-size: contain;
-	margin: 0 0 0 0;
-	top: 0;
-	left: 0;
-	padding: 10px 0px 10px 0px;
-	text-align: center;
-    height:50px;
-    width:100px;
+  position: absolute;
+      left: 100px;
+      top: 150px;    
 }
 
 img {
@@ -70,8 +64,8 @@ a.navbarItem:hover {
 	border-width: 5px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1600px;
-	height: 918px;
+	width: 1700px;
+	height: 1050px;
 	background-color: #f7f5e6;
 /*	background-image: url("../images/background_tile.png");*/
 }
@@ -82,8 +76,55 @@ a.navbarItem:hover {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 0 0 0;
-	width: 1300px;
+	width: 1388px;
 }
+
+#frame_top {
+	background-image: url("../images/frame_top_2.png");
+  background-repeat: no-repeat;
+	float: left;
+	padding: 0 0 0 0;
+	width: 1388px;
+	height: 61px;
+}
+
+#frame_right {
+	background-image: url("../images/frame_right_2.png");
+	width: 61px;
+	height: 710px;
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#frame_bottom {
+	background-image: url("../images/frame_bottom_2.png");
+  background-repeat: no-repeat;
+	height: 60px;
+	padding: 0 0 0 0;
+	float: left;
+	width: 1388px;
+}
+
+#frame_left {
+	background-image: url("../images/frame_left_2.png");
+	width: 62px;
+	height: 710px;
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#pageCanvas {
+	width: 1258px;
+	height: 710px;
+	background-color: white;
+	position: relative;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	float: left;
+}
+
 
 #frame_top_left {
 	background-image: url("../images/frame_top_left.png");
@@ -92,13 +133,12 @@ a.navbarItem:hover {
 	height: 50px;
 }
 
-#frame_top {
-	background-image: url("../images/frame_top_2.png");
-  background-repeat: no-repeat;
+
+#frame_bottom_left {
+	background-image: url("../images/frame_bottom_left.png");
+	width: 50px;
 	height: 50px;
-	float: left;
-	padding: 0 0 0 0;
-	width: 1300px;
+	float:left;
 }
 
 #frame_top_right {
@@ -108,50 +148,6 @@ a.navbarItem:hover {
 	height: 50px;
 }
 
-
-#frame_left {
-	background-image: url("../images/frame_left_2.png");
-	width: 50px;
-	height: 676px;
-	float: left;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-}
-
-#pageCanvas {
-	width: 1200px;
-	height: 676px;
-	background-color: white;
-	position: relative;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-	float: left;
-}
-
-#frame_right {
-	background-image: url("../images/frame_right_2.png");
-	width: 50px;
-	height: 676px;
-	float: left;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-}
-
-#frame_bottom_left {
-	background-image: url("../images/frame_bottom_left.png");
-	width: 50px;
-	height: 50px;
-	float:left;
-}
-
-#frame_bottom {
-	background-image: url("../images/frame_bottom_2.png");
-  background-repeat: no-repeat;
-	height: 50px;
-	padding: 0 0 0 0;
-	float: left;
-	width: 1400px;
-}
 
 #frame_bottom_right {
 	background-image: url("../images/frame_bottom_right.png");

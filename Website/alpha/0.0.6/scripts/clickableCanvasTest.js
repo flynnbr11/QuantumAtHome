@@ -5,8 +5,8 @@ var STATEVAR_CLICKABLE_INACTIVE = 0;
 var STATEVAR_CLICKABLE_ACTIVE = 1;
 
 function Initialise(bgSrc, roomName) {
-	var width = 1200;
-	var height = 675;
+	var width = 1258;
+	var height = 710;
 
 	MainCanvas.Initialise(width, height, bgSrc, roomName);
 }

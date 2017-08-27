@@ -28,9 +28,9 @@
 <link rel = "stylesheet" type = "text/css" href = "styles/house_items.css" />
 </head>
 <script> 
-		var room_height = 175;
+		var room_height = 190;
 		var room_width = 350;
-		var left_room = 250;
+		var left_room = 278;
 		var right_room = left_room + room_width;
 		var upstairs = 170;
 		var downstairs = upstairs + room_height;
@@ -62,7 +62,7 @@
 
 	function PageInit() <!-- Fill in page details here -->
 	{
-		Initialise("images/house_background_3.png", "outside");
+		Initialise("images/house_background.png", "outside");
 		
 		// add new rooms/furniture here
 		AddItemToCanvas( left_room, upstairs, room_width, room_height, "images/bedroom.jpg", "bedroom.html", false);
@@ -93,18 +93,13 @@
 	<div id="navbar"></div>
 	
 	<div id="whole_frame">
-<!--		<div id="frame_top_left"></div>-->
 		<div id="frame_top"></div>
-<!--		<div id="frame_top_right"></div> -->
 		<div id="frame_left"></div>
 		<div id="pageCanvas"></div>
 		<div id="frame_right"></div>
-<!--		<div id="frame_bottom_left"></div> -->
 		<div id="frame_bottom"></div>
-<!--		<div id="frame_bottom_right"></div> -->
 	</div>
 	
-	<div class="footer"></div>
 </div>
 
 </body>
