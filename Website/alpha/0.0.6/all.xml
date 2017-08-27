@@ -13,37 +13,55 @@
         <image_name>
         </image_name>
         <summary>
+        Engineering batteries that last longer and charge faster than the existing ones is always going to be a goal to pursue. Full control on the specific quantum state of the components of a battery could represent the boost on efficiency required to set a new generation of batteries improving almost in every aspect of our lives.
+
         </summary>
         <description>
+        <p>
+        Batteries are an essential resource in our lives. They are everywhere: smartphones, laptops, cars, smoke detectors, satellites and even sometimes inside people. Since 1800, year when Alessandro Volta published the invention of the first battery (called Voltaic pile), batteries have determined the evolution pace of some technological areas.
+</p><p>
+Batteries come in many shapes and sizes. Also, the materials used to fabricate the anodes, cathodes and the medium that provides the ion transport inside them have been changing through the years, constantly improving their performance. The voltaic pile, built more than 200 years ago, consisted of a pile of pairs of Copper and Zinc discs, separated by a piece of cloth moistened with brine. Nowadays the battery market is based in alkaline, lead-acid, and Lithium-Ion batteries and rapidly changing into an exclusively rechargeable battery market.
+</p><p>
+Despite the fact that the battery industry has moved between materials and technology schemes over time, they all share the same fundamental principle: Batteries are physical systems that store chemical potential energy and let us, on demand, directly extract electrical energy. How can our understanding and control of quantum systems help us to improve batteries?
+</p><p>
+Understanding how much of this chemical potential energy we can extract from the batteries is matter of study for chemists and material scientists. However, thermodynamics sets an upper bound on how much energy we can extract from those systems. Recently, quantum physicists have been trying to use their knowledge to hit that physical upper bound. 
+</p><p>
+A quantum battery can be seen as a small system that is used to temporarily store energy, to transfer it from a production to a consumption center. In recent years we have understood that quantum entanglement between many of these tiny systems would contribute to a better energy extraction or even a faster charging time. Setting this entanglement on will is something we cannot achieve with the actual technology, however efforts of building fully controllable quantum systems is a heavily pursued task within scientific community and maybe in a few years we would be able to set, in a complete controllable way, the optimum quantum state of the battery components to make them as efficient as nature allows us.
+</p>
         </description>
         <more_info_url>
         </more_info_url>
       </tech>
     </item>
-    <item name="recycling bin">
-      <heading>
+    <item name="first aid kit">
+      <heading>First aid kit
       </heading>
       <tagline>
       </tagline>
       <summary>
       </summary>
-      <imgsrc>images/recycling_bin.png</imgsrc>
+      <imgsrc>images/first_aid_kit.png</imgsrc>
       <tech>
-        <name>quantum enhanced material detection</name>
+        <name>drug simulation</name>
         <image_name>
         </image_name>
-        <summary>
+        <summary>Quantum simulations that predict the behaviour of chemical systems could result in ground-breaking results for medical research, both reducing the cost of medicine and leading the development of many new medicines. 
         </summary>
         <description>
+       <p> Computer simulations use mathematical models to reproduce the behaviour of dynamical systems, and they come into numerous aspects of our everyday lives. For instance, simulations are used in pharmaceutical research for drug design, and this has enabled the availability of a much wider range of medicines. However, simulations we use today are limited because computers fundamentally rely on manipulating ‘1s’ and ‘0s’, called ‘bits’, and it turns out nature can’t be completely described by such a simplistic machine. It is therefore necessary to incorporate approximations and simplifications which only capture essential features of the actual physical systems. This is generally so that the simulation can be completed in a reasonable amount of time, and real experimental data is often still required to check the consistency of the predictions with real life. In drug simulations, this often causes problems because in order to get the most realistic results, programs which simulate the underlying physical phenomena are needed. However, predicting the behaviour of large systems at a quantum level is known to be impossible for classical computers since the time or machinery required quickly becomes overwhelming.
+</p> <p>
+A known solution to this problem is to make the computer itself behave quantum mechanically, which means instead of manipulating bits, this quantum computer must manipulate physical quantum states as the fundamental blocks of information. In quantum mechanics, the Hamiltonian of a system can be thought of a large array of numbers that completely describes the energy of the quantum system. There exist mappings between most physical systems and finite sized Hamiltonians, and all finite sized Hamiltonians can be easily simulated on a quantum computer. Although chemical and biological processes involve the interactions of very complex quantum systems, work on quantum algorithms suggests that if we could make a large-scale quantum computer, the quantum simulations could be very effective in medical and drug research, potentially both reducing the cost of medicine and leading to a much wider range of useful medicine on the market. 
+</p>
+
         </description>
         <more_info_url>
         </more_info_url>
       </tech>
     </item>
     <item name="tablet">
-      <heading>
+      <heading> Tablet
       </heading>
-      <tagline>
+      <tagline> Machine learning to improve services and tools, precision to improve weather forecasting and  randomness to keep you more secure. 
       </tagline>
       <summary>
       </summary>
@@ -53,8 +71,27 @@
         <image_name>
         </image_name>
         <summary>
+        Secure life needs secure passwords, secure passwords rely on cryptography and cryptography relies on random numbers.
         </summary>
         <description>
+       <p> In the cases of both classical and quantum cryptography the existence of a “good” Random Number Generator is vital. The applications of cryptography to our everyday life are numerous: online payments, ATM’s, e-banking, wireless keys, e-mail access, mobile communications, etc. In simple words cryptography is the science of keeping a message secret. The security of a message relies on the production of perfectly random, uncorrelated digits used to encode data. Such a random sequence must be unpredictable for anyone wanting to break the code. Cryptography systems need both parties to produce random numbers for their keys and measurement devices. Quantum systems give us true natural randomness, not fake randomness generated by a computer. </p> <p>
+But if the physical system used to produce random numbers, no matter how complicated the procedure, is fundamentally not random in nature, for example generated by a computer or other classical methods, then an eavesdropper can know a enough about the system to predict the sequence. In contrast, if there are physical procedures that are intrinsically random then unconditional secure coding schemes schemes are doable. A simple quantum random number generator apparatus consists of a quantum system in a superposition. When we measure that system, it collapses into only one state at random, truly. Determining which state it will collapse into is a fundamentally unpredictable event, so nobody could break your encryption.</p> <p>
+The worst imaginable scenario in cryptography is when a malicious manufacturer has stored a random sequence that passes all the known randomness tests into a hard drive and has equipped a “random number” generator with this hard drive. In that case the adversary knows in advance the sequence and the honest user feels secure because their device passes the statistical tests. </p> <p>
+Device independent quantum random number generators can solve this problem. These are plug-in tools, where we know nothing about their internal workings - the quantum mechanics. The maths says that the input-output statistics of these boxes violate certain kind of inequalities, so we can certify that the inner working of these black-boxes is fundamentally random. </p> <p>
+The device independent method promises randomness ideal for cryptographic purposes because it is: </p>
+<ul>
+<li>Certifiable, in the sense that the randomness of the generated numbers is verified through reliable tests.
+</li>
+<li>Private, because the random numbers will appear random not only to the honest user but also to any other potentially adversarial user.
+</li>
+<li>Device independent, as the production of random numbers does not rely on any modeling of the internal working principles of the experimental devices and thus it is robust to imperfect or malicious devices. 
+</li>
+</ul>
+
+<p>
+This means your e-banking will be safer, your texts more secure online and hacking attacks like the one against the NHS will be impossible. You can use random number generators to come up with truly secure passwords to protect your online presence, and all other vulnerable services you might access on your tablet can be more secure.
+</p>
+
         </description>
         <more_info_url>
         </more_info_url>
@@ -64,8 +101,27 @@
         <image_name>
         </image_name>
         <summary>
+        <p> Machine learning is often used for pattern matching, which is used, for example, to determine whether messages are spam or not.  Quantum machine learning algorithms have the potential to be significantly faster than classical machine learning algorithms, as well as handle much bigger data sets.  This could increase the accuracy of determining what is spam and so could be used in spam filtering in the future.
+</p>
         </summary>
         <description>
+       <p> Unwanted messages (spam) in emails have become increasingly problematic. Not only is it annoying filtering through emails that are unnecessary, but more importantly reading emails from scam artists can have severe consequences. Spam filters aim to remove these unwanted emails from your inbox. To do this, the computer must classify an email as spam or not spam, which is determined using a number of features. One way is to use pattern matching to pick out words or phrases commonly found in spam, like ‘free’ or ‘congratulations’. Each word can be assigned a spam weight, with ‘free’ and ‘congratulations’ to have more weighting. Spammers can get around this by diluting spam words with many non-spam words. This is called ‘poisoning’. Another way to slip past the filter is to put words in images instead of text, which would not be picked up by the text pattern matcher. Also adding special characters eg. ‘f-r-e-e’ or misspellings eg. ‘congratulatoins’ avoid the words being detected. Therefore, filtering techniques must keep on improving to keep up with spammers. </p> <p>
+Using the idea that different spam rules would suit different people, spam filters are commonly customised and updated using machine learning algorithms [https://en.wikipedia.org/wiki/Machine_learning]. These learn from your own emails and particularly which emails you put in ‘junk’ to determine words that are more likely to be spam to you. For example, if you exchange emails with one bank, the filter learns that those emails can probably be trusted, and then if you change your bank, the filter relearns and updates to trust that bank instead. 
+A recent area of research is quantum machine learning which uses quantum physics principles to implement machine learning significantly more efficiently. Certain algorithms performed using quantum computers have been proven to be considerably faster than classical algorithms. This concept is explained briefly in the video below. </p> <p>
+In particular, speedup due to quantum computing would mean that the filters can process much more data and so more words and images can be checked and compared, which could increase the accuracy of the spam filter. There is currently no research looking at how quantum machine learning may improve spam filtering in particular and so it is difficult to know now whether it could provide enough of an improvement to warrant implementing it, however it is a possible route to take in the search of improved filtering.</p>
+
+
+
+  	<div class="video_container">
+			<iframe style = "	display: block;
+	margin: auto;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 560px;
+	height: 315px;
+" src="https://www.youtube.com/embed/8anVNc0r_8o" frameborder="0" ></iframe>
+		</div>
         </description>
         <more_info_url>
         </more_info_url>
@@ -75,8 +131,15 @@
         <image_name>
         </image_name>
         <summary>
+        A phenomena called atomic interferometry can be used to measure gravity: A cloud of atoms which is in a superposition can be interfered with itself, exploiting the wave property of matter. Devices which use this effect are at the late stages of development and are looking to cost less, be more sensitive and less bulky than current technologies, for example, a commercially available Micro-g Lacoste has a mass of around 150kg and a price tag of $100, 000!
+
         </summary>
         <description>
+        <p>Climate models are very complex. The climate is an inherently chaotic system: ever heard of a butterfly flapping its wings causing a hurricane halfway around the world? This is a stretch, but it helps us understand how difficult it is to predict the weather! </p> <p>
+A globally distributed network of sensitive, mobile and precise gravimeters will feed in a lot of information into climate science, including to better define the shape of the Earth and track the movement of water and precipitation around the world. The NASA GRACE experiment, satellite measurements of the effect of water build-up on gravity measurements, has already demonstrated the application of this. Quantum devices promise to be especially precise, mobile and potentially cheaper to produce and have even been demonstrated to work on-chip. These devices are based on atomic interferometry: clouds of particles are interfered with each other (using the principle of superposition and the wave nature of matter) to measure the absolute gravity. </p> <p>
+With more data, the models we use to predict the weather and climate change will be better equipped to deal with climate change and humanity’s impact on the world. Further, gravity sensors can be used to track magma flows and tectonic plate movements, which may give us better predictive tools for natural disasters. 
+An example of a classical gravimeter is a freefalling corner cube, which essentially uses the interference of light to measure how fast a mirror falls. Other examples of gravimeters include spring systems and superconducting gravimeters (which do use the quantum effect of superconductivity). </p>
+
         </description>
         <more_info_url>
         </more_info_url>
@@ -87,7 +150,7 @@
       Fridge
       </heading>
       <tagline>
-      
+      Quick and cheap testing of food for harmful bacteria to save you from eating gone off food, or throwing away good food.
       </tagline>
       <summary>
       </summary>
@@ -103,30 +166,36 @@
         <p> 10 million tonnes of food is thrown away each year in the UK, <a href="http://www.wrap.org.uk/sites/files/wrap/Estimates_%20in_the_UK_Jan17.pdf"> 70% of which is attributed to households </a>. One problem identified is ‘best before’ dates, which can lead people to throw away perfectly good food. An easy way to test the safety of food at home would go a long way to solving this problem, by reassuring people that their food is still safe to eat. An affordable device which tests for harmful microbes (fungi, bacteria and viruses) is required, and it should provide results in the near future.
         </p>
         <p>
-Fluorescence techniques are a modern way to screen for almost any chemical or biological entity (eg. bacteria, proteins). Fluorescence is the effect whereby light is emitted by an object, in response to absorption of light by the object. This is the reason fluorescent objects <a href="http://friends.wikia.com/wiki/The_One_With_Ross%27s_Teeth?_Phoebe_(9x04).png=undefined&file=Teeth.jpg"> glow when illuminated with UV light </a> (which we can’t see). In fluorescence microscopy, fluorescent molecules (known as dyes) are used to label entities. These molecules can be designed to attach to, for example, specific proteins characteristic of a species of bacteria, so that by observing the fluorescent light through a microscope, the presence of that species can be determined. This approach provides results much faster than the traditional method of growing a culture over a period of days until the bacteria can be detected by eye.
+Fluorescence techniques are a modern way to screen for almost any chemical or biological entity (eg. bacteria, proteins). Fluorescence is the effect whereby light is emitted by an object, in response to absorption of light by the object. This is the reason fluorescent objects glow when illuminated with UV light (which we can’t see). In fluorescence microscopy, fluorescent molecules (known as dyes) are used to label entities. These molecules can be designed to attach to, for example, specific proteins characteristic of a species of bacteria, so that by observing the fluorescent light through a microscope, the presence of that species can be determined. This approach provides results much faster than the traditional method of growing a culture over a period of days until the bacteria can be detected by eye.
         </p>
+        <center>
+        <img width="50%" style="position:center;" src="images/fridge_qdot.jpg">
+        <div style="font-size: small; text-align:center;"> Model of a lead sulfide quantum dot coated with oleic acid molecules. The grey and yellow atoms are lead and sulfur respectively. Image taken from [Zherebetskyy
+Et al. Science 344,1380 (2014)]
+</div>
+        </img>
+        </center>
+        <p>
+        Quantum dots are clusters of several thousand atoms, with a diameter on the nano-scale, i.e. if 1 million of them were placed next to each other in a straight line, the line would be 1cm long. At this size, quantum effects mean that they have properties similar to single atoms, in that electrons have discrete energy states, and the absorption and emission of light corresponds to transitions between these states (watch this 5-min video below for an introduction to atomic energy states). Changing the size alters these states in quantum dots, and as a result they can be made to fluoresce at any desired colour. To target specific entities, they are functionalized, i.e. coated with different chemicals which determine what the dot will attach to. While fluorescent dyes only last a few minutes before losing their fluorescence, quantum dots work for hours or more and glow brighter.
+        </p>
+		
+<p>		Experiments have shown that the fluorescence light can be reduced when quantum dots bond to something, allowing automatic detection systems using a light sensor. One experiment used this effect to detect and identify explosives. Three different colours of quantum dot were added to the sample, each functionalized to target a different explosive molecule, and the intensity of light emitted in the three colours was monitored. The presence of one type of explosive resulted in reduced intensity in one of the colours. By functionalizing to target harmful microbes, this system could be adapted for testing food.
+</p>
+<p>
+A compact device for screening for harmful microbes in food could be designed based on these ideas. Such a device would be useful not just for testing at home, but also by supermarkets and restaurants, certainly leading to a reduction in food poisoning, in addition to enabling you to know with certainty whether the food in your fridge is safe to eat.
+</p>
         
-        </description>
-        <more_info_url>
-        </more_info_url>
-      </tech>
-    </item>
-    <item name="first aid kit">
-      <heading>
-      </heading>
-      <tagline>
-      </tagline>
-      <summary>
-      </summary>
-      <imgsrc>
-      </imgsrc>
-      <tech>
-        <name>medicine and simluation</name>
-        <image_name>
-        </image_name>
-        <summary>
-        </summary>
-        <description>
+
+  	<div class="video_container">
+			<iframe style = "	display: block;
+	margin: auto;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 560px;
+	height: 315px;
+" src="https://www.youtube.com/embed/lJh2Ra1eygA" frameborder="0" ></iframe>
+		</div>
         </description>
         <more_info_url>
         </more_info_url>
@@ -134,19 +203,63 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
     </item>
   </room>
   <room name="living_room">
-    <item name="camera">
-      <heading>
+      <item name="camera">
+      <heading>Camera
       </heading>
       <tagline>
       </tagline>
       <summary>
       </summary>
+      
       <imgsrc>images/camera.png</imgsrc>
+      <tech>
+        <name>quantum camera</name>
+        <summary>
+      The use of very sensitive detectors combined with light that exhibits non-conventional quantum properties can help us to create cameras with an extraordinary resolution not only for personal use, but also for medical and industrial applications.
+
+        </summary>
+        <description>
+      <p>  Humankind has a long history of creating and detecting light. On one hand, the advent of the laser represented a huge breakthrough regarding light sources because it emits a distinct type of light, called coherent light, now used in communications, medical areas, security. This allows for much more powerful, concentrated and collimated light sources. And on the other hand, the creation of camera photography in 1826 was the first time when humanity stored light information in a fast and accurate way. Since then, constant improvements in camera quality have been made and now companies deliver professional cameras with better resolution and characteristics, e.g. anti-blur modes, various focal planes.
+ </p> <p>
+Light sources and cameras can benefit from a variety of different quantum technologies, especially if they can be combined. The use of special kinds of light beyond the laser, which we now call quantum states of light because they do not have classical counterparts, can greatly improve the resolution of images. Some of these quantum states of light are generated by entangling photons together, which means that one photon depends on the others and cannot be described independently. Another quantum light source can be made by decreasing the uncertainty on some property of the light, and we call this squeezed light. By using these special types of light, it will be possible to make a camera with enhanced image quality compared to any camera available today. But while today’s cameras just capture external light, quantum cameras will need to produce these special quantum states of light inside them, shine the light onto objects and collect it. This might seem like an unrealistic design for a camera, but these quantum states of light are already being used in medicine and biology, interferometric measurements for gravitational wave detection and atomic clocks.  
+</p>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
     </item>
-    <item name="games console">
-      <heading>
+      <item name="money">
+      <heading> Money
       </heading>
       <tagline>
+      </tagline>
+      <summary>
+      </summary>
+      
+      <imgsrc>images/money.png</imgsrc>
+      <tech>
+        <name>quantum money</name>
+        <summary>
+What if I tell you that, in the future, you would never be worried about false notes or pickpockets again? Quantum physics allows us to create either physical money protected by the principles of nature against counterfeit or online digital money that is impossible to be hacked.
+
+        </summary>
+        <description>
+<p>        Money is essential in people's lives. It does not only play an important role nowadays, but it was fundamental throughout history. On one hand we have currencies like the dollar, the euro or the pound, which are fiat money, that is, they are centralised and controlled by governments and central banks. On the other hand, the rise of cryptocurrencies lead by the Bitcoin since 2009 is changing the paradigm of trading and the money itself. Unlike the mainstream currencies, cryptocurrencies are digital, decentralised money. Both these approaches to money have problems. Paper money (unlike gold, silver or the cryptocurrencies) can be frauded by people. Government and central banks have been trying to avoid forgery for centuries. The cryptocurrencies (and digital banking in general) are based on classical cryptography, which is known to be vulnerable, e.g. by hacking. The advent of powerful quantum computers in the future may threaten their system.
+</p> <p>
+Special money bills can be produced by using quantum mechanics to avoid forgery. The idea is based on the No-Cloning Theorem, which states that it is impossible to create an identical copy of an arbitrary unknown quantum state. By encoding information about the value of the bill in a quantum state, it is not possible to duplicate the bill. One of the first quantum systems proposed to serve as information encoding in bills were photons. In  each  bill,  there  would  a  sequence  of  quantum  states of photons  in different directions. By  the quantum  no-cloning  theorem,  anyone  who  does  not  know  these directions of  these  states in advance  cannot  copy  them.
+</p> <p>
+Regarding cryptocurrencies like Bitcoin, they heavily rely on classical cryptography and hashing functions, which are functions that are easy to verify that some input data maps to a given hash value, but if the input data is unknown, it is deliberately difficult to reconstruct it. Quantum technologies like quantum key distribution (QKD) and quantum hash functions can improve the security features from cryptocurrencies. Using these, it becomes physically impossible to hack private keys from Bitcoin users, and not just only computationally hard, which is the case nowadays.
+</p>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+    </item>
+    <item name="games console">
+      <heading>games console
+      </heading>
+      <tagline>
+      
       </tagline>
       <summary>
       </summary>
@@ -156,8 +269,16 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
         <image_name>
         </image_name>
         <summary>
+        The videogame industry could not be left out from the improvement quantum computers will provide. Massive speedup on image processing is one of the things quantum based processors could achieve leading to videogames with outstanding graphics and maybe even gameplay features we never imagined.
         </summary>
         <description>
+        <p>
+        Video games are one of the main sources of entertainment nowadays. From the its origin with the famous game “Pong”, video games spread into people’s houses in the form of consoles and are now present even in their smartphones. It is then natural to ask oneself if quantum technologies will have an impact on the video game industry and help it developing and improving games. Among the many directions quantum technologies are heading, and the many ideas being developed, the prospect of focusing on the hardware seems the most promising. Quantum technologies might offer better hardware parts for the consoles, and also specific algorithms, specially for randomness inside a game.
+</p>
+
+<p>
+The GPU is a specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device. Their highly parallel structure makes them more efficient than general-purpose CPUs for algorithms where the processing of large blocks of data is done in parallel. Since a classical video game console nowadays heavily depends on a GPU, which in turn relies on parallel processing, and the quantum mechanics behind the quantum computer idea can be worked out to intrinsically do parallel processing, the substitution of the classical GPU on a video game console for a quantum one seems ideal. A quantum GPU would then be a quantum system solely focused on image processing. Even though a very recent field, Quantum Image Processing has already interesting quantum algorithms for particular problems, like rendering problem and  computational geometry, and also proposals for quantum image representation. These ideas, of course, always ends at the task of building a quantum computer, or at least something similar, which by itself is an amazing challenge. Nonetheless, quantum technologies can find applications in the video game industry in external, and highly parallelized, tasks such as image processing, and in algorithms which use randomness.
+</p>
         </description>
         <more_info_url>
         </more_info_url>
@@ -167,8 +288,17 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
         <image_name>
         </image_name>
         <summary>
+        Fair gaming and gambling is part of our investments and entertainment. Honest lotteries need a trustworthy source of random numbers. Quantum technologies could provide true randomness, and make gaming fairer, from online adventure games, to gambling in casinos.
         </summary>
         <description>
+<p>
+Lotteries are a serious business where random numbers are essential. Due to the large amount of money involved there have been set strict requirements for random number generators (RNG) used in online gambling and lottery machines. These rules try to ensure honest games by the providers, and prevent the possibility that the players could manipulate the system. 
+</p> <p>
+Within the framework of classical physics there is no real randomness. The probabilities that appear in classical physics reflect only our lack of knowledge about aspects of a physical system. Quantum theory introduced a new kind of randomness. In quantum theory, even in the case where we know exactly the preparation of the state of a physical system, the best predictions we can make about it are still probabilistic! This is the kind of randomness that provoked Einstein into saying that “God does not play dice”. 
+</p> <p>
+There are three types of random number generators (RNG), the pseudo-RNG, the “true” RNG and the quantum RNG. A pseudo-RNG generates numbers algorithmically  directly from a computer. However, because digital computers operate deterministically they cannot produce really random numbers. John Von Neumann had stated that “Anyone who considers arithmetical methods of producing random digits is, of course, in the state of sin”. Indeed, pseudo-random number sequences suffer from long-range correlations. The “true” RNG use some physical process that is hard to predict. Such a complex process can be for example the noise in a thermal, atmospheric, or electrical circuit system.  Finally, the quantum RNGs utilize genuine quantum features to generate random bits. 
+</p> <p>
+If the physical system used to produce random numbers, despite its complexity, is fundamentally deterministic then an eavesdropper can know a more detailed description of that system and thus can, in principle, predict the sequence.  Imagine that a roulette wheel seems fair, so you bet your money for a specific “random” outcome. At the same time your opponent knows the complete details of the mechanism-motion of the roulette wheel, does calculations in advance, and so knows the outcome in advance. This game was fundamentally unfair because the presumption of randomness was wrong. Another undesirable situation is when a gamer can predict the “random numbers” after some time of playing because the number series is repeated. At the same time, online casinos and internet gambling require faster rates of random number generation than the traditional daily or weekly lotteries. For all these reasons quantum random number generators are more appropriate than classical ones for gaming. Likewise, your personal console relies on random numbers anywhere a number of things can happen, like whether your play scores a goal or kicks the ball wide. All aspects of gaming stand to benefit from true randomness. </p>
         </description>
         <more_info_url>
         </more_info_url>
@@ -187,48 +317,61 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
         <image_name>
         </image_name>
         <summary>
+        Quantum routers may be used to transmit and receive quantum states encoding information, with potential applications in areas such as quantum cryptography, increased speed of data transfer, and communication with quantum computers for specialized tasks. 
+
+
         </summary>
         <description>
-        </description>
-        <more_info_url>
-        </more_info_url>
-      </tech>
-    </item>
-    <item name="storage disc">
-      <heading>
-      </heading>
-      <tagline>
-      </tagline>
-      <summary>
-      </summary>
-      <imgsrc>images/storage_disc.png</imgsrc>
-      <tech>
-        <name>optical storage</name>
-        <image_name>
-        </image_name>
-        <summary>
-        </summary>
-        <description>
+        <p>There is a continual effort to increase the rate (bandwidth, often currently measured in Megabits per second) and speed (ping, often currently measured in milliseconds) of data transfer and it is possible that, in the future, current forms of encryption will not be secure. The ability to transmit a quantum signal increases the security of data as quantum cryptography may be used to encrypt the information. Also, this may offer both a potentially secure method of communicating with a remote quantum computer and increased data speeds, doubling the amount of data sent per second. </p> <p> Considerably increased sensitivity in measuring these quantum states would also require a smaller signal to be transmitted, potentially further improving bandwidth. As this would require light to be used at all stages of communication, this would achieve a slight improvement in the speed of data transfer as light is faster than an electrical signal. This technology already exists, although needs improvement before it can be made commercially available. It is extremely expensive to make currently, requiring large numbers of transmitters and receivers at a cost of about £100k each. </p>
+
         </description>
         <more_info_url>
         </more_info_url>
       </tech>
     </item>
     <item name="tv">
-      <heading>
+      <heading> Television
       </heading>
       <tagline>
+      
       </tagline>
       <summary>
       </summary>
-      <imgsrc>images/tv_image_2.png</imgsrc>
+      <imgsrc>images/tv_image.png</imgsrc>
       <tech>
         <name>reccommendation engines</name>
         <image_name>
         </image_name>
         <summary>
+        Quantum computers will give us access to information processing power as we have never seen before. With computers that can compare objects in an amazing fast way, personalized recommendations for movies to watch on Netflix or news websites to follow would be more accurate letting us discover new content everyday.
+
         </summary>
         <description>
+        <p>
+        With over 1 billion websites on the World Wide Web we need something other than search engines to find a new band to hear, a good rated movie to watch or news articles about an specific topic. Recommender systems (like the ones used by Netflix, Amazon, Tweeter, etc.) provide personalized information by analyzing the user's interests from traces of interaction with that user and recommend us new options. These systems have changed the way websites communicate with their users becoming a standard element on a modern web presence.
+</p>
+<p>
+Designing more accurate and more efficient recommender systems is of great interest for companies. For instance, in 2006, the streaming media and video on-demand company Netflix, Inc. (actually at that time it was a DVD rental company) organized a competition where they offered a prize of one million dollars for the first algorithm that could show a 10% improvement in accuracy compared with their own system. 
+</p>
+<p>
+Many versions of recommender systems have been tested for many years. From collaborative filtering to content-based filtering and complex hybrid algorithms. However, all of them deal with the fundamental problem of finding two similar items or users in a big search space. This means that we need to find a quick and efficient way to compare two objects amongst a huge number of them, specially if they don’t have any order or structure.
+</p>
+<p>
+In 1997, Lov K. Grover showed that by the use of quantum mechanics, it is possible to find a single object amongst N of them with just around N of steps instead the N steps a standard algorithm would have used meaning a massive improvement on the time this algorithms take to compare objects. Recently, researchers in IIIT Hyderabad, India proposed a way to use Grover’s search algorithm in recommender systems.
+</p> <p>
+This is one of the clear examples of how quantum computers are going to affect our lives even when the physical quantum processor might not be in our houses. For example, a quantum processor will probably be connected to the server of the website, run this quantum algorithm, and then, classical computers are going to post-process the outcomes and finally give us accurate recommendations. 
+</p>
+  	<div >
+			<iframe style = "	display: block;
+	margin: auto;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 560px;
+	height: 315px;
+" src="https://www.youtube.com/embed/ImpV70uLxyw" frameborder="0" ></iframe>
+  </div>
+
         </description>
         <more_info_url>
         </more_info_url>
@@ -241,6 +384,7 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
       <tagline>
       </tagline>
       <summary>
+
       </summary>
       <imgsrc>images/computer.png</imgsrc>
       <tech>
@@ -248,19 +392,40 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
         <image_name>
         </image_name>
         <summary>
+        <p>
+              Quantum computers are devices that aim to exploit the behaviours of superposition and entanglement to perform calculations that take the lifetime of the universe on a classical computer - even a supercomputer. A quantum processing unit would be an addition to a PC that can do these calculations for the PC, allowing it to solve problems it couldn’t otherwise. Applications might include video games that simulate quantum mechanics, or communicating in a way that no one else can read. 
+        </p>
         </summary>
         <description>
-        </description>
-        <more_info_url>
-        </more_info_url>
-      </tech>
-      <tech>
-        <name>simulation</name>
-        <image_name>
-        </image_name>
-        <summary>
-        </summary>
-        <description>
+<p>
+More than perhaps any other recent invention, the central processing unit (CPU) and graphical processing unit (GPU) have changed the way the world works. Almost every aspect of our lives depends in some way on computers, the workhorses of which are the CPU and GPU. A central idea behind these 2 circuits is that they work together to do certain tasks. A CPU is the central “brain” of any computer: it is capable of doing any of the tasks a computer can do, it can quickly switch between tasks and it has a reasonably sized local memory. A CPU is optimised to perform a relatively small number of complex tasks on a small amount of data at a time. The GPU on the other hand is only capable of performing much simpler tasks (such as basic mathematical operations), but it can do them on a much larger amount of data at once. This makes a GPU much faster than a CPU when performing certain tasks, but incapable of doing others at all. By working together a CPU and a GPU allow a computer to perform the huge variety of work we assign to them today - from browsing the web to modelling the weather.
+</p>
+<p>
+Quantum Computing is a very hot topic in the news right now. It promises to open up whole new realms of computing. The key difference between a classical and a quantum computer is that the former uses ‘bits’ in its operation, and the latter uses ‘qubits’. These qubits are quantum systems with 2 distinct states. Exactly what the states are depends on the system, some examples are atomic energy levels, polarisation of photons and the direction of current flow in a superconductor. As they are quantum particles, they can be in a superposition of these 2 states - combining this with entanglement forms the basis of what makes a quantum computer tick.
+</p>
+<p>
+Surely it seems to be the natural extension to the pairing of a CPU and a GPU to add a quantum processing unit? It’s easy to imagine this QPU sitting next to the other units and doing those tasks that they can’t. However, this idea (like so many others) is a lot easier thought about than done. There are several reasons why it might never be the case that the average home has its own QPU. Chief among these is that it’s quite likely that there is no need for one. A quantum computer does not offer an advantage over a normal computer for a huge majority of tasks. They can’t access email or write a document any better than a standard laptop - and they may in fact be worse! They are much better at much more specialised tasks, often very mathematical in nature. It’s quite unlikely that something like integer factorisation is something you need to do everyday, and (at the moment at least) this is what a quantum computer is good at. 
+</p>
+<p>
+But what if we discovered a problem that was useful to solve in the home? With the state of current technology, it still seems unlikely that the QPU would make an appearance. This is because all of the platforms require temperatures of about -273°C (colder than outer space) to work properly. Currently, large machines called dilution refrigerators are used to do this, they are quite large and require liquid helium to work. Obviously this makes them impractical to fit into the home. There are methods of quantum computing that don’t require such cooling, but they are early in development and will not catch up for several years.
+</p>
+<p>
+Quantum computers promise a lot, and the QPU is a very attractive idea - who doesn’t want a faster, better computer? However, right now it doesn’t look like you’ll need one, and even if you did, as it stands you would need a very powerful fridge to make it work. 
+</p>
+<p>
+In 1943, Thomas Watson (then CEO of IBM) is alleged to have said “I think there is a world market for maybe five computers”. Whether he said this is up for debate, but the idea behind it is clear: when a technology is being developed no one is sure exactly how useful it may be. In this case, whoever said this got it very wrong, and so we must be open to QPUs becoming a staple in everyone’s computers - at this point however, it looks unlikely.
+</p>
+  	<div >
+			<iframe style = "	display: block;
+	margin: auto;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 560px;
+	height: 315px;
+" src="https://www.youtube.com/embed/JODJYwYz088" frameborder="0" ></iframe>
+  </div>
+
         </description>
         <more_info_url>
         </more_info_url>
@@ -277,8 +442,17 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
         <name>neural transmitter</name>
         <image_name>
         </image_name>
-        <summary>Quantum communication between your brain and your devices.</summary>
+        <summary>Quantum-enhanced magnetic sensing technologies allow significant improvements in the precision, portability and cost-effectiveness of measuring biomagnetic signals from the brain. This could revolutionise brain-computer interfaces, changing the way we can interact with machines.
+</summary>
         <description>
+<p>        
+Mind controlled technologies may seem like a thing of the distant future, but electromagnetic sensing of brain signals is already being used to develop a Brain-computer Interface (BCI) to enable the control of devices such as prosthetic limbs and motorised wheelchairs. These systems detect electroencephalographic (EEG) signals with a number of electrodes placed on the person’s head. However, they often suffer from poor resolution and excess noise, making it difficult to accurately translate the brain signal into a useful action. 
+</p> <p>
+Quantum-enhanced sensing could provide the means to provide a commercially viable BCI, due to the latest developments in devices for the quantum magnetic sensing of brain signals.
+The technique used to achieve enhanced sensitivity in magnetic field sensing involves monitoring the light observed from a laser beam that has been passed through a vapour of atomic spins. The magnetic field alters the direction of the spins in the vapour, and this results in a measurable change in the light transmitted through the vapour. If there are many spins, this method can be used to determine the magnetic field to an extraordinary level of precision. In fact, the sensitivity of this measurement can be improved further still by using the laser to project the spins into a quantum squeezed state. This means that the uncertainty in the measurement is compressed beyond the standard quantum limit, which is a limit that is not possible to surpass without using quantum effects. An alternative quantum-enhanced approach to magnetic sensing relies on using electron spins in diamond. With many spins in a sample, a laser can be used to produce light emission from the sample that depends on the electron spins. As before, the alignment of these spins depends on the surrounding magnetic field, and hence by measuring the light scattered from the sample, the magnetic field strength can be measured to an extremely high precision.
+</p> <p>
+These techniques can increase the sensitivity of magnetic field measurements dramatically, and have already been used to sense magnetic fields from the brain. Although current neural magnetic sensing systems have a high precision, they are far from portable as they rely on heavy cooling systems, requiring temperatures of approximately -200ºC to function. This costs hospitals about £200,000 per year to run. On the other hand, the devices discussed here require no such cooling, and as such can be made very inexpensive and compact. This portability combined with the enhanced sensitivity means that the technology could provide people suffering from paralysis the ability to control their wheelchair just by thinking!
+        </p> 
         </description>
         <more_info_url>
         </more_info_url>
@@ -286,7 +460,7 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
     </item>
     <item name="wallet">
       <heading>Wallet</heading>
-      <tagline>
+      <tagline> Quantum security for your finances.
       </tagline>
       <summary>
       </summary>
@@ -295,8 +469,12 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
         <name>quantum atm</name>
         <image_name>images/wallet_open.png</image_name>
         <summary>
+        A handheld transmitter, used with a receiver, can be used to perform authentication to determine if a user is who they claim to be, much like a credit or debit card. This has applications in cash withdrawals, secure card transactions and potentially in eBanking.
+
         </summary>
         <description>
+        Classical methods of securely transferring money by credit/debit card and withdrawing money using an ATM require authentication, which involves using random numbers to check a user’s identity. These methods have security flaws, which can be reliably solved using ideas from Quantum Cryptography. Random numbers are generated using a quantum random number generator and stored in the memory of the device. Quantum random numbers are more secure than classically generated random numbers, as it is possible for them to be ‘truly’ random. For each random bit, one of four LEDs is used to emit a single quantum particle in one of four states. This is repeated thousands of times to generate a random number that cannot be guessed classically without the receiving device being aware of someone trying to guess. Each particle is then measured by the receiving device, which is the only other device that knows the random number being used. The received random number is then compared with what it should have been and a match indicates that the person is who they say they are. This can be used to authenticate card transactions and cash withdrawals. The technology already exists and so, could potentially be implemented within a few years. It is estimated to potentially cost around £10 for each transmitting device, which each person could own and about £100k for the receiving device, which could be owned by each Bank.
+
         </description>
         <more_info_url>
         </more_info_url>
@@ -305,7 +483,7 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
   </room>
   <room name="garage">
     <item name="car">
-      <heading>
+      <heading>Car
       </heading>
       <tagline>
       </tagline>
@@ -317,15 +495,21 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
         <image_name>
         </image_name>
         <summary>
+        A phenomena called atomic interferometry can be used to measure gravity: A cloud of atoms which is in a superposition can be interfered with itself, exploiting the wave property of matter. Devices which use this effect are at the late stages of development and are looking to cost less, be more sensitive and less bulky than current technologies, for example, a commercially available Micro-g Lacoste has a mass of around 150kg and a price tag of $100, 000!
         </summary>
         <description>
+        <p>The Global Positioning System is how our phones tell us where we are in the world. Signals from four satellites are coordinated to calculate our position based on the travel time of the signals from the satellites and the position of the satellites at that moment in time. </p> <p>
+For the best accuracy the GPS needs to be able to connect with four satellites. GPS still works when a device can only access three satellites but it must make an approximation: That you are at sea level. In a dense city or in remote areas this can be an issue, your phone might only know your position approximately. </p> <p>
+Currently, very precise absolute gravimeters are expensive. Quantum devices based on atomic interferometry, even now being demonstrated on chip, may be sensitive, cheap to manufacture and portable to the extent that a global network of absolute gravimeters can be established.  A globally distributed network of these devices might be used to better define the shape of the Earth, calibrate other gravity instruments, determine the height of landmasses and using the same principle as accelerometers better inform and work alongside GPS systems for tracking and positioning in urban or remote environments.</p> <p>
+An example of a classical gravimeter is a free-falling corner cube, which essentially uses the interference of light to measure how fast a mirror falls. Other examples of gravimeters include spring systems and superconducting gravimeters (which do use the quantum effect of superconductivity). </p>
+
         </description>
         <more_info_url>
         </more_info_url>
       </tech>
     </item>
     <item name="leak">
-      <heading>
+      <heading>Leak
       </heading>
       <tagline>
       </tagline>
@@ -336,15 +520,24 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
         <name>construction</name>
         <image_name>
         </image_name>
-        <summary>Using quantum gravity sensors</summary>
+        <summary>A phenomena called atomic interferometry can be used to measure gravity: A cloud of atoms which is in a superposition can be interfered with itself, exploiting the wave property of matter. Devices which use this effect are at the late stages of development and are looking to cost less, be more sensitive and less bulky than current technologies, for example, a commercially available Micro-g Lacoste has a mass of around 150kg and a price tag of $100, 000!
+</summary>
         <description>
+        <p>
+        Climate models are very complex. The climate is an inherently chaotic system: ever heard of a butterfly flapping its wings causing a hurricane halfway around the world? This is a stretch, but it helps us understand how difficult it is to predict the weather!  </p>
+        <p>
+A globally distributed network of sensitive, mobile and precise gravimeters will feed in a lot of information into climate science, including to better define the shape of the Earth and track the movement of water and precipitation around the world. The NASA GRACE experiment, satellite measurements of the effect of water build-up on gravity measurements, has already demonstrated the application of this. Quantum devices promise to be especially precise, mobile and potentially cheaper to produce and have even been demonstrated to work on-chip. These devices are based on atomic interferometry: clouds of particles are interfered with each other (using the principle of superposition and the wave nature of matter) to measure the absolute gravity. </p>
+<p>
+With more data, the models we use to predict the weather and climate change will be better equipped to deal with climate change and humanity’s impact on the world. Further, gravity sensors can be used to track magma flows and tectonic plate movements, which may give us better predictive tools for natural disasters. 
+An example of a classical gravimeter is a freefalling corner cube, which essentially uses the interference of light to measure how fast a mirror falls. Other examples of gravimeters include spring systems and superconducting gravimeters (which do use the quantum effect of superconductivity).</p>
+
         </description>
         <more_info_url>
         </more_info_url>
       </tech>
     </item>
     <item name="scanner">
-      <heading>
+      <heading>Scanner
       </heading>
       <tagline>
       </tagline>
@@ -352,34 +545,96 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
       </summary>
       <imgsrc>images/scanner.png</imgsrc>
       <tech>
-        <name>medical scanner</name>
+        <name>Health Monitoring</name>
         <image_name>
         </image_name>
         <summary>
+        Quantum-enhanced magnetic sensing devices allow substantial improvements in the precision, portability and cost-effectiveness of detecting biomagnetic signals from the heart and brain. This could change the way we monitor our own health, with the possibility of having quantum diagnostic tools in our own homes.
         </summary>
         <description>
+        <p>
+It is known that both the human heart and brain generate a detectable magnetic field, and measurement of this field has been used in medical research and diagnosis for many years. Such measurements have previously been carried out using superconducting quantum interference devices, or SQUIDS. These devices can sense changes in biomagnetic fields with extreme precision by using interference in a superconducting circuit (a circuit which has zero electrical resistance). However, this technique is limited as the circuit requires cooling to temperatures of at most -200ºC, and this can cost hospitals about £200,000 per year just in energy costs. However, recent developments have enabled quantum magnetic field sensors to operate at room temperature, which could make medical diagnostic tools in the home a real possibility.
+</p> <p>
+The method used to achieve a quantum enhanced precision in magnetic field sensing involves monitoring the output of a laser beam that has been passed through a vapour of atomic spins. The magnetic field changes the direction of the spins in the vapour, and this results in an observable variation in the light passing through the vapour. If there are a large number of spins, this method can be used to determine the magnetic field strength to an extraordinary level of precision. In fact, the sensitivity can be improved further still by using the laser beam to project the spins into a quantum squeezed state. This means that the uncertainty in the measurement is compressed beyond the standard quantum limit, which is a limit that cannot be surpassed without harnessing quantum effects. An alternative quantum-enhanced approach to magnetic sensing relies on using a large number of electron spins embedded in diamond. A laser can induce light emission from the sample which is dependent on the electron spins. As before, the alignment of these spins depends on the magnetic field, and hence by observing the light scattered from the sample, the magnetic field strength can be measured to a remarkably high precision.
+These techniques have already been shown to increase the sensitivity of magnetic sensing devices while not needing extreme cooling. This has been used to sense the magnetic fields in the heart and brain, and can also be used to achieve MRI scanning without having to cryogenically cool the device. The ability to make such a device compact and work at room temperature could lead to their use in the home for regular health monitoring, which could lead to early diagnosis of many diseases, potentially saving many lives in the near future.
+ </p>
+
         </description>
         <more_info_url>
         </more_info_url>
       </tech>
+
+      <tech>
+        <name>Disease Detection</name>
+        <image_name>
+        </image_name>
+        <summary>
+        Quantum dots offer more versatility over fluorescent dyes in fluorescence imaging, with longer lifetime and the ability to set their colour. In the future, diseases could be diagnosed at home in the future using fluorescence techniques with quantum dots.
+        </summary>
+        <description>
+<p>        The spread of disease is helped by the incubation time, which refers to the time between first encountering the harmful microbes, until symptoms are noticeable. During this time the infected person can unknowingly pass microbes on, spreading the disease to others. With some diseases, early detection is critical to effective treatment, for example meningitis. Cheaper and faster testing systems, suitable for use outside of hospitals and at home, could help to diagnose earlier and inhibit the spread of disease. Such devices are often called biosensors, and are especially important in areas where medical-sample-testing labs are not available.
+</p> <p>
+Similar to the food testing scheme proposed (try clicking on the fridge!), fluorescence techniques can be used to screen for harmful diseases (bacteria, viruses) directly, or indicators such as antibodies.
+</p> <p>
+Fluorescence techniques are a modern way to screen for almost any chemical or biological entity (eg. bacteria, proteins). Fluorescence is the effect whereby light is emitted by an object, in response to absorption of light by the object. This is the reason fluorescent objects glow when illuminated with UV light (which we can’t see). 
+</p> <p>
+We can coat fluorescent quantum dots in chemicals which will attach to the entity we are looking for in a sample. In fluorescence microscopy, the fluorescent light is observed through a microscope, and the presence of the entity can be determined. We might see clusters of fluorescence where the dots have attached to a harmful microbe. This approach provides results much faster than the traditional method of growing a culture over a period of days until the bacteria can be detected by eye.
+</p> <p>
+Experiments have shown that the fluorescence light can be reduced when quantum dots bond to something, allowing automatic detection systems using a light sensor. Since quantum dots can be made to glow with any desired colour, we can coat different types of quantum dots to target different diseases and test for several different diseases in one go.
+</p> <p>
+A compact device for screening could be designed based on these ideas, enabling you to check at home for a range of diseases. This may be especially important for disease which are best treated as early as possible, leading to improved survival rates and limiting the spread of these diseases.
+</p>
+        </description>
+        <more_info_url>
+        </more_info_url>
+      </tech>
+
     </item>
   </room>
   <room name="outside">
     <item name="mailbox">
       <heading>
+      Mailbox
       </heading>
       <tagline>
+      Quantum Teleportation: Beam me up Scotty?
       </tagline>
       <summary>
       </summary>
-      <imgsrc>images/mailbox.jpg</imgsrc>
+      <imgsrc>images/mailbox.png</imgsrc>
       <tech>
         <name>quantum teleportation device</name>
         <image_name>
         </image_name>
         <summary>
+        When you wake up on Sunday morning and you feel so lazy that you dream there was a device that could teleport you from the bed directly to the bathroom. We are sorry but this is not the case! Read about why quantum teleportation is one of the biggest myths of our field. 
         </summary>
         <description>
+        <p>
+Asher Peres, one of the inventors of quantum teleportation, wrote in his paper “What is actually teleported?”:
+</p>
+<p> 
+<i> “I don’t watch TV and I was suspicious of the term teleportation. In my dictionary, I found “theoretical transportation of matter through space by converting it into energy and then reconverting it at the terminal point.” I protested that this was not at all what we had in mind, but Charlie* reassured me, saying that we shall cite Penrose’s book. I threatened that if we cite Penrose, I won’t be a co-author. A few days later, Charlie wrote to me that he wanted to use weak measurements and cite Aharonov and Vaidman. This time, I didn’t fall in the trap. We had other semantic problems. I proposed to write that the quantum state was disembodied and reincarnated. This was found unacceptable. Later, when a newsman asked me whether it was possible to teleport not only the body but also the soul, I answered “only the soul.” Even that is a gross oversimplification.” </i>
+</p>
+
+
+<h4> Myths </h4>
+<ul>
+<li>Quantum teleportation happens instantaneously.</li>
+<li>The material object, the particle is teleported.</li>
+<li>The quantum state of the original particle stays unaffected, the original particle is cloned. </li>
+<li>Human teleportation is doable.</li>
+</ul>
+<h4> Facts </h4>
+<ul>
+<li>In order to accomplish an 100% successful teleportation communication between two remote parties is needed. This communication realized through a classical means like a telephone and its speed is of course limited by the speed of light. </li>
+<li>Only the quantum state, only information is teleported and not the material object. </li>
+<li>The original state is destroyed because it undergoes a measurement process that causes it to collapse. </li>
+<li>Mass and energy are inextricably linked. The energy of a human being disappearing would be enough to blow up the planet!</li>
+<li>Quantum teleportation is an extremely useful procedure for many other protocols of quantum information science. In simple words teleportation will play the role of the wires in a quantum network-internet.  </li>
+<li>There have been realized many spectacular record breaking experiments that accomplished quantum teleportation in huge distances, even in 143km. The trend now is the extension of that distances by using satellites! </li>
+</ul>
+
         </description>
         <more_info_url>
         </more_info_url>
@@ -390,25 +645,29 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
       <tagline>Improved energy efficiency using quantum devices.</tagline>
       <summary>
       </summary>
-      <imgsrc>images/solar_cell.jpg</imgsrc>
+      <imgsrc>images/solar_cell.png</imgsrc>
       <tech>
         <name>solar cells</name>
         <image_name>
         </image_name>
         <summary>
+        By engineering solar cells from nanoscale quantum engines, it has been shown that significant improvements in the efficiency of solar panels could be achieved, due to the naturally energy regulating behaviour of these structures.
         </summary>
-        <description><p><a href="https://en.wikipedia.org/wiki/Solar_cell">Solar cells</a> have transformed the way we harvest energy in recent years, and promise to be a significant part of achieving a sustainable future.</p><p>However, a major barrier to this progress is the limited efficiency which has been achieved in solar cells to date, and in current solar technologies these inefficiencies stem from fluctuations in the light received by the solar cell.</p><p>Quantum physics has recently been shown to provide a significant advantage in improving the efficiency of solar power, by naturally regulating the energy received to produce a steady state output from the fluctuating input. These quantum solar cells are made by combining two materials that are linked by a quantum energy transition. This means that incoming particle of light (photon) can be absorbed such that its energy is converted to electronic energy in the form of electric power. Today’s solar technology also works by joining material linked by an energy gap such that individual photons are absorbed, giving extra energy to electrons. However, the quantum solar cells are distinct from their classical counterpart because in the quantum case the energy gap is formed from two individual quantum states with different energy, such as you would find in an atom, rather than the energy levels arising as a property of a large-scale material, as in the classical case.</p>
+        <description>
+        <p>Solar cells have transformed the way we harvest energy in recent years, and promise to be a significant part of achieving a sustainable future. However, a major barrier to this progress is the limited efficiency which has been achieved in solar cells to date, and in current solar technologies these inefficiencies stem from fluctuations in the light received by the solar cell. Quantum physics has recently been shown to provide a significant advantage in improving the efficiency of solar power, by naturally regulating the energy received to produce a steady state output from the fluctuating input. These quantum solar cells are made by combining two semiconductor materials that are linked by a quantum energy transition. This means that incoming particle of light (photon) can be absorbed such that its energy is converted to electronic energy in the form of electric power. Today’s solar technology also works by joining semiconductor materials linked by an energy gap such that individual photons are absorbed, giving extra energy to electrons. However, the quantum solar cells are distinct from their classical counterpart because in the quantum case the energy gap is formed from two individual quantum states with different energy, such as are found in an atom, rather than the energy levels arising as a property of a large-scale material, as in the classical case. Semiconductor nanostructures have already been shown to be promising candidates for light harvesting, as they have remarkably high absorption, a high efficiency of charge transfer and an intrinsically high power conversion efficiency. </p><p>
+The quantum energy regulation works by having two ‘quantum channels’ which are used to channel energy efficiently through the photocell. One channel absorbs at a colour of light which is providing a high average intensity, and the other channel absorbs colours of light with low intensity. In order to make the output energy as constant as possible, the quantum solar cell switches randomly between the high and the low energy channel.  It is possible to engineer nanoscale semiconductors with these properties, and by electronic coupling of these structures the increased power conversion efficiency could be directly observable. We know that different colours of light have different energies, and incredibly it was found that green light does not provide a benefit by switching in this way. This means that the device can increase the amount of energy it can make by not absorbing as much green light as it does all the other colours. Plants all around us have this same property, which is what makes them green, and this may be because of a similar kind of quantum benefit researchers have found using these devices. In fact, in recent studies of the microscopic nature of plants, a molecular structure proposed on the basis of its photosynthetic properties has interesting similarities to the quantum solar cells discussed here. It is remarkable that we can turn to nature for hints about how we can reduce our carbon footprint with the latest quantum technologies.
+</p>
 
-		<p>The energy regulation works by having two ‘quantum channels’ which are used to channel energy efficiently through the photocell. One channel absorbs at a colour of light which is providing a high average intensity, and the other channel absorbs colours of light with low intensity. In order to make the output energy as constant as possible, the quantum solar cell switches randomly between the high and the low energy channel.  Incredibly, it was found that green light does not provide a benefit by switching in this way, so the device can increase the amount of energy it can make by not absorbing as much green light as it does all the other colours. Plants all around us have this same property, and this may be because of a similar kind of quantum benefit researchers have found using these devices. In fact, in recent studies of the microscopic nature of plants, a molecular structure proposed on the basis of its photosynthetic properties has interesting similarities to the quantum solar cells discussed here. It is remarkable that we can turn to nature for hints about how we can reduce our carbon footprint with the latest quantum technologies.</p></description>
+        </description>
         <more_info_url>
-		./Quantum_At_Home.pdf#solar_cells
+		./QuantumAtHome.pdf
         </more_info_url>
       </tech>
     </item>
     <item name="cctv">
-      <heading>
+      <heading>CCTV
       </heading>
-      <tagline>
+      <tagline> Stronger pattern and facial recognition from quantum machine learning.
       </tagline>
       <summary>
       </summary>
@@ -418,8 +677,35 @@ Fluorescence techniques are a modern way to screen for almost any chemical or bi
         <image_name>
         </image_name>
         <summary>
+        Machine learning is often used for pattern matching, which is the principle used in facial recognition software.  Quantum machine learning algorithms have the potential to be significantly faster than classical machine learning algorithms, as well as handle much bigger data sets.  This could lead to more accurate results. If accuracy and efficiency are improved enough, this could be applied to security cameras in public places or around your own home.
+
         </summary>
         <description>
+        
+        Think about getting home from doing the weekly grocery shopping and you get to your front door, hands full with heavy bags, and you remember your keys are in the bottom of your bag, or worse you’ve dropped them on the journey somewhere. No problem: simply look into the camera which instantly recognises you and unlocks the door. No need to even put your bags down. Your face is your key. Now you’re lying in bed and you hear a noise in the garden. Should you check that out, maybe call the police? No, just relax – the camera would have detected if anybody was in the garden; it’s probably just a cat.
+This is a futuristic house, but these technologies do exist. Airports already have epassport gates which use facial recognition [https://en.wikipedia.org/wiki/Facial_recognition_system] to check if you match the photograph electronically stored in your epassport. A start-up company TrueFace.AI [https://www.trueface.ai/] has developed a ‘doorbell’ that identifies the person at the door and can automatically unlock it or inform you who it is via an app. A security camera is a bit more difficult as first it has to locate the person and then, in potentially very poor lighting and resolution, determine who the person is: friend or stranger.
+There are three main steps in facial recognition:
+<ol>
+<li> Face detection – this is the process of picking a face out of an image. This is used already on many phone cameras so it can focus on people’s faces;
+</li>
+<li> Dimensionality reduction – the computer performing the recognition process must store the information given in a face in a useful, compact way so as to not use too much memory, which would significantly slow the process down;</li>
+<li> Classification – once the information has been converted into a useful format, it needs to be compared to the information of every face stored in the database to determine which face it matches.
+</li>
+ </ol>
+<p> These processes are usually performed using machine learning algorithms. In machine learning, the parameters are chosen not by human determined rules, but using data to change the parameters to improve the outcome. In facial recognition, many faces are chosen to test which bits of the data can be ignored to minimise the information lost. For example, more information is contained in the eyes than the forehead. The more subtle differences are better determined by machine learning algorithms. There are many different such algorithms and each performs better under certain scenarios. In different applications of facial recognition, you can expect different conditions – poor lighting, different facial expressions, occlusions due to sunglasses for facial hair. Algorithms perform better under perfect conditions, hence why you are asked to remove glasses, keep hair out  your face, have a blank background and look straight at the camera with a neutral expression for passport photographs. However, a security camera in your garden would not have such luxuries, and a facial recognition front door lock would need to be extremely accurate, in case you have an evil twin. This is why research is now being done into quantum machine learning, which uses quantum principles, particularly quantum computation, to perform machine learning tasks. Quantum computation has been proven to provide speedup in certain algorithms. A short explanation is given in the video at the bottom. </p> 
+ <p>  Advantages of quantum machine learning could be a significant speedup compared to the current classical technologies, meaning they could handle more data or require less input faces to learn the rules, as well as a possible improvement in accuracy using novel algorithms particularly invented for quantum computers. This could be the step that means facial recognition is secure enough to use as a key or security camera.
+</p>
+  	<div class="video_container">
+			<iframe style = "	display: block;
+	margin: auto;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 560px;
+	height: 315px;
+" src="https://www.youtube.com/embed/8anVNc0r_8o" frameborder="0" ></iframe>
+		</div>
+
         </description>
         <more_info_url>
         </more_info_url>

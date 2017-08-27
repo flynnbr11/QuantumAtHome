@@ -336,8 +336,8 @@ function OpenOverlay(itemName)
 //	img.insertBefore(item_data.img, img.childNodes[0]);
 	
 	
-	document.getElementById("item_tagline").innerHTML = item_data.tagline;
-	document.getElementById("item_summary").innerHTML = item_data.summary;
+<!--	document.getElementById("item_tagline").innerHTML = item_data.tagline;-->
+<!--	document.getElementById("item_summary").innerHTML = item_data.summary;-->
 	
 	// fill in tech data
 	var tech_container = document.getElementById("item_techs");
@@ -363,8 +363,8 @@ function OpenOverlay(itemName)
 		
 		var container_techDescription = document.createElement("section");
 		container_techDescription.setAttribute("class", "tech_description");
-		container_techDescription.innerHTML = "<h3> <center> <u> </br> Description </u> </center> </h3>";
-		container_techDescription.innerHTML += "<p>" + tech_data.description + "</p>";
+		container_techDescription.innerHTML = "<div> <h3> <center> <u> Description </u> </center> </h3> </div>" 
+		container_techDescription.innerHTML += "<div> <p>" + tech_data.description + "</p> </div>";
 		
 		var container_techMoreInfo = document.createElement("section");
 		container_techMoreInfo.setAttribute("class", "tech_more_info");
