@@ -80,17 +80,17 @@ a.navbarItem:hover {
 }
 
 #frame_top {
-	background-image: url("../images/frame_top_2.png");
+	background-image: url("../images/frame_top_5.png");
   background-repeat: no-repeat;
 	float: left;
 	padding: 0 0 0 0;
-	width: 1388px;
+	width: 1378px;
 	height: 61px;
 }
 
 #frame_right {
-	background-image: url("../images/frame_left_2.png");
-	width: 61px;
+	background-image: url("../images/frame_right_2.png");
+	width: 71px;
 	height: 710px;
 	float: left;
 	margin: 0 0 0 0;
@@ -116,8 +116,8 @@ a.navbarItem:hover {
 }
 
 #pageCanvas {
-	width: 1258px;
-	height: 710px;
+	width: 1250px;
+	height: 709px;
 	background-color: white;
 	position: relative;
 	margin: 0 0 0 0;

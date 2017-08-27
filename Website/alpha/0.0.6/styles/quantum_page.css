@@ -3,14 +3,15 @@
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
 	border: 0;
-	width: 900px;
-	height: 623px;
+	width: 950px;
+	height: 656px;
 }
 
 #quantum_header_frame {
 	width:100%;
 	height: 50px;
-	background-color: #3ffefe;
+	background-color: #213E7B;
+	color: white;
 	text-align: center;
 	border: 0;
 	border-bottom: 3px;
@@ -19,10 +20,11 @@
 }
 #quantum_header {
 	font-size: 30px;
+	font-family: Trebuchet, Arial, sans-serif;
 	text-align: center;
 	margin: auto;
 	padding-top: 10px;
-	font-weight: bold;
+	width:100%;
 }
 
 #sidebar_header {
@@ -44,7 +46,7 @@
 	border-style: solid;
 	float: left;
 	width: 297px;
-	height: 623px;
+	height: 658px;
 	scroll: visible;
 	background-color: #3f3f3f;
 }
