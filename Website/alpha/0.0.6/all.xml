@@ -3,7 +3,7 @@
     <item name="phone charger">
       <heading>
       </heading>
-      <tagline>
+      <tagline>Where quantum models might increase the efficiency of batteries.
       </tagline>
       <summary>
       </summary>
@@ -36,7 +36,7 @@ A quantum battery can be seen as a small system that is used to temporarily stor
     <item name="first aid kit">
       <heading>First aid kit
       </heading>
-      <tagline>
+      <tagline>Quantum and the power to change the way industry makes pharmaceuticals.
       </tagline>
       <summary>
       </summary>
@@ -54,15 +54,13 @@ A known solution to this problem is to make the computer itself behave quantum m
 </p>
 
         </description>
-        <more_info_url>
- ./QuantumAtHome.pdf#simulation      
- </more_info_url>
+        <more_info_url>./QuantumAtHome.pdf#simulation</more_info_url>
       </tech>
     </item>
     <item name="tablet">
       <heading> Tablet
       </heading>
-      <tagline> Machine learning to improve services and tools, precision to improve weather forecasting and  randomness to keep you more secure. 
+      <tagline> Machine learning to improve services and tools, gravity sensing to improve weather forecasting and randomness to keep you more secure. 
       </tagline>
       <summary>
       </summary>
@@ -108,11 +106,6 @@ This means your e-banking will be safer, your texts more secure online and hacki
        <p> Unwanted messages (spam) in emails have become increasingly problematic. Not only is it annoying filtering through emails that are unnecessary, but more importantly reading emails from scam artists can have severe consequences. Spam filters aim to remove these unwanted emails from your inbox. To do this, the computer must classify an email as spam or not spam, which is determined using a number of features. One way is to use pattern matching to pick out words or phrases commonly found in spam, like ‘free’ or ‘congratulations’. Each word can be assigned a spam weight, with ‘free’ and ‘congratulations’ to have more weighting. Spammers can get around this by diluting spam words with many non-spam words. This is called ‘poisoning’. Another way to slip past the filter is to put words in images instead of text, which would not be picked up by the text pattern matcher. Also adding special characters eg. ‘f-r-e-e’ or misspellings eg. ‘congratulatoins’ avoid the words being detected. Therefore, filtering techniques must keep on improving to keep up with spammers. </p> <p>
 Using the idea that different spam rules would suit different people, spam filters are commonly customised and updated using machine learning algorithms [https://en.wikipedia.org/wiki/Machine_learning]. These learn from your own emails and particularly which emails you put in ‘junk’ to determine words that are more likely to be spam to you. For example, if you exchange emails with one bank, the filter learns that those emails can probably be trusted, and then if you change your bank, the filter relearns and updates to trust that bank instead. </p> 
 
-		<div class="video_container">
-			<iframe class="quantum_video" src="https://www.youtube.com/embed/8anVNc0r_8o" allowfullscreen="allowfullscreen" frameborder="0">iFrames not supported.</iframe>
-			<div class="quantum_video_caption">Replace me with caption.</div>
-		</div>
-
 <p>
 A recent area of research is quantum machine learning which uses quantum physics principles to implement machine learning significantly more efficiently. Certain algorithms performed using quantum computers have been proven to be considerably faster than classical algorithms. This concept is explained briefly in the video below. </p> <p>
 In particular, speedup due to quantum computing would mean that the filters can process much more data and so more words and images can be checked and compared, which could increase the accuracy of the spam filter. There is currently no research looking at how quantum machine learning may improve spam filtering in particular and so it is difficult to know now whether it could provide enough of an improvement to warrant implementing it, however it is a possible route to take in the search of improved filtering.</p>
@@ -142,8 +135,7 @@ An example of a classical gravimeter is a freefalling corner cube, which essenti
       <heading>
       Fridge
       </heading>
-      <tagline>
-      Quick and cheap testing of food for harmful bacteria to save you from eating gone off food, or throwing away good food.
+      <tagline>Testing for contamination and chemicals may become a quantum affair.
       </tagline>
       <summary>
       </summary>
@@ -198,7 +190,7 @@ A compact device for screening for harmful microbes in food could be designed ba
       <item name="camera">
       <heading>Camera
       </heading>
-      <tagline>
+      <tagline>Imaging technologies for the future.
       </tagline>
       <summary>
       </summary>
@@ -222,7 +214,7 @@ Light sources and cameras can benefit from a variety of different quantum techno
       <item name="money">
       <heading> Money
       </heading>
-      <tagline>
+      <tagline> Cryptocurrencies and verification for quantum money.
       </tagline>
       <summary>
       </summary>
@@ -248,7 +240,7 @@ Regarding cryptocurrencies like Bitcoin, they heavily rely on classical cryptogr
     <item name="games console">
       <heading>games console
       </heading>
-      <tagline>
+      <tagline>Where might quantum technologies affect gaming? 
       
       </tagline>
       <summary>
@@ -295,7 +287,7 @@ If the physical system used to produce random numbers, despite its complexity, i
     <item name="router">
       <heading>
       </heading>
-      <tagline>
+      <tagline>Secure and future-proof communication and data.
       </tagline>
       <summary>
       </summary>
@@ -319,7 +311,7 @@ If the physical system used to produce random numbers, despite its complexity, i
     <item name="tv">
       <heading> Television
       </heading>
-      <tagline>
+      <tagline>Quantum technologies may one day power the recommendation systems you use everyday.
       
       </tagline>
       <summary>
@@ -367,7 +359,7 @@ This is one of the clear examples of how quantum computers are going to affect o
   <room name="bedroom">
     <item name="computer">
       <heading>Quantum Computer</heading>
-      <tagline>
+      <tagline>The computing revolution of the 21st century?
       </tagline>
       <summary>
 
@@ -418,7 +410,7 @@ In 1943, Thomas Watson (then CEO of IBM) is alleged to have said “I think ther
     </item>
     <item name="wheelchair">
       <heading>Wheelchair</heading>
-      <tagline>
+      <tagline>Interfacing your brain with computers through imaging may have widereaching unexpected applications.
       </tagline>
       <summary>
       </summary>
@@ -439,9 +431,7 @@ The technique used to achieve enhanced sensitivity in magnetic field sensing inv
 These techniques can increase the sensitivity of magnetic field measurements dramatically, and have already been used to sense magnetic fields from the brain. Although current neural magnetic sensing systems have a high precision, they are far from portable as they rely on heavy cooling systems, requiring temperatures of approximately -200ºC to function. This costs hospitals about £200,000 per year to run. On the other hand, the devices discussed here require no such cooling, and as such can be made very inexpensive and compact. This portability combined with the enhanced sensitivity means that the technology could provide people suffering from paralysis the ability to control their wheelchair just by thinking!
         </p> 
         </description>
-        <more_info_url>
- ./QuantumAtHome.pdf#magnetic_sensors      
- </more_info_url>
+        <more_info_url>./QuantumAtHome.pdf#magnetic_sensors</more_info_url>
       </tech>
     </item>
     <item name="wallet">
@@ -470,7 +460,7 @@ These techniques can increase the sensitivity of magnetic field measurements dra
     <item name="car">
       <heading>Car
       </heading>
-      <tagline>
+      <tagline>Improving mapping and GPS with gravity sensors.
       </tagline>
       <summary>
       </summary>
@@ -495,7 +485,7 @@ An example of a classical gravimeter is a free-falling corner cube, which essent
     <item name="leak">
       <heading>Leak
       </heading>
-      <tagline>
+      <tagline>X-Ray vision by gravity sensing.
       </tagline>
       <summary>
       </summary>
@@ -522,7 +512,7 @@ An example of a classical gravimeter is a freefalling corner cube, which essenti
     <item name="scanner">
       <heading>Scanner
       </heading>
-      <tagline>
+      <tagline>Medical imaging technology, in your own home.
       </tagline>
       <summary>
       </summary>
@@ -646,7 +636,7 @@ The quantum energy regulation works by having two ‘quantum channels’ which a
     <item name="cctv">
       <heading>CCTV
       </heading>
-      <tagline> Stronger pattern and facial recognition from quantum machine learning.
+      <tagline> Attempting to power facial recognition with quantum machine learning.
       </tagline>
       <summary>
       </summary>
