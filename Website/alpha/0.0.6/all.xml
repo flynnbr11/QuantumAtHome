@@ -335,21 +335,16 @@ Designing more accurate and more efficient recommender systems is of great inter
 <p>
 Many versions of recommender systems have been tested for many years. From collaborative filtering to content-based filtering and complex hybrid algorithms. However, all of them deal with the fundamental problem of finding two similar items or users in a big search space. This means that we need to find a quick and efficient way to compare two objects amongst a huge number of them, specially if they don’t have any order or structure.
 </p>
+		<div class="video_container">
+			<iframe class="quantum_video" src="https://www.youtube.com/embed/ImpV70uLxyw" frameborder="0" allowfullscreen="allowfullscreen">iFrame not supported</iframe>
+			<div class="quantum_video_caption">Replace me with caption</div>
+		</div>
+
 <p>
 In 1997, Lov K. Grover showed that by the use of quantum mechanics, it is possible to find a single object amongst N of them with just around N of steps instead the N steps a standard algorithm would have used meaning a massive improvement on the time this algorithms take to compare objects. Recently, researchers in IIIT Hyderabad, India proposed a way to use Grover’s search algorithm in recommender systems.
 </p> <p>
 This is one of the clear examples of how quantum computers are going to affect our lives even when the physical quantum processor might not be in our houses. For example, a quantum processor will probably be connected to the server of the website, run this quantum algorithm, and then, classical computers are going to post-process the outcomes and finally give us accurate recommendations. 
 </p>
-  	<div >
-			<iframe style = "	display: block;
-	margin: auto;
-	margin: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 560px;
-	height: 315px;
-" src="https://www.youtube.com/embed/ImpV70uLxyw" frameborder="0" ></iframe>
-  </div>
 
         </description>
         <more_info_url>./QuantumAtHome.pdf#algorithms</more_info_url>
