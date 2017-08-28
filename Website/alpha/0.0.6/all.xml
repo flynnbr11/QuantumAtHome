@@ -111,9 +111,9 @@ A recent area of research is quantum machine learning which uses quantum physics
 In particular, speedup due to quantum computing would mean that the filters can process much more data and so more words and images can be checked and compared, which could increase the accuracy of the spam filter. There is currently no research looking at how quantum machine learning may improve spam filtering in particular and so it is difficult to know now whether it could provide enough of an improvement to warrant implementing it, however it is a possible route to take in the search of improved filtering.</p>
 
 
-
-  	<div class="video_container">
+		<div class="video_container">
 			<iframe class="quantum_video" src="https://www.youtube.com/embed/8anVNc0r_8o" frameborder="0" ></iframe>
+			<div class="quantum_video_caption">Schrodinger's Cat lets us think about quantum superpositions at a macroscopic, scale.</div>
 		</div>
         </description>
         <more_info_url>

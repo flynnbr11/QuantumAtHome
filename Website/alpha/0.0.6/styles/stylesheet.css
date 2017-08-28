@@ -117,7 +117,7 @@ a.navbarItem:hover {
 }
 
 #frame_left {
-	background-image: url("../images/frame_left_2.png");
+/*	background-image: url("../images/frame_left_2.png");*/
 	width: 62px;
 	height: 710px;
 	float: left;
@@ -137,7 +137,7 @@ a.navbarItem:hover {
 
 
 #frame_top_left {
-	background-image: url("../images/frame_top_left.png");
+/*	background-image: url("../images/frame_top_left.png");*/
 	width: 50px;
 	float: left;
 	height: 50px;
@@ -145,14 +145,14 @@ a.navbarItem:hover {
 
 
 #frame_bottom_left {
-	background-image: url("../images/frame_bottom_left.png");
+/*	background-image: url("../images/frame_bottom_left.png");*/
 	width: 50px;
 	height: 50px;
 	float:left;
 }
 
 #frame_top_right {
-	background-image: url("../images/frame_top_right_2.png");
+/*	background-image: url("../images/frame_top_right_2.png");*/
 	width: 50px;
 	float: left;
 	height: 50px;
@@ -160,7 +160,7 @@ a.navbarItem:hover {
 
 
 #frame_bottom_right {
-	background-image: url("../images/frame_bottom_right.png");
+/*	background-image: url("../images/frame_bottom_right.png");*/
 	width: 50px;
 	height: 50px;
 	float:left;
