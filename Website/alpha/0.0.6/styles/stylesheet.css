@@ -6,7 +6,7 @@ body
 
 
 #navbar {
-  background-image: url("../images/qah_logo.png");
+  <!-- background-image: url("../images/qah_logo.png");-->
 	background-repeat: no-repeat;
   background-position: left top;
 	background-color: #213E7B; /* #333A56; */
