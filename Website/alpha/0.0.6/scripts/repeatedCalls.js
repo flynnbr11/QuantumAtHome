@@ -1,7 +1,7 @@
 function LoadNavbar() {
 <!--	document.getElementById("navbar").innerHTML+=" <a  href=\"index.html\"> <img width=\"6%\"  src=\"../images/qah_logo.png\"> </img> </a>"; -->
 
-  document.getElementById("navbar").innerHTML+="<a href=\"index.html\" class=\"navbarItem\">Homepage</a>"; 
+  document.getElementById("navbar").innerHTML+="<a href=\"index.html\" class=\"navbarItem\" id=\"homepage_link\"></a>"; 
 	document.getElementById("navbar").innerHTML+="<a href=\"house.html\" class=\"navbarItem\">Quantum@Home</a>";
 	document.getElementById("navbar").innerHTML+="<a href=\"quantum.html\" class=\"navbarItem\">Quantum Physics</a>";
 	document.getElementById("navbar").innerHTML+="<a href=\"all_items.html\" class=\"navbarItem\">Technologies</a>";

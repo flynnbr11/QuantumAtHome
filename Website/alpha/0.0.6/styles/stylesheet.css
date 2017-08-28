@@ -3,7 +3,13 @@ body
 	font-family: Trebuchet, Arial, sans-serif;
 }
 
-
+#homepage_link
+{
+	background-image: url("../images/qah_logo.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: contain;
+}
 
 #navbar {
   <!-- background-image: url("../images/qah_logo.png");-->
