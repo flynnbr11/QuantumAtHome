@@ -104,10 +104,17 @@ This means your e-banking will be safer, your texts more secure online and hacki
         </summary>
         <description>
        <p> Unwanted messages (spam) in emails have become increasingly problematic. Not only is it annoying filtering through emails that are unnecessary, but more importantly reading emails from scam artists can have severe consequences. Spam filters aim to remove these unwanted emails from your inbox. To do this, the computer must classify an email as spam or not spam, which is determined using a number of features. One way is to use pattern matching to pick out words or phrases commonly found in spam, like ‘free’ or ‘congratulations’. Each word can be assigned a spam weight, with ‘free’ and ‘congratulations’ to have more weighting. Spammers can get around this by diluting spam words with many non-spam words. This is called ‘poisoning’. Another way to slip past the filter is to put words in images instead of text, which would not be picked up by the text pattern matcher. Also adding special characters eg. ‘f-r-e-e’ or misspellings eg. ‘congratulatoins’ avoid the words being detected. Therefore, filtering techniques must keep on improving to keep up with spammers. </p> <p>
-Using the idea that different spam rules would suit different people, spam filters are commonly customised and updated using machine learning algorithms [https://en.wikipedia.org/wiki/Machine_learning]. These learn from your own emails and particularly which emails you put in ‘junk’ to determine words that are more likely to be spam to you. For example, if you exchange emails with one bank, the filter learns that those emails can probably be trusted, and then if you change your bank, the filter relearns and updates to trust that bank instead. </p> 
+Using the idea that different spam rules would suit different people, spam filters are commonly customised and updated using <a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning algorithms</a>. These learn from your own emails and particularly which emails you put in ‘junk’ to determine words that are more likely to be spam to you. For example, if you exchange emails with one bank, the filter learns that those emails can probably be trusted, and then if you change your bank, the filter relearns and updates to trust that bank instead. </p> 
 
 <p>
-A recent area of research is quantum machine learning which uses quantum physics principles to implement machine learning significantly more efficiently. Certain algorithms performed using quantum computers have been proven to be considerably faster than classical algorithms. This concept is explained briefly in the video below. </p> <p>
+A recent area of research is quantum machine learning which uses quantum physics principles to implement machine learning significantly more efficiently. Certain algorithms performed using quantum computers have been proven to be considerably faster than classical algorithms. This concept is explained briefly in the video below. </p>
+
+		<div class="video_container">
+			<iframe class="quantum_video" src="https://www.youtube.com/embed/8anVNc0r_8o" frameborder="0" allowfullscreen="allowfullscreen">iFrame not supported</iframe>
+			<div class="quantum_video_caption">Quantum algorithms can be used to give faster and/or more accurate results than using classical computers.</div>
+		</div>
+
+ <p>
 In particular, speedup due to quantum computing would mean that the filters can process much more data and so more words and images can be checked and compared, which could increase the accuracy of the spam filter. There is currently no research looking at how quantum machine learning may improve spam filtering in particular and so it is difficult to know now whether it could provide enough of an improvement to warrant implementing it, however it is a possible route to take in the search of improved filtering.</p>
 
         </description>
@@ -163,6 +170,11 @@ Et al. Science 344,1380 (2014)]
         <p>
         Quantum dots are clusters of several thousand atoms, with a diameter on the nano-scale, i.e. if 1 million of them were placed next to each other in a straight line, the line would be 1cm long. At this size, quantum effects mean that they have properties similar to single atoms, in that electrons have discrete energy states, and the absorption and emission of light corresponds to transitions between these states (watch this 5-min video below for an introduction to atomic energy states). Changing the size alters these states in quantum dots, and as a result they can be made to fluoresce at any desired colour. To target specific entities, they are functionalized, i.e. coated with different chemicals which determine what the dot will attach to. While fluorescent dyes only last a few minutes before losing their fluorescence, quantum dots work for hours or more and glow brighter.
         </p>
+		<div class="video_container">
+			<iframe class="quantum_video" src="https://www.youtube.com/embed/lJh2Ra1eygA" frameborder="0" allowfullscreen="allowfullscreen">iFrame not supported</iframe>
+			<div class="quantum_video_caption">Atomic transitions give rise to quantum effects.</div>
+		</div>
+
 		
 <p>		Experiments have shown that the fluorescence light can be reduced when quantum dots bond to something, allowing automatic detection systems using a light sensor. One experiment used this effect to detect and identify explosives. Three different colours of quantum dot were added to the sample, each functionalized to target a different explosive molecule, and the intensity of light emitted in the three colours was monitored. The presence of one type of explosive resulted in reduced intensity in one of the colours. By functionalizing to target harmful microbes, this system could be adapted for testing food.
 </p>
@@ -170,17 +182,6 @@ Et al. Science 344,1380 (2014)]
 A compact device for screening for harmful microbes in food could be designed based on these ideas. Such a device would be useful not just for testing at home, but also by supermarkets and restaurants, certainly leading to a reduction in food poisoning, in addition to enabling you to know with certainty whether the food in your fridge is safe to eat.
 </p>
         
-
-  	<div class="video_container">
-			<iframe style = "	display: block;
-	margin: auto;
-	margin: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 560px;
-	height: 315px;
-" src="https://www.youtube.com/embed/lJh2Ra1eygA" frameborder="0" ></iframe>
-		</div>
         </description>
         <more_info_url>./QuantumAtHome.pdf#chemical_sensors</more_info_url>
       </tech>
@@ -285,13 +286,13 @@ If the physical system used to produce random numbers, despite its complexity, i
       </tech>
     </item>
     <item name="router">
-      <heading>
+      <heading>Router
       </heading>
       <tagline>Secure and future-proof communication and data.
       </tagline>
       <summary>
       </summary>
-      <imgsrc>images/phone.png</imgsrc>
+      <imgsrc>images/router.png</imgsrc>
       <tech>
         <name>port and router</name>
         <image_name>
@@ -337,7 +338,7 @@ Many versions of recommender systems have been tested for many years. From colla
 </p>
 		<div class="video_container">
 			<iframe class="quantum_video" src="https://www.youtube.com/embed/ImpV70uLxyw" frameborder="0" allowfullscreen="allowfullscreen">iFrame not supported</iframe>
-			<div class="quantum_video_caption">Replace me with caption</div>
+			<div class="quantum_video_caption">The Netflix prize: A competition to beat Netflix's own recommender system.</div>
 		</div>
 
 <p>
@@ -646,8 +647,8 @@ The quantum energy regulation works by having two ‘quantum channels’ which a
         </summary>
         <description>
         
-        Think about getting home from doing the weekly grocery shopping and you get to your front door, hands full with heavy bags, and you remember your keys are in the bottom of your bag, or worse you’ve dropped them on the journey somewhere. No problem: simply look into the camera which instantly recognises you and unlocks the door. No need to even put your bags down. Your face is your key. Now you’re lying in bed and you hear a noise in the garden. Should you check that out, maybe call the police? No, just relax – the camera would have detected if anybody was in the garden; it’s probably just a cat.
-This is a futuristic house, but these technologies do exist. Airports already have epassport gates which use facial recognition [https://en.wikipedia.org/wiki/Facial_recognition_system] to check if you match the photograph electronically stored in your epassport. A start-up company TrueFace.AI [https://www.trueface.ai/] has developed a ‘doorbell’ that identifies the person at the door and can automatically unlock it or inform you who it is via an app. A security camera is a bit more difficult as first it has to locate the person and then, in potentially very poor lighting and resolution, determine who the person is: friend or stranger.
+    <p>    Think about getting home from doing the weekly grocery shopping and you get to your front door, hands full with heavy bags, and you remember your keys are in the bottom of your bag, or worse you’ve dropped them on the journey somewhere. No problem: simply look into the camera which instantly recognises you and unlocks the door. No need to even put your bags down. Your face is your key. Now you’re lying in bed and you hear a noise in the garden. Should you check that out, maybe call the police? No, just relax – the camera would have detected if anybody was in the garden; it’s probably just a cat.</p> <p>
+This is a futuristic house, but these technologies do exist. Airports already have epassport gates which use <a href="https://en.wikipedia.org/wiki/Facial_recognition_system"> facial recognition</a> to check if you match the photograph electronically stored in your epassport. A start-up company, <a href="https://www.trueface.ai/">TrueFace.AI</a>, has developed a ‘doorbell’ that identifies the person at the door and can automatically unlock it or inform you who it is via an app. A security camera is a bit more difficult as first it has to locate the person and then, in potentially very poor lighting and resolution, determine who the person is: friend or stranger.</p>
 There are three main steps in facial recognition:
 <ol>
 <li> Face detection – this is the process of picking a face out of an image. This is used already on many phone cameras so it can focus on people’s faces;
@@ -657,18 +658,15 @@ There are three main steps in facial recognition:
 </li>
  </ol>
 <p> These processes are usually performed using machine learning algorithms. In machine learning, the parameters are chosen not by human determined rules, but using data to change the parameters to improve the outcome. In facial recognition, many faces are chosen to test which bits of the data can be ignored to minimise the information lost. For example, more information is contained in the eyes than the forehead. The more subtle differences are better determined by machine learning algorithms. There are many different such algorithms and each performs better under certain scenarios. In different applications of facial recognition, you can expect different conditions – poor lighting, different facial expressions, occlusions due to sunglasses for facial hair. Algorithms perform better under perfect conditions, hence why you are asked to remove glasses, keep hair out  your face, have a blank background and look straight at the camera with a neutral expression for passport photographs. However, a security camera in your garden would not have such luxuries, and a facial recognition front door lock would need to be extremely accurate, in case you have an evil twin. This is why research is now being done into quantum machine learning, which uses quantum principles, particularly quantum computation, to perform machine learning tasks. Quantum computation has been proven to provide speedup in certain algorithms. A short explanation is given in the video at the bottom. </p> 
+
+		<div class="video_container">
+			<iframe class="quantum_video" src="https://www.youtube.com/embed/8anVNc0r_8o" frameborder="0" allowfullscreen="allowfullscreen">iFrame not supported</iframe>
+			<div class="quantum_video_caption">Quantum algorithms can be used to give faster and/or more accurate results than using classical computers.</div>
+		</div>
+
+
  <p>  Advantages of quantum machine learning could be a significant speedup compared to the current classical technologies, meaning they could handle more data or require less input faces to learn the rules, as well as a possible improvement in accuracy using novel algorithms particularly invented for quantum computers. This could be the step that means facial recognition is secure enough to use as a key or security camera.
 </p>
-  	<div class="video_container">
-			<iframe style = "	display: block;
-	margin: auto;
-	margin: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 560px;
-	height: 315px;
-" src="https://www.youtube.com/embed/8anVNc0r_8o" frameborder="0" ></iframe>
-		</div>
 
         </description>
         <more_info_url>./QuantumAtHome.pdf#pattern_matching</more_info_url>
