@@ -388,7 +388,7 @@ function OpenOverlay(itemName)
 
 function OpenPage(url)
 {
-	window.location = url;
+	window.open(url, '_blank');
 }
 
 function off() {
