@@ -9,16 +9,6 @@
 <link rel = "stylesheet" type = "text/css" href = "styles/overlay.css" />
 <link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
 <link rel = "stylesheet" type = "text/css" href = "styles/house_items.css" />
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-104442988-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </head>
 <script> 
     function LoadAll() <!-- Load external scripts for nav bar etc. --> 
@@ -29,12 +19,11 @@
 
 	function PageInit() <!-- Fill in page details here -->
 	{
-		Initialise("images/kitchen.png", "kitchen");
+		Initialise("images/basement.png", "garage");
 		
-		AddItemToCanvas( 965, 345, 250, 360, "images/fridge.png", "fridge", true);
-		AddItemToCanvas( 250, 380, 85, 85, "images/phone_charger.png", "phone charger", true);
-		AddItemToCanvas( 575, 425, 65, 60, "images/tablet.png", "tablet", true);
-		AddItemToCanvas( 15, 300, 75, 75, "images/first_aid_kit.png", "first aid kit", true);
+		AddItemToCanvas( 400, 350, 375, 325, "images/car.png", "car", true);
+		AddItemToCanvas( 700, 50, 100, 100, "images/leak.png", "leak", true);
+		AddItemToCanvas( 1000, 300, 150, 150, "images/scanner.png", "scanner", true);
 		
 	}
 </script>
@@ -42,7 +31,6 @@
 
 
 <body onload="LoadAll()">
-
 
 <div id="item_overlay">
 		<div id="inner_overlay">
@@ -55,7 +43,6 @@
 		</div>
 	</div>
 </div>
-
 <div class="wrapper">
 	<div id="navbar"></div>
 	
