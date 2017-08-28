@@ -211,6 +211,7 @@ function OpenOverlay()
 		var container_techMoreInfo = document.createElement("a");
 		container_techMoreInfo.setAttribute("class", "tech_more_info");
 		container_techMoreInfo.setAttribute("href", tech_data.moreInfoURL);
+		container_techMoreInfo.setAttribute("target", "_blank");
 		container_techMoreInfo.innerHTML = "Click here for a full scientific discussion.";
 		
 		tech_container.insertBefore(tech_accordion, tech_container.childNodes[0]);
