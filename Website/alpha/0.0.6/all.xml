@@ -113,14 +113,7 @@ In particular, speedup due to quantum computing would mean that the filters can 
 
 
   	<div class="video_container">
-			<iframe style = "	display: block;
-	margin: auto;
-	margin: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 560px;
-	height: 315px;
-" src="https://www.youtube.com/embed/8anVNc0r_8o" frameborder="0" ></iframe>
+			<iframe class="quantum_video" src="https://www.youtube.com/embed/8anVNc0r_8o" frameborder="0" ></iframe>
 		</div>
         </description>
         <more_info_url>
