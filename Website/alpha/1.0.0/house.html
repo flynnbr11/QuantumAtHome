@@ -1,0 +1,119 @@
+<!DOCTYPE=html>
+<html>
+<head>
+	<link rel="icon" href="images/icon.png">
+
+	<meta name="description" content="Quantum at Home: An exploration of the potential uses of quantum technology in the home.">
+	<meta name="keywords" content="quantum,technology,computing,home,quantum at home">
+	<meta name="author" content="Quantum Engineering CDT 2016/17, University of Bristol">
+	<!-- Facebook stuff -->
+	<meta property="og:title" content="Quantum At Home">
+	<meta property="og:image" content="images/qah_logo.png">
+	<meta property="og:description" content="An exploration of the potential uses of quantum technology in the home.">
+	<meta property="og:url" content="http://quantumathome.co.uk" />
+
+	<!-- Twitter stuff -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:creator" content="@BristolQE" />
+	<meta name="twitter:title" content="Quantum at Home" />
+	<meta name="twitter:description" content="An exploration of the potential uses of quantum technology in the home." />
+	<meta name="twitter:image" content="images/qah_logo.png" />
+	<!-- -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quantum at Home</title>
+<script src="scripts/clickableCanvasTest.js"></script>
+<script src="scripts/repeatedCalls.js"></script>
+
+<link rel = "stylesheet" type = "text/css" href = "styles/overlay.css" />
+<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
+<link rel = "stylesheet" type = "text/css" href = "styles/house_items.css" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-104442988-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<script> 
+		var room_height = 190;
+		var room_width = 350;
+		var left_room = 278;
+		var right_room = left_room + room_width;
+		var upstairs = 170;
+		var downstairs = upstairs + room_height;
+		
+		
+		var house_width=room_width + room_width;
+		var house_height=room_height + room_height;
+		var house_right = left_room + house_width;
+		var house_bottom = upstairs+house_height;
+		
+		var external_item_width=50;
+		var external_item_height=50;
+		var mailbox_height=100;
+		var leak_x_pos = left_room-external_item_width;
+		var leak_y_pos = upstairs + external_item_height + external_item_height;		
+		var cctv_x_pos = house_right;
+		var cctv_y_pos = leak_y_pos;		
+		var mailbox_x_pos = house_right + external_item_width + external_item_width/4;
+		var mailbox_y_pos = house_bottom+20;
+		var solar_height=80;
+		var solar_y_pos = upstairs-solar_height;
+				
+
+    function LoadAll() <!-- Load external scripts for nav bar etc. --> 
+    {
+        PageInit();
+        DoLoad();
+    }
+
+	function PageInit() <!-- Fill in page details here -->
+	{
+		Initialise("images/house_background_3.png", "outside");
+		
+		// add new rooms/furniture here
+		AddItemToCanvas( left_room, upstairs, room_width, room_height, "images/bedroom.jpg", "bedroom.html", false);
+		AddItemToCanvas( right_room, upstairs, room_width, room_height, "images/living_room.jpg", "living_room.html", false);
+		AddItemToCanvas( left_room, downstairs, room_width, room_height, "images/kitchen.png", "kitchen.html", false);
+		AddItemToCanvas( right_room, downstairs, room_width, room_height, "images/basement.png", "garage.html", false);
+
+		AddItemToCanvas( mailbox_x_pos, mailbox_y_pos-75, external_item_width*1.5,2* mailbox_height, "images/mailbox.png", "mailbox", true);
+		
+		AddItemToCanvas( cctv_x_pos, cctv_y_pos, external_item_width*1.5, 1.5*external_item_height, "images/cctv.png", "cctv", true);
+		AddItemToCanvas( right_room - 100, solar_y_pos, house_width/2, solar_height/2, "images/solar_cell.png", "solar cell", true);
+	}
+</script>
+
+<body onload="LoadAll()">
+
+<div id="item_overlay">
+		<div id="inner_overlay">
+			<div id="overlay_close" onclick="off()">X</div>
+			<canvas id="item_image"></canvas>
+			<header id="item_header"></header>
+			<section id="item_tagline"></section>
+			<section id="item_summary"></section>
+			<section id="item_techs"></section>
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+	<div id="navbar"></div>
+	
+	<div id="whole_frame">
+		<div id="frame_top"></div>
+		<div id="frame_left"></div>
+		<div id="pageCanvas"></div>
+		<div id="frame_right"></div>
+		<div id="frame_bottom"></div>
+	</div>
+	
+</div>
+
+</body>
+</html>

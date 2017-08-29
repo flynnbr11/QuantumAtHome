@@ -1,0 +1,90 @@
+<!DOCTYPE=html>
+<html>
+<head>
+	<link rel="icon" href="images/icon.png">
+
+	<meta name="description" content="Quantum at Home: An exploration of the potential uses of quantum technology in the home.">
+	<meta name="keywords" content="quantum,technology,computing,home,quantum at home">
+	<meta name="author" content="Quantum Engineering CDT 2016/17, University of Bristol">
+	<!-- Facebook stuff -->
+	<meta property="og:title" content="Quantum At Home">
+	<meta property="og:image" content="images/qah_logo.png">
+	<meta property="og:description" content="An exploration of the potential uses of quantum technology in the home.">
+	<meta property="og:url" content="http://quantumathome.co.uk" />
+
+	<!-- Twitter stuff -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:creator" content="@BristolQE" />
+	<meta name="twitter:title" content="Quantum at Home" />
+	<meta name="twitter:description" content="An exploration of the potential uses of quantum technology in the home." />
+	<meta name="twitter:image" content="images/qah_logo.png" />
+	<!-- -->
+
+	<title>Quantum at Home - Surveys</title>
+	<script src="scripts/xml_loader.js"></script>
+	<script src="scripts/repeatedCalls.js"></script>
+<base target="_parent"> </base> 
+	<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/all_items.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/accordian.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/quantum_page.css" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-104442988-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body onload="DoLoad()">
+
+<div class="wrapper">
+	<div id="navbar"></div>
+	
+	<div id="whole_frame">
+		<div id="frame_top"></div>
+		
+		<div id="frame_left"></div>
+
+		<div id="pageCanvas"> 
+			<div id="quantum_header_frame"><header id="quantum_header">Surveys about Quantum Technologies</header></div>
+		
+			<aside id="topics"> 
+				<!--<header id="sidebar_header">Click to read what people think about Quantum Technology.</header>-->
+				<section id="sidebar_buttons">
+					<button class="topic_button" onclick="LoadPageInFrame('surveys/intro.html')">Overview</button>
+					<button class="topic_button" onclick="LoadPageInFrame('surveys/public.html')">Festival of Nature</button>
+					<button class="topic_button" onclick="LoadPageInFrame('surveys/uni_poll.html')">University of Bristol Poll</button>
+					<button class="topic_button" onclick="LoadPageInFrame('surveys/cqp.html')">Centre for Quantum Photonics</button>
+				</section>
+			</aside>
+			
+			<iframe  id="quantum_frame" src="surveys/intro.html"> </iframe>
+		</div>
+			
+		<div id="frame_right"></div>
+		<div id="frame_bottom"></div>
+	</div>
+	
+</div>
+ 
+
+	<script src="scripts/accordian.js"></script> 
+
+<script>
+
+var LoadPageInFrame = function(src)
+{
+	var frame = document.getElementById("quantum_frame");
+	
+	frame.src = src;
+}
+
+</script>	
+
+</body>
+</html>

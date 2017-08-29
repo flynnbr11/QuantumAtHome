@@ -1,0 +1,68 @@
+#quantum_frame {
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border: 0;
+	width: 950px;
+	height: 656px;
+}
+
+#quantum_header_frame {
+	width:100%;
+	height: 50px;
+	background-color: #213E7B;
+	color: white;
+	text-align: center;
+	border: 0;
+	border-bottom: 3px;
+	border-style: solid;
+	border-color: black;
+}
+#quantum_header {
+	font-size: 30px;
+	font-family: Trebuchet, Arial, sans-serif;
+	text-align: center;
+	margin: auto;
+	padding-top: 10px;
+	width:100%;
+}
+
+#sidebar_header {
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+	border-bottom: 3px;
+	border-style: solid;
+	background-color: #e9e9e9;
+}
+
+#topics {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border: 0;
+	border-right: 3px;
+	border-style: solid;
+	float: left;
+	width: 297px;
+	height: 658px;
+	scroll: visible;
+	background-color: #3f3f3f;
+}
+
+.topic_button {
+	width: 100%;
+	padding: 10px;
+	cursor: pointer;
+	border: 0;
+	background-color: grey;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+}
+.topic_button:hover {
+	color: grey;
+	background-color: #dddddd;
+	transition: background-color 0.5s, color 0.5s;
+}
