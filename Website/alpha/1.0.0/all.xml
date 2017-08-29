@@ -52,7 +52,6 @@ A quantum battery can be seen as a small system that is used to temporarily stor
 </p> <p>
 A known solution to this problem is to make the computer itself behave quantum mechanically, which means instead of manipulating bits, this quantum computer must manipulate physical quantum states as the fundamental blocks of information. In quantum mechanics, the Hamiltonian of a system can be thought of a large array of numbers that completely describes the energy of the quantum system. There exist mappings between most physical systems and finite sized Hamiltonians, and all finite sized Hamiltonians can be easily simulated on a quantum computer. Although chemical and biological processes involve the interactions of very complex quantum systems, work on quantum algorithms suggests that if we could make a large-scale quantum computer, the quantum simulations could be very effective in medical and drug research, potentially both reducing the cost of medicine and leading to a much wider range of useful medicine on the market. 
 </p>
-
         </description>
         <more_info_url>./QuantumAtHome.pdf#simulation</more_info_url>
       </tech>
@@ -237,7 +236,7 @@ What if I tell you that, in the future, you would never be worried about false n
 
         </summary>
         <description>
-<p>        Money is essential in people's lives. It does not only play an important role nowadays, but it was fundamental throughout history. On one hand we have currencies like the dollar, the euro or the pound, which are fiat money, that is, they are centralised and controlled by governments and central banks. On the other hand, the rise of cryptocurrencies lead by the Bitcoin since 2009 is changing the paradigm of trading and the money itself. Unlike the mainstream currencies, cryptocurrencies are digital, decentralised money. Both these approaches to money have problems. Paper money (unlike gold, silver or the cryptocurrencies) can be frauded by people. Government and central banks have been trying to avoid forgery for centuries. The cryptocurrencies (and digital banking in general) are based on classical cryptography, which is known to be vulnerable, e.g. by hacking. The advent of powerful quantum computers in the future may threaten their system.
+<p>        Money is essential in people's lives. It does not only play an important role nowadays, but it was fundamental throughout history. On one hand we have currencies like the dollar, the euro or the pound, which are fiat money, that is, they are centralised and controlled by governments and central banks. On the other hand, the rise of <a href="https://en.bitcoin.it/wiki/Main_Page">cryptocurrencies</a> led by the Bitcoin since 2009 is changing the paradigm of trading and the money itself. Unlike the mainstream currencies, cryptocurrencies are digital, decentralised money. Both these approaches to money have problems. Paper money (unlike gold, silver or the cryptocurrencies) can be frauded by people. Government and central banks have been trying to avoid forgery for centuries. The cryptocurrencies (and digital banking in general) are based on classical cryptography, which is known to be vulnerable, e.g. by hacking. The advent of powerful quantum computers in the future may threaten their system.
 </p> <p>
 Special money bills can be produced by using quantum mechanics to avoid forgery. The idea is based on the No-Cloning Theorem, which states that it is impossible to create an identical copy of an arbitrary unknown quantum state. By encoding information about the value of the bill in a quantum state, it is not possible to duplicate the bill. One of the first quantum systems proposed to serve as information encoding in bills were photons. In  each  bill,  there  would  a  sequence  of  quantum  states of photons  in different directions. By  the quantum  no-cloning  theorem,  anyone  who  does  not  know  these directions of  these  states in advance  cannot  copy  them.
 </p> <p>
@@ -248,7 +247,7 @@ Regarding cryptocurrencies like Bitcoin, they heavily rely on classical cryptogr
       </tech>
     </item>
     <item name="games console">
-      <heading>games console
+      <heading>Games Console
       </heading>
       <tagline>Where might quantum technologies affect gaming? 
       
@@ -376,6 +375,60 @@ This is one of the clear examples of how quantum computers are going to affect o
 
       </summary>
       <imgsrc>images/computer.png</imgsrc>
+
+      <tech>
+        <name>Simulations</name>
+        <image_name>
+        </image_name>
+        <summary>
+        <p>Quantum
+simulations that predict the behaviour of physical systems could result in
+ground-breaking results for high-temperature superconducting, leading the
+development of new generation of electronics with both increased performance
+and reduced size and cost.
+        </p>
+        </summary>
+        <description>
+        <p>  Computer simulations
+use mathematical models to reproduce the behaviour of dynamical systems, and
+they come into numerous aspects of our everyday lives. For instance,
+simulations are used in physics research for superconducting development and design,
+which has enabled the creation of the widely used portable electronics nowadays.
+However, simulations we use today are limited because computers fundamentally
+rely on manipulating 1s; and 0s, called 'bits', and it turns out nature
+can't be completely described by such a simplistic machine. It is therefore
+necessary to incorporate approximations and simplifications which only capture
+essential features of the actual physical systems. This is generally so that
+the simulation can be completed in a reasonable amount of time, and real
+experimental data is often still required to check the consistency of the
+predictions with real life. In simulating superconductivity, this often causes
+problems because in order to get the most realistic results, programs which
+simulate the underlying physical phenomena are needed. However, predicting the
+behaviour of large systems at a quantum level is known to be impossible for
+classical computers since the time or machinery required quickly becomes
+overwhelming.</p>
+
+<p>
+A known solution to
+this problem is to make the computer itself behave quantum mechanically, which
+means instead of manipulating bits, this quantum computer must manipulate
+physical quantum states as the fundamental blocks of information. In quantum
+mechanics, the Hamiltonian of a system can be thought of as a large array of
+numbers that completely describes the energy of the quantum system. There exist
+mappings between most physical systems and finite sized Hamiltonians, and all
+finite sized Hamiltonians can be easily simulated on a quantum computer.
+Although high-temperature superconductivity is not fully understood yet, work
+on quantum algorithms suggests that if we could make a large-scale quantum
+computer, the quantum simulations could be very effective in nanoscale
+electronics research, potentially reducing the cost and size of future
+electronical devices while boosting their performance.
+</p>
+
+        </description>
+        <more_info_url>./QuantumAtHome.pdf#simulation</more_info_url>
+      </tech>
+
+
       <tech>
         <name>processor</name>
         <image_name>
@@ -415,6 +468,9 @@ In 1943, Thomas Watson (then CEO of IBM) is alleged to have said “I think ther
         </description>
         <more_info_url>./QuantumAtHome.pdf#processor</more_info_url>
       </tech>
+
+
+
     </item>
     <item name="wheelchair">
       <heading>Wheelchair</heading>
