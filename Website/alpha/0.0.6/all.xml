@@ -1,7 +1,7 @@
 <root>
   <room name="kitchen">
     <item name="phone charger">
-      <heading>
+      <heading> Phone Charger
       </heading>
       <tagline>Where quantum models might increase the efficiency of batteries.
       </tagline>
@@ -342,7 +342,7 @@ Many versions of recommender systems have been tested for many years. From colla
 		</div>
 
 <p>
-In 1997, Lov K. Grover showed that by the use of quantum mechanics, it is possible to find a single object amongst N of them with just around N of steps instead the N steps a standard algorithm would have used meaning a massive improvement on the time this algorithms take to compare objects. Recently, researchers in IIIT Hyderabad, India proposed a way to use Grover’s search algorithm in recommender systems.
+In 1997, Lov K. Grover showed that by the use of quantum mechanics, it is possible to find a single object amongst N of them with just around the square root of N of steps instead the N steps a standard algorithm would have used meaning a massive improvement on the time this algorithms take to compare objects. Recently, researchers in IIIT Hyderabad, India proposed a way to use Grover’s search algorithm in recommender systems.
 </p> <p>
 This is one of the clear examples of how quantum computers are going to affect our lives even when the physical quantum processor might not be in our houses. For example, a quantum processor will probably be connected to the server of the website, run this quantum algorithm, and then, classical computers are going to post-process the outcomes and finally give us accurate recommendations. 
 </p>
@@ -506,7 +506,7 @@ An example of a classical gravimeter is a freefalling corner cube, which essenti
       </tech>
     </item>
     <item name="scanner">
-      <heading>Scanner
+      <heading>Health Scanner
       </heading>
       <tagline>Medical imaging technology, in your own home.
       </tagline>
