@@ -301,7 +301,7 @@ If the physical system used to produce random numbers, despite its complexity, i
       </tagline>
       <summary>
       </summary>
-      <imgsrc>images/router.png</imgsrc>
+      <imgsrc>images/phone.png</imgsrc>
       <tech>
         <name>port and router</name>
         <image_name>
@@ -313,6 +313,12 @@ If the physical system used to produce random numbers, despite its complexity, i
         </summary>
         <description>
         <p>There is a continual effort to increase the rate (bandwidth, often currently measured in Megabits per second) and speed (ping, often currently measured in milliseconds) of data transfer and it is possible that, in the future, current forms of encryption will not be secure. The ability to transmit a quantum signal increases the security of data as quantum cryptography may be used to encrypt the information. Also, this may offer both a potentially secure method of communicating with a remote quantum computer and increased data speeds, doubling the amount of data sent per second. </p> <p> Considerably increased sensitivity in measuring these quantum states would also require a smaller signal to be transmitted, potentially further improving bandwidth. As this would require light to be used at all stages of communication, this would achieve a slight improvement in the speed of data transfer as light is faster than an electrical signal. This technology already exists, although needs improvement before it can be made commercially available. It is extremely expensive to make currently, requiring large numbers of transmitters and receivers at a cost of about £100k each. </p>
+        
+		<div class="video_container">
+			<iframe class="quantum_video" src="https://www.youtube.com/embed/UiJiXNEm-Go" frameborder="0" allowfullscreen="allowfullscreen">iFrame not supported</iframe>
+			<div class="quantum_video_caption">Quantum Key Distribution.</div>
+		</div>
+        
 
         </description>
         <more_info_url>./QuantumAtHome.pdf#port_router</more_info_url>
@@ -461,6 +467,14 @@ These techniques can increase the sensitivity of magnetic field measurements dra
         </summary>
         <description>
         Classical methods of securely transferring money by credit/debit card and withdrawing money using an ATM require authentication, which involves using random numbers to check a user’s identity. These methods have security flaws, which can be reliably solved using ideas from Quantum Cryptography. Random numbers are generated using a quantum random number generator and stored in the memory of the device. Quantum random numbers are more secure than classically generated random numbers, as it is possible for them to be ‘truly’ random. For each random bit, one of four LEDs is used to emit a single quantum particle in one of four states. This is repeated thousands of times to generate a random number that cannot be guessed classically without the receiving device being aware of someone trying to guess. Each particle is then measured by the receiving device, which is the only other device that knows the random number being used. The received random number is then compared with what it should have been and a match indicates that the person is who they say they are. This can be used to authenticate card transactions and cash withdrawals. The technology already exists and so, could potentially be implemented within a few years. It is estimated to potentially cost around £10 for each transmitting device, which each person could own and about £100k for the receiving device, which could be owned by each Bank.
+        
+        <center>
+        <img width="50%" style="position:center;" src="images/QKDCreditCardDemo2.jpg">
+        <div style="font-size: small; text-align:center;"> Prototype receiving device for handheld quantum authentication.</div>
+        </img>
+        </center>
+        
+        
 
         </description>
         <more_info_url>./QuantumAtHome.pdf#key_distribution</more_info_url>
@@ -614,7 +628,7 @@ A compact device for screening could be designed based on these ideas, enabling 
         <image_name>
         </image_name>
         <summary>
-        When you wake up on Sunday morning and you feel so lazy that you dream there was a device that could teleport you from the bed directly to the bathroom. We are sorry but this is not the case! Read about why quantum teleportation is one of the biggest myths of our field. 
+        When you wake up on Sunday morning and you feel so lazy that you dream there was a device that could teleport you from the bed directly to the bathroom. We are sorry but this is not the case! Read about common misconceptions of the term <i> quantum teleportation</i>.
         </summary>
         <description>
         <p>
