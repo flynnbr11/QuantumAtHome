@@ -130,7 +130,16 @@ In particular, speedup due to quantum computing would mean that the filters can 
         </summary>
         <description>
         <p>Climate models are very complex. The climate is an inherently chaotic system: ever heard of a butterfly flapping its wings causing a hurricane halfway around the world? This is a stretch, but it helps us understand how difficult it is to predict the weather! </p> <p>
-A globally distributed network of sensitive, mobile and precise gravimeters will feed in a lot of information into climate science, including to better define the shape of the Earth and track the movement of water and precipitation around the world. The NASA GRACE experiment, satellite measurements of the effect of water build-up on gravity measurements, has already demonstrated the application of this. Quantum devices promise to be especially precise, mobile and potentially cheaper to produce and have even been demonstrated to work on-chip. These devices are based on atomic interferometry: clouds of particles are interfered with each other (using the principle of superposition and the wave nature of matter) to measure the absolute gravity. </p> <p>
+A globally distributed network of sensitive, mobile and precise gravimeters will feed in a lot of information into climate science, including to better define the shape of the Earth and track the movement of water and precipitation around the world. The NASA GRACE experiment, satellite measurements of the effect of water build-up on gravity measurements, has already demonstrated the application of this. Quantum devices promise to be especially precise, mobile and potentially cheaper to produce and have even been demonstrated to work on-chip. These devices are based on atomic interferometry: clouds of particles are interfered with each other (using the principle of superposition and the wave nature of matter) to measure the absolute gravity. </p> 
+        <center>
+        <img width="50%" style="position:center;" src="images/grace.jpg">
+        <div style="font-size: small; text-align:center;"> NASA <a href="https://www.nasa.gov/mission_pages/Grace/index.html">GRACE</a> experiment.  
+</div>
+        </img>
+        </center>
+
+
+<p>
 With more data, the models we use to predict the weather and climate change will be better equipped to deal with climate change and humanity’s impact on the world. Further, gravity sensors can be used to track magma flows and tectonic plate movements, which may give us better predictive tools for natural disasters. 
 An example of a classical gravimeter is a freefalling corner cube, which essentially uses the interference of light to measure how fast a mirror falls. Other examples of gravimeters include spring systems and superconducting gravimeters (which do use the quantum effect of superconductivity). </p>
 
@@ -149,13 +158,13 @@ An example of a classical gravimeter is a freefalling corner cube, which essenti
       
       <imgsrc>images/fridge.png</imgsrc>
       <tech>
-        <name>quantum enhanced chemical/biologiacl detection</name>
+        <name>quantum enhanced chemical/biological detection</name>
         <summary>
       Quantum dots offer more versatility over fluorescent dyes in fluorescence imaging, with longer lifetime and the ability to set their colour. Detection of microbes in food could be done at home in the future using fluorescence techniques with quantum dots.
 
         </summary>
         <description>
-        <p> 10 million tonnes of food is thrown away each year in the UK, <a href="http://www.wrap.org.uk/sites/files/wrap/Estimates_%20in_the_UK_Jan17.pdf"> 70% of which is attributed to households </a>. One problem identified is ‘best before’ dates, which can lead people to throw away perfectly good food. An easy way to test the safety of food at home would go a long way to solving this problem, by reassuring people that their food is still safe to eat. An affordable device which tests for harmful microbes (fungi, bacteria and viruses) is required, and it should provide results in the near future.
+        <p> 10 million tonnes of food is thrown away each year in the UK, <a href="http://www.wrap.org.uk/sites/files/wrap/Estimates_%20in_the_UK_Jan17.pdf"> 70% of which is attributed to households </a>. One problem identified is ‘best before’ dates, which can lead people to throw away perfectly good food. An easy way to test the safety of food at home would go a long way to solving this problem, by reassuring people that their food is still safe to eat. An affordable device which tests for harmful microbes (fungi, bacteria &amp; viruses), and gives results in a few minutes, is required.
         </p>
         <p>
 Fluorescence techniques are a modern way to screen for almost any chemical or biological entity (eg. bacteria, proteins). Fluorescence is the effect whereby light is emitted by an object, in response to absorption of light by the object. This is the reason fluorescent objects glow when illuminated with UV light (which we can’t see). In fluorescence microscopy, fluorescent molecules (known as dyes) are used to label entities. These molecules can be designed to attach to, for example, specific proteins characteristic of a species of bacteria, so that by observing the fluorescent light through a microscope, the presence of that species can be determined. This approach provides results much faster than the traditional method of growing a culture over a period of days until the bacteria can be detected by eye.
@@ -389,16 +398,13 @@ Quantum computers promise a lot, and the QPU is a very attractive idea - who doe
 <p>
 In 1943, Thomas Watson (then CEO of IBM) is alleged to have said “I think there is a world market for maybe five computers”. Whether he said this is up for debate, but the idea behind it is clear: when a technology is being developed no one is sure exactly how useful it may be. In this case, whoever said this got it very wrong, and so we must be open to QPUs becoming a staple in everyone’s computers - at this point however, it looks unlikely.
 </p>
-  	<div >
-			<iframe style = "	display: block;
-	margin: auto;
-	margin: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 560px;
-	height: 315px;
-" src="https://www.youtube.com/embed/JODJYwYz088" frameborder="0" ></iframe>
-  </div>
+
+		<div class="video_container">
+			<iframe class="quantum_video" src="https://www.youtube.com/embed/JODJYwYz088" frameborder="0" allowfullscreen="allowfullscreen">iFrame not supported</iframe>
+			<div class="quantum_video_caption">Bristol's Professor John Rarity talks about quantum computing.</div>
+		</div>
+
+
 
         </description>
         <more_info_url>./QuantumAtHome.pdf#processor</more_info_url>
@@ -420,6 +426,15 @@ In 1943, Thomas Watson (then CEO of IBM) is alleged to have said “I think ther
         <description>
 <p>        
 Mind controlled technologies may seem like a thing of the distant future, but electromagnetic sensing of brain signals is already being used to develop a Brain-computer Interface (BCI) to enable the control of devices such as prosthetic limbs and motorised wheelchairs. These systems detect electroencephalographic (EEG) signals with a number of electrodes placed on the person’s head. However, they often suffer from poor resolution and excess noise, making it difficult to accurately translate the brain signal into a useful action. 
+
+        <center>
+        <img width="50%" style="position:center;" src="images/wheelchair_1.png">
+        <div style="font-size: small; text-align:center;"> Brain controlled wheelchair based on EEG. <a href="http://www.ubergizmo.com/2010/09/swiss-researchers-showcase-a-brain-controlled-wheelchair/">Image source</a>.  
+</div>
+        </img>
+        </center>
+
+
 </p> <p>
 Quantum-enhanced sensing could provide the means to provide a commercially viable BCI, due to the latest developments in devices for the quantum magnetic sensing of brain signals.
 The technique used to achieve enhanced sensitivity in magnetic field sensing involves monitoring the light observed from a laser beam that has been passed through a vapour of atomic spins. The magnetic field alters the direction of the spins in the vapour, and this results in a measurable change in the light transmitted through the vapour. If there are many spins, this method can be used to determine the magnetic field to an extraordinary level of precision. In fact, the sensitivity of this measurement can be improved further still by using the laser to project the spins into a quantum squeezed state. This means that the uncertainty in the measurement is compressed beyond the standard quantum limit, which is a limit that is not possible to surpass without using quantum effects. An alternative quantum-enhanced approach to magnetic sensing relies on using electron spins in diamond. With many spins in a sample, a laser can be used to produce light emission from the sample that depends on the electron spins. As before, the alignment of these spins depends on the surrounding magnetic field, and hence by measuring the light scattered from the sample, the magnetic field strength can be measured to an extremely high precision.
@@ -469,7 +484,15 @@ These techniques can increase the sensitivity of magnetic field measurements dra
         A phenomena called atomic interferometry can be used to measure gravity: A cloud of atoms which is in a superposition can be interfered with itself, exploiting the wave property of matter. Devices which use this effect are at the late stages of development and are looking to cost less, be more sensitive and less bulky than current technologies, for example, a commercially available Micro-g Lacoste has a mass of around 150kg and a price tag of $100, 000!
         </summary>
         <description>
-        <p>The Global Positioning System is how our phones tell us where we are in the world. Signals from four satellites are coordinated to calculate our position based on the travel time of the signals from the satellites and the position of the satellites at that moment in time. </p> <p>
+        <p>The Global Positioning System is how our phones tell us where we are in the world. Signals from four satellites are coordinated to calculate our position based on the travel time of the signals from the satellites and the position of the satellites at that moment in time. </p>
+                <center>
+        <img width="50%" style="position:center;" src="images/satellite.jpg">
+        <div style="font-size: small; text-align:center;"> GPS Satellite.  
+</div>
+        </img>
+        </center>
+
+         <p>
 For the best accuracy the GPS needs to be able to connect with four satellites. GPS still works when a device can only access three satellites but it must make an approximation: That you are at sea level. In a dense city or in remote areas this can be an issue, your phone might only know your position approximately. </p> <p>
 Currently, very precise absolute gravimeters are expensive. Quantum devices based on atomic interferometry, even now being demonstrated on chip, may be sensitive, cheap to manufacture and portable to the extent that a global network of absolute gravimeters can be established.  A globally distributed network of these devices might be used to better define the shape of the Earth, calibrate other gravity instruments, determine the height of landmasses and using the same principle as accelerometers better inform and work alongside GPS systems for tracking and positioning in urban or remote environments.</p> <p>
 An example of a classical gravimeter is a free-falling corner cube, which essentially uses the interference of light to measure how fast a mirror falls. Other examples of gravimeters include spring systems and superconducting gravimeters (which do use the quantum effect of superconductivity). </p>
@@ -494,12 +517,19 @@ An example of a classical gravimeter is a free-falling corner cube, which essent
 </summary>
         <description>
         <p>
-        Climate models are very complex. The climate is an inherently chaotic system: ever heard of a butterfly flapping its wings causing a hurricane halfway around the world? This is a stretch, but it helps us understand how difficult it is to predict the weather!  </p>
-        <p>
-A globally distributed network of sensitive, mobile and precise gravimeters will feed in a lot of information into climate science, including to better define the shape of the Earth and track the movement of water and precipitation around the world. The NASA GRACE experiment, satellite measurements of the effect of water build-up on gravity measurements, has already demonstrated the application of this. Quantum devices promise to be especially precise, mobile and potentially cheaper to produce and have even been demonstrated to work on-chip. These devices are based on atomic interferometry: clouds of particles are interfered with each other (using the principle of superposition and the wave nature of matter) to measure the absolute gravity. </p>
+Classical gravity sensors tend to be bulky, expensive and susceptible to drift. For a construction site, this can be difficult! Quantum gravity sensors aim to be mobile, sensitive and cheaper than their classical counterparts. They are based on the principle of atomic interferometry and may one day even be precise enough to detect pipes, load bearing walls and structural issues in our own homes. </p> 
+
 <p>
-With more data, the models we use to predict the weather and climate change will be better equipped to deal with climate change and humanity’s impact on the world. Further, gravity sensors can be used to track magma flows and tectonic plate movements, which may give us better predictive tools for natural disasters. 
-An example of a classical gravimeter is a freefalling corner cube, which essentially uses the interference of light to measure how fast a mirror falls. Other examples of gravimeters include spring systems and superconducting gravimeters (which do use the quantum effect of superconductivity).</p>
+An example of a classical gravimeter is a freefalling corner cube, which essentially uses the interference of light to measure how fast a mirror falls. Other examples of gravimeters include spring systems and superconducting gravimeters (which use the quantum effect of superconductivity). </p> <p>
+In the field of construction, gravity sensors can be used in big infrastructure projects to detect sinkholes and see underground when planning building projects. Gravity sensors detect variations in mass by the gravity experienced as a result of that mass, and as such can be thought of as almost x-ray vision to see underground. Quantum gravity sensors could one day be so precise, and cost so little, as to be used to “see” through walls in our own homes. 
+</p>
+
+        <center>
+        <img width="50%" style="position:center;" src="images/gravimeter.jpg">
+        <div style="font-size: small; text-align:center;"> Gravimeter for use in construction.  
+</div>
+        </img>
+        </center>
 
         </description>
         <more_info_url>./QuantumAtHome.pdf#gravity_sensors</more_info_url>
@@ -523,7 +553,17 @@ An example of a classical gravimeter is a freefalling corner cube, which essenti
         <description>
         <p>
 It is known that both the human heart and brain generate a detectable magnetic field, and measurement of this field has been used in medical research and diagnosis for many years. Such measurements have previously been carried out using superconducting quantum interference devices, or SQUIDS. These devices can sense changes in biomagnetic fields with extreme precision by using interference in a superconducting circuit (a circuit which has zero electrical resistance). However, this technique is limited as the circuit requires cooling to temperatures of at most -200ºC, and this can cost hospitals about £200,000 per year just in energy costs. However, recent developments have enabled quantum magnetic field sensors to operate at room temperature, which could make medical diagnostic tools in the home a real possibility.
-</p> <p>
+</p> 
+
+        <center>
+        <img width="50%" style="position:center;" src="images/wheelchair_2.png">
+        <div style="font-size: small; text-align:center;"> Typical MEG scanner based on SQUID technology . <a href="https://www.admin.ox.ac.uk/estates/aboutus/spotlight/casestudies/capitalprojects/megscanner/">Image source</a>.  
+</div>
+        </img>
+        </center>
+
+
+<p>
 The method used to achieve a quantum enhanced precision in magnetic field sensing involves monitoring the output of a laser beam that has been passed through a vapour of atomic spins. The magnetic field changes the direction of the spins in the vapour, and this results in an observable variation in the light passing through the vapour. If there are a large number of spins, this method can be used to determine the magnetic field strength to an extraordinary level of precision. In fact, the sensitivity can be improved further still by using the laser beam to project the spins into a quantum squeezed state. This means that the uncertainty in the measurement is compressed beyond the standard quantum limit, which is a limit that cannot be surpassed without harnessing quantum effects. An alternative quantum-enhanced approach to magnetic sensing relies on using a large number of electron spins embedded in diamond. A laser can induce light emission from the sample which is dependent on the electron spins. As before, the alignment of these spins depends on the magnetic field, and hence by observing the light scattered from the sample, the magnetic field strength can be measured to a remarkably high precision.
 These techniques have already been shown to increase the sensitivity of magnetic sensing devices while not needing extreme cooling. This has been used to sense the magnetic fields in the heart and brain, and can also be used to achieve MRI scanning without having to cryogenically cool the device. The ability to make such a device compact and work at room temperature could lead to their use in the home for regular health monitoring, which could lead to early diagnosis of many diseases, potentially saving many lives in the near future.
  </p>
@@ -621,7 +661,7 @@ Asher Peres, one of the inventors of quantum teleportation, wrote in his paper �
         By engineering solar cells from nanoscale quantum engines, it has been shown that significant improvements in the efficiency of solar panels could be achieved, due to the naturally energy regulating behaviour of these structures.
         </summary>
         <description>
-        <p>Solar cells have transformed the way we harvest energy in recent years, and promise to be a significant part of achieving a sustainable future. However, a major barrier to this progress is the limited efficiency which has been achieved in solar cells to date, and in current solar technologies these inefficiencies stem from fluctuations in the light received by the solar cell. Quantum physics has recently been shown to provide a significant advantage in improving the efficiency of solar power, by naturally regulating the energy received to produce a steady state output from the fluctuating input. These quantum solar cells are made by combining two semiconductor materials that are linked by a quantum energy transition. This means that incoming particle of light (photon) can be absorbed such that its energy is converted to electronic energy in the form of electric power. Today’s solar technology also works by joining semiconductor materials linked by an energy gap such that individual photons are absorbed, giving extra energy to electrons. However, the quantum solar cells are distinct from their classical counterpart because in the quantum case the energy gap is formed from two individual quantum states with different energy, such as are found in an atom, rather than the energy levels arising as a property of a large-scale material, as in the classical case. Semiconductor nanostructures have already been shown to be promising candidates for light harvesting, as they have remarkably high absorption, a high efficiency of charge transfer and an intrinsically high power conversion efficiency. </p><p>
+        <p>Solar cells have transformed the way we harvest energy in recent years, and promise to be a significant part of achieving a sustainable future. However, a major barrier to this progress is the limited efficiency which has been achieved in solar cells to date, and in current solar technologies these inefficiencies stem from fluctuations in the light received by the solar cell. Quantum physics has recently been shown to provide a significant advantage in improving the efficiency of solar power, by naturally regulating the energy received to produce a steady state output from the fluctuating input. These quantum solar cells are made by combining two semiconductor materials that are linked by a quantum energy transition. For an explanation of semiconductors and how they work, <a href="http://electronics.howstuffworks.com/diode.htm">click here</a>. This means that incoming particle of light (photon) can be absorbed such that its energy is converted to electronic energy in the form of electric power. Today’s solar technology also works by joining semiconductor materials linked by an energy gap such that individual photons are absorbed, giving extra energy to electrons. However, the quantum solar cells are distinct from their classical counterpart because in the quantum case the energy gap is formed from two individual quantum states with different energy, such as are found in an atom, rather than the energy levels arising as a property of a large-scale material, as in the classical case. Semiconductor nanostructures have already been shown to be promising candidates for light harvesting, as they have remarkably high absorption, a high efficiency of charge transfer and an intrinsically high power conversion efficiency. </p><p>
 The quantum energy regulation works by having two ‘quantum channels’ which are used to channel energy efficiently through the photocell. One channel absorbs at a colour of light which is providing a high average intensity, and the other channel absorbs colours of light with low intensity. In order to make the output energy as constant as possible, the quantum solar cell switches randomly between the high and the low energy channel.  It is possible to engineer nanoscale semiconductors with these properties, and by electronic coupling of these structures the increased power conversion efficiency could be directly observable. We know that different colours of light have different energies, and incredibly it was found that green light does not provide a benefit by switching in this way. This means that the device can increase the amount of energy it can make by not absorbing as much green light as it does all the other colours. Plants all around us have this same property, which is what makes them green, and this may be because of a similar kind of quantum benefit researchers have found using these devices. In fact, in recent studies of the microscopic nature of plants, a molecular structure proposed on the basis of its photosynthetic properties has interesting similarities to the quantum solar cells discussed here. It is remarkable that we can turn to nature for hints about how we can reduce our carbon footprint with the latest quantum technologies.
 </p>
 
@@ -649,7 +689,7 @@ The quantum energy regulation works by having two ‘quantum channels’ which a
         
     <p>    Think about getting home from doing the weekly grocery shopping and you get to your front door, hands full with heavy bags, and you remember your keys are in the bottom of your bag, or worse you’ve dropped them on the journey somewhere. No problem: simply look into the camera which instantly recognises you and unlocks the door. No need to even put your bags down. Your face is your key. Now you’re lying in bed and you hear a noise in the garden. Should you check that out, maybe call the police? No, just relax – the camera would have detected if anybody was in the garden; it’s probably just a cat.</p> <p>
 This is a futuristic house, but these technologies do exist. Airports already have epassport gates which use <a href="https://en.wikipedia.org/wiki/Facial_recognition_system"> facial recognition</a> to check if you match the photograph electronically stored in your epassport. A start-up company, <a href="https://www.trueface.ai/">TrueFace.AI</a>, has developed a ‘doorbell’ that identifies the person at the door and can automatically unlock it or inform you who it is via an app. A security camera is a bit more difficult as first it has to locate the person and then, in potentially very poor lighting and resolution, determine who the person is: friend or stranger.</p>
-There are three main steps in facial recognition:
+<p>There are three main steps in facial recognition:</p>
 <ol>
 <li> Face detection – this is the process of picking a face out of an image. This is used already on many phone cameras so it can focus on people’s faces;
 </li>
@@ -657,7 +697,7 @@ There are three main steps in facial recognition:
 <li> Classification – once the information has been converted into a useful format, it needs to be compared to the information of every face stored in the database to determine which face it matches.
 </li>
  </ol>
-<p> These processes are usually performed using machine learning algorithms. In machine learning, the parameters are chosen not by human determined rules, but using data to change the parameters to improve the outcome. In facial recognition, many faces are chosen to test which bits of the data can be ignored to minimise the information lost. For example, more information is contained in the eyes than the forehead. The more subtle differences are better determined by machine learning algorithms. There are many different such algorithms and each performs better under certain scenarios. In different applications of facial recognition, you can expect different conditions – poor lighting, different facial expressions, occlusions due to sunglasses for facial hair. Algorithms perform better under perfect conditions, hence why you are asked to remove glasses, keep hair out  your face, have a blank background and look straight at the camera with a neutral expression for passport photographs. However, a security camera in your garden would not have such luxuries, and a facial recognition front door lock would need to be extremely accurate, in case you have an evil twin. This is why research is now being done into quantum machine learning, which uses quantum principles, particularly quantum computation, to perform machine learning tasks. Quantum computation has been proven to provide speedup in certain algorithms. A short explanation is given in the video at the bottom. </p> 
+<p> These processes are usually performed using machine learning algorithms. In machine learning, the parameters are chosen not by human determined rules, but using data to change the parameters to improve the outcome. In facial recognition, many faces are chosen to test which bits of the data can be ignored to minimise the information lost. For example, more information is contained in the eyes than the forehead. The more subtle differences are better determined by machine learning algorithms. There are many different such algorithms and each performs better under certain scenarios. In different applications of facial recognition, you can expect different conditions – poor lighting, different facial expressions, occlusions due to sunglasses or facial hair. Algorithms perform better under perfect conditions, hence why you are asked to remove glasses, keep hair off your face, have a blank background and look straight at the camera with a neutral expression for passport photographs. However, a security camera in your garden would not have such luxuries, and a facial recognition front door lock would need to be extremely accurate, in case you have an evil twin. This is why research is now being done into quantum machine learning, which uses quantum principles, particularly quantum computation, to perform machine learning tasks. Quantum computation has been proven to provide speedup in certain algorithms. A short explanation is given in the video below. </p> 
 
 		<div class="video_container">
 			<iframe class="quantum_video" src="https://www.youtube.com/embed/8anVNc0r_8o" frameborder="0" allowfullscreen="allowfullscreen">iFrame not supported</iframe>
